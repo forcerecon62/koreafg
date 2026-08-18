@@ -33,15 +33,15 @@ TOP_N_BY_CAP = 100        # 주가 강도 지표에 사용할 시총 상위 표�
 NEAR_BAND_PCT = 5.0        # 52주 고/저가 대비 근접 판정 기준(%)
 
 INDICATOR_WEIGHTS = {
+    "volatility": 0.18,
+    "market_breadth": 0.17,
     "kospi_momentum": 0.15,
-    "kosdaq_momentum": 0.10,
-    "volatility": 0.15,
-    "fx_stress": 0.15,
-    "market_breadth": 0.15,
+    "fx_stress": 0.13,
+    "kosdaq_momentum": 0.12,
     "foreign_flow": 0.10,
-    "price_strength": 0.10,
-    "safe_haven": 0.10,
-}
+    "price_strength": 0.08,
+    "safe_haven": 0.07,
+}  # 합 1.00 — 2026-08-18 yasun.gg 대비 캘리브레이션 반영
 
 INDICATOR_LABELS = {
     "kospi_momentum": "KOSPI 모멘텀",
@@ -85,14 +85,14 @@ def days_ago_str(n: int, fmt: str = "%Y%m%d") -> str:
 
 # ── 지표 수집 ─────────────────────────────────────────────
 def collect_market_index() -> dict:
-    """KOSPI/KOSDAQ 모멘텀(20일 이평 괴리율), KOSPI 변동성(20일 실현변동성 연율화)"""
+    """KOSPI/KOSDAQ 모멘텀(60일 이평 괴리율), KOSPI 변동성(20일 실현변동성 연율화)"""
     out = {}
     try:
         for key, ticker in (("kospi_momentum", YF_KOSPI), ("kosdaq_momentum", YF_KOSDAQ)):
             df = yf.download(ticker, period="1y", interval="1d", progress=False, auto_adjust=True)
             close = df["Close"].dropna()
-            ma20 = close.rolling(20).mean()
-            out[key] = round(float((close.iloc[-1] - ma20.iloc[-1]) / ma20.iloc[-1] * 100), 2)
+            ma = close.rolling(60).mean()  # 60거래일(약 1분기) 이평 — 급락 후 하루 반등에 과민반응 방지
+            out[key] = round(float((close.iloc[-1] - ma.iloc[-1]) / ma.iloc[-1] * 100), 2)
 
         df = yf.download(YF_KOSPI, period="1y", interval="1d", progress=False, auto_adjust=True)
         close = df["Close"].dropna()
@@ -117,10 +117,10 @@ def collect_fx() -> dict:
 
 
 def collect_safe_haven() -> dict:
-    """KOSPI 20일 수익률 - 금 20일 수익률 스프레드. 낮을수록(주식이 금 대비 부진) 공포."""
+    """KOSPI 60일 수익률 - 금 60일 수익률 스프레드(모멘텀과 윈도우 통일). 낮을수록(주식이 금 대비 부진) 공포."""
     out = {}
     try:
-        def n_day_return(ticker, window=20):
+        def n_day_return(ticker, window=60):
             df = yf.download(ticker, period="1y", interval="1d", progress=False, auto_adjust=True)
             close = df["Close"].dropna()
             return (float(close.iloc[-1]) - float(close.iloc[-1 - window])) / float(close.iloc[-1 - window]) * 100
