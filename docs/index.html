@@ -7,7 +7,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
 <style>
   :root{
     --bg: #0A0D13;
@@ -32,7 +31,6 @@
     padding:20px 16px 48px;
   }
   .wrap{max-width:720px;margin:0 auto;}
-
   .topbar{
     display:flex;justify-content:space-between;align-items:baseline;
     margin-bottom:22px;
@@ -47,16 +45,13 @@
     font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-dim);
     font-variant-numeric: tabular-nums;
   }
-
   .lede{color:var(--ink-dim);font-size:13px;line-height:1.6;margin:0 0 20px;}
-
   .card{
     background:var(--panel);
     border:1px solid var(--panel-border);
     border-radius:var(--radius);
     padding:20px;
   }
-
   .hero{margin-bottom:16px;}
   .gauge-wrap{position:relative;display:flex;flex-direction:column;align-items:center;padding-top:6px;}
   svg.gauge{width:100%;max-width:380px;height:auto;}
@@ -71,7 +66,6 @@
     font-size:12px;font-weight:600;letter-spacing:0.02em;
   }
   .asof{color:var(--ink-dim);font-size:12px;margin-top:12px;font-family:'IBM Plex Mono',monospace;}
-
   .section-title{font-size:14px;font-weight:600;margin:28px 0 12px;color:var(--ink);}
   .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
   .ind-card{padding:16px;}
@@ -80,16 +74,12 @@
   .ind-score .of100{font-size:13px;color:var(--ink-dim);font-weight:400;}
   .ind-verdict{font-size:12px;font-weight:600;margin-top:4px;}
   .ind-raw{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-dim);margin-top:8px;}
-
   .chart-card{padding:18px 14px 8px;margin-top:8px;}
   .chart-box{height:200px;}
-
   .legend{margin-top:24px;font-size:12.5px;line-height:2;color:var(--ink-dim);}
   .legend b{color:var(--ink);}
   .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;}
-
   .foot{margin-top:32px;font-size:11.5px;color:#5A6376;line-height:1.7;}
-
   @media (max-width:420px){
     .score-num{font-size:46px;}
     .grid{grid-template-columns:1fr 1fr;gap:8px;}
@@ -141,10 +131,11 @@
 
   <div class="section-title">점수 추이</div>
   <div class="card chart-card">
-    <div class="chart-box"><canvas id="history-chart"></canvas></div>
+    <div class="chart-box" id="history-chart"></div>
   </div>
 
   <div class="legend">
+    <div style="margin-bottom:12px;color:var(--ink-dim);">지표들이 서로 다른 방향을 가리킬 때는 종합 점수가 중립 쪽으로 모입니다 — 여러 지표가 같은 방향에 동의할 때만 극단(공포/탐욕) 판정이 나옵니다.</div>
     <div><span class="dot" style="background:#3A63C4"></span><b>0–24 극단적 공포</b> — 시장 심리가 과도하게 비관적. 역사적으로 반등 신호 가능성.</div>
     <div><span class="dot" style="background:#5B8DEF"></span><b>25–44 공포</b> — 위험 회피 분위기 확산.</div>
     <div><span class="dot" style="background:#4C5568"></span><b>45–55 중립</b> — 방향성 불분명.</div>
@@ -159,7 +150,7 @@
 </div>
 
 <script>
-const DATA_URL = "./data/history.json";
+const DATA_URL = "./data/history.json"; // GitHub Actions가 매일 커밋하는 정적 JSON
 
 function verdictColor(score){
   if(score < 25) return "#3A63C4";
@@ -210,32 +201,43 @@ function renderLatest(rec){
 }
 
 function renderHistoryChart(records){
-  const labels = records.map(r=>r.date.slice(5));
+  const box = document.getElementById("history-chart");
   const scores = records.map(r=>r.composite_score);
+  const n = scores.length;
+  const W = 600, H = 200, padL = 30, padR = 8, padT = 10, padB = 20;
+  const innerW = W - padL - padR, innerH = H - padT - padB;
+  const x = i => padL + (n<=1?0:(i/(n-1))*innerW);
+  const y = s => padT + (100-s)/100*innerH;
 
-  new Chart(document.getElementById("history-chart"), {
-    type: "line",
-    data: {
-      labels,
-      datasets: [{
-        data: scores,
-        borderColor: "#F2B84B",
-        backgroundColor: "rgba(242,184,75,0.08)",
-        borderWidth: 2,
-        pointRadius: 0,
-        tension: 0.25,
-        fill: true,
-      }]
-    },
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { display:false } },
-      scales: {
-        x: { ticks:{ color:"#5A6376", maxTicksLimit:6, font:{family:"IBM Plex Mono", size:10} }, grid:{ display:false } },
-        y: { min:0, max:100, ticks:{ color:"#5A6376", stepSize:25, font:{family:"IBM Plex Mono", size:10} }, grid:{ color:"#1F2532" } }
-      }
-    }
+  let linePath = "";
+  scores.forEach((s,i)=>{ linePath += (i===0?"M":"L") + x(i).toFixed(1) + "," + y(s).toFixed(1) + " "; });
+  const areaPath = linePath + `L ${x(n-1).toFixed(1)},${(padT+innerH).toFixed(1)} L ${x(0).toFixed(1)},${(padT+innerH).toFixed(1)} Z`;
+
+  let grid = "";
+  [0,25,50,75,100].forEach(v=>{
+    const gy = y(v);
+    grid += `<line x1="${padL}" y1="${gy}" x2="${W-padR}" y2="${gy}" stroke="#1F2532" stroke-width="1"/>`;
+    grid += `<text x="${padL-6}" y="${gy+3}" text-anchor="end" font-size="9" fill="#5A6376" font-family="IBM Plex Mono, monospace">${v}</text>`;
   });
+
+  let xLabels = "";
+  const labelCount = Math.min(6, n);
+  for(let k=0;k<labelCount;k++){
+    const idx = Math.round(k*(n-1)/(labelCount-1||1));
+    const dateStr = (records[idx].date||"").slice(5);
+    xLabels += `<text x="${x(idx).toFixed(1)}" y="${H-6}" text-anchor="middle" font-size="9" fill="#5A6376" font-family="IBM Plex Mono, monospace">${dateStr}</text>`;
+  }
+
+  box.innerHTML = `<svg viewBox="0 0 ${W} ${H}" width="100%" height="100%" preserveAspectRatio="none">
+    <defs><linearGradient id="histFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F2B84B" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#F2B84B" stop-opacity="0"/>
+    </linearGradient></defs>
+    ${grid}
+    <path d="${areaPath}" fill="url(#histFill)" stroke="none"/>
+    <path d="${linePath.trim()}" fill="none" stroke="#F2B84B" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    ${xLabels}
+  </svg>`;
 }
 
 async function main(){
