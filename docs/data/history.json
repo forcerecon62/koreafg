@@ -7,14 +7,14 @@
       {
         "key": "kospi_momentum",
         "label": "KOSPI 모멘텀",
-        "raw": -8.83,
+        "raw": -9.2,
         "score": 0.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "kosdaq_momentum",
         "label": "KOSDAQ 모멘텀",
-        "raw": -6.34,
+        "raw": -6.92,
         "score": 0.0,
         "verdict": "극단적 공포"
       },
@@ -28,14 +28,14 @@
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
-        "raw": -0.51,
+        "raw": -0.53,
         "score": 100.0,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -6.34,
+        "raw": -6.47,
         "score": 0.0,
         "verdict": "극단적 공포"
       }
