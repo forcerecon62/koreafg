@@ -10,6 +10,7 @@ docs/index.html이 이 JSON 파일을 읽어 대시보드를 그린다.
 """
 import sys
 import json
+import time
 from bisect import bisect_left
 from datetime import date, datetime, timedelta
 from pathlib import Path
@@ -83,6 +84,20 @@ def days_ago_str(n: int, fmt: str = "%Y%m%d") -> str:
     return (now_kst() - timedelta(days=n)).strftime(fmt)
 
 
+def _retry(fn, tries=3, delay=4):
+    """KRX 서버가 간헐적으로 빈 응답을 줄 때(Expecting value 에러) 잠깐 쉬었다가 재시도."""
+    last_err = None
+    for i in range(tries):
+        try:
+            return fn()
+        except Exception as e:
+            last_err = e
+            if i < tries - 1:
+                print(f"[RETRY] {i+1}/{tries} 실패({e}), {delay}초 후 재시도")
+                time.sleep(delay)
+    raise last_err
+
+
 # ── 지표 수집 ─────────────────────────────────────────────
 def collect_market_index() -> dict:
     """KOSPI/KOSDAQ 모멘텀(60일 이평 괴리율), KOSPI 변동성(20일 실현변동성 연율화)"""
@@ -135,7 +150,7 @@ def collect_breadth() -> dict:
     """코스피+코스닥 전종목 중 상승-하락 종목 비율(%). 낮을수록 공포."""
     out = {}
     try:
-        df = stock.get_market_ohlcv_by_ticker(today_str(), market="ALL", alternative=True)
+        df = _retry(lambda: stock.get_market_ohlcv_by_ticker(today_str(), market="ALL", alternative=True))
         chg = df["등락률"]
         adv, dec = int((chg > 0).sum()), int((chg < 0).sum())
         total = adv + dec
@@ -150,9 +165,9 @@ def collect_foreign_flow() -> dict:
     """최근 5거래일 외국인 순매수 대금 합계(억원). 클수록 탐욕."""
     out = {}
     try:
-        df = stock.get_market_net_purchases_of_equities(
+        df = _retry(lambda: stock.get_market_net_purchases_of_equities(
             days_ago_str(7), today_str(), market="ALL", investor="외국인"
-        )
+        ))
         out["foreign_flow"] = round(float(df["순매수거래대금"].sum()) / 100_000_000, 1)
     except Exception as e:
         print(f"[WARN] foreign_flow 수집 실패: {e}")
@@ -164,14 +179,14 @@ def collect_strength() -> dict:
     out = {}
     try:
         date_s = today_str()
-        cap_df = stock.get_market_cap_by_ticker(date_s, market="ALL", alternative=True)
+        cap_df = _retry(lambda: stock.get_market_cap_by_ticker(date_s, market="ALL", alternative=True))
         tickers = list(cap_df.sort_values("시가총액", ascending=False).index[:TOP_N_BY_CAP])
 
         near_high, near_low, counted = 0, 0, 0
         fromdate = days_ago_str(365)
         for ticker in tickers:
             try:
-                ohlcv = stock.get_market_ohlcv_by_date(fromdate, date_s, ticker)
+                ohlcv = _retry(lambda t=ticker: stock.get_market_ohlcv_by_date(fromdate, date_s, t), tries=2, delay=2)
                 if ohlcv.empty:
                     continue
                 hi, lo = float(ohlcv["고가"].max()), float(ohlcv["저가"].min())
