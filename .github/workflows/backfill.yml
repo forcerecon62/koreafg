@@ -1,0 +1,33 @@
+name: Backfill History
+
+on:
+  workflow_dispatch: {}  # 딱 1회 수동 실행용. 스케줄 없음.
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: 파이썬 설치
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 의존성 설치
+        run: pip install yfinance==1.6.0 numpy pandas==2.2.2
+
+      - name: 과거 이력 소급 계산
+        run: python scripts/backfill.py
+
+      - name: 결과 커밋 & 푸시
+        run: |
+          git config user.name "kfg-index-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/data/history.json
+          git diff --cached --quiet || git commit -m "chore: backfill history"
+          git push
