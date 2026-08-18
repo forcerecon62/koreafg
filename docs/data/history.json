@@ -1,0 +1,44 @@
+[
+  {
+    "date": "2026-08-18",
+    "composite_score": 47.7,
+    "verdict": "중립",
+    "components": [
+      {
+        "key": "kospi_momentum",
+        "label": "KOSPI 모멘텀",
+        "raw": -8.83,
+        "score": 0.0,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "kosdaq_momentum",
+        "label": "KOSDAQ 모멘텀",
+        "raw": -6.34,
+        "score": 0.0,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 87.64,
+        "score": 100.0,
+        "verdict": "극단적 탐욕"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.51,
+        "score": 100.0,
+        "verdict": "극단적 탐욕"
+      },
+      {
+        "key": "safe_haven",
+        "label": "안전자산 수요",
+        "raw": -6.34,
+        "score": 0.0,
+        "verdict": "극단적 공포"
+      }
+    ]
+  }
+]
