@@ -23,7 +23,8 @@ jobs:
           python-version: "3.12"
 
       - name: 의존성 설치
-        run: pip install setuptools pykrx==1.0.51 yfinance==0.2.44 numpy==1.26.4 pandas==2.2.2
+        run: pip install pykrx==1.2.8 yfinance==0.2.44 numpy==1.26.4 pandas==2.2.2
+    
       - name: 지수 계산
         run: python scripts/collect_static.py
 
