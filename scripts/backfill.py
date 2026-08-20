@@ -85,7 +85,12 @@ def label_for(score: float) -> str:
 
 def _close(ticker: str) -> pd.Series:
     df = yf.download(ticker, period="1y", interval="1d", progress=False, auto_adjust=True)
-    return df["Close"].dropna()
+    close = df["Close"]
+    if isinstance(close, pd.DataFrame):
+        # 최신 yfinance는 단일 종목이어도 MultiIndex 컬럼을 줘서 df["Close"]가
+        # Series가 아니라 1개짜리 DataFrame으로 나온다 - 진짜 Series로 변환
+        close = close.iloc[:, 0]
+    return close.dropna()
 
 
 def build_raw_series() -> pd.DataFrame:
