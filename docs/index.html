@@ -302,4 +302,44 @@ function renderHistoryChart(){
   let xLabels = "";
   const labelCount = Math.min(6, n);
   for(let k=0;k<labelCount;k++){
-    const idx = Math.round(k*(n-1)/(labelCount-
+    const idx = Math.round(k*(n-1)/(labelCount-1||1));
+    const dateStr = (records[idx].date||"").slice(5);
+    xLabels += `<text x="${x(idx).toFixed(1)}" y="${H-6}" text-anchor="middle" font-size="9" fill="#5A6376" font-family="IBM Plex Mono, monospace">${dateStr}</text>`;
+  }
+
+  box.innerHTML = `<svg viewBox="0 0 ${W} ${H}" width="100%" height="100%" preserveAspectRatio="none">
+    ${grid}
+    ${transitions}
+    ${segments}
+    ${xLabels}
+  </svg>`;
+}
+
+document.getElementById("zoom-in").addEventListener("click", ()=>{
+  if(zoomIndex > 0){ zoomIndex--; updateZoomUI(); renderHistoryChart(); }
+});
+document.getElementById("zoom-out").addEventListener("click", ()=>{
+  if(zoomIndex < ZOOM_PRESETS.length - 1){ zoomIndex++; updateZoomUI(); renderHistoryChart(); }
+});
+
+async function main(){
+  try{
+    const res = await fetch(`${DATA_URL}?t=${Date.now()}`); // 캐시 우회
+    const records = await res.json();
+    if(!Array.isArray(records) || records.length === 0){
+      document.getElementById("verdict").textContent = "데이터 없음 — 첫 배치가 아직 실행 전입니다";
+      return;
+    }
+    renderLatest(records[records.length - 1]);
+    fullHistory = records;
+    updateZoomUI();
+    renderHistoryChart();
+  }catch(e){
+    document.getElementById("verdict").textContent = "데이터를 불러오지 못했습니다";
+  }
+}
+
+main();
+</script>
+</body>
+</html>
