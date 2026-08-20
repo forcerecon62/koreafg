@@ -7561,42 +7561,42 @@
   },
   {
     "date": "2026-08-20",
-    "composite_score": 35.0,
+    "composite_score": 30.9,
     "verdict": "공포",
     "components": [
       {
         "key": "kospi_momentum",
         "label": "KOSPI 모멘텀",
-        "raw": -9.11,
+        "raw": -9.14,
         "score": 11.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "kosdaq_momentum",
         "label": "KOSDAQ 모멘텀",
-        "raw": -5.32,
-        "score": 29.3,
+        "raw": -4.51,
+        "score": 30.9,
         "verdict": "공포"
       },
       {
         "key": "volatility",
         "label": "변동성 (KOSPI)",
-        "raw": 86.8,
+        "raw": 86.78,
         "score": 7.7,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
-        "raw": -1.75,
-        "score": 81.8,
+        "raw": -1.57,
+        "score": 81.2,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -6.87,
-        "score": 3.9,
+        "raw": -13.72,
+        "score": 0.0,
         "verdict": "극단적 공포"
       },
       {
@@ -7609,7 +7609,7 @@
       {
         "key": "foreign_flow",
         "label": "외국인 5일 수급",
-        "raw": 32146.8,
+        "raw": 32148.8,
         "score": 50.0,
         "verdict": "중립"
       },
