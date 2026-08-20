@@ -1,69 +1,231 @@
 """
-초기 이력 채우기 스크립트 (1회만 실행하면 됨)
+K-FGI 일일 수집 + 점수화 스크립트 (완전 독립형 - 다른 파일에 의존하지 않음)
 
-collect_static.py는 매일 딱 하루치씩만 쌓기 때문에, 서비스를 막 시작하면 percentile을
-계산할 과거 데이터가 없어 지표가 전부 0점 아니면 100점으로만 나온다(cold start 문제).
+GitHub Actions에서 매일 실행되어:
+  1. 8개 지표의 raw값을 KRX(pykrx) / Yahoo Finance(yfinance)에서 수집하고
+  2. 과거 기록(docs/data/history.json) 대비 percentile로 0~100점을 매긴 뒤
+  3. 오늘자 기록을 docs/data/history.json에 추가 저장한다.
 
-이 스크립트는 yfinance가 한 번 호출할 때 어차피 받아오는 1년치 시세를 이용해서,
-과거 약 190여 거래일치의 raw 지표를 소급 계산해 docs/data/history.json에 한 번에
-채워 넣는다. 그러면 서비스를 시작하자마자 진짜 percentile 기반 점수를 볼 수 있다.
-
-대상 5개 지표 (yfinance 기반 - 한 번의 다운로드로 전체 과거 계산 가능):
-  - KOSPI/KOSDAQ 모멘텀, 변동성, 환율 스트레스, 안전자산 수요
-
-제외 3개 지표 (KRX 기반 - 날짜별로 따로 조회해야 해서 비용/차단 위험이 큼):
-  - 시장 폭, 외국인 수급, 주가 강도
-  → collect_static.py가 매일 실행되면서 자연히 쌓인다.
-
-이미 history.json에 있는 날짜는 건드리지 않고, 없는 과거 날짜만 추가한다.
-
-실행: GitHub Actions의 "Backfill History" 워크플로를 Run workflow로 1회 실행.
+docs/index.html이 이 JSON 파일을 읽어 대시보드를 그린다.
 """
+import sys
 import json
+import time
 from bisect import bisect_left
+from datetime import date, datetime, timedelta
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import numpy as np
 import pandas as pd
 import yfinance as yf
+from pykrx import stock
+
+# ── 설정 ──────────────────────────────────────────────────
+TIMEZONE = "Asia/Seoul"
+LOOKBACK_DAYS = 252  # percentile 계산에 사용할 과거 거래일 수 (약 1년)
+MAX_RECORDS = 800    # history.json에 보관할 최대 일수 (약 3년)
 
 YF_KOSPI = "^KS11"
 YF_KOSDAQ = "^KQ11"
 YF_USDKRW = "KRW=X"
 YF_GOLD = "GC=F"
 
-MOMENTUM_WINDOW = 60
-VOL_WINDOW = 20
-FX_WINDOW = 5
-SAFE_HAVEN_WINDOW = 60
+TOP_N_BY_CAP = 100        # 주가 강도 지표에 사용할 시총 상위 표본 수
+NEAR_BAND_PCT = 5.0        # 52주 고/저가 대비 근접 판정 기준(%)
 
-GREEDY_WHEN_HIGH = {
-    "kospi_momentum": True,
-    "kosdaq_momentum": True,
-    "volatility": False,
-    "fx_stress": False,
-    "safe_haven": True,
-}
+INDICATOR_WEIGHTS = {
+    "volatility": 0.18,
+    "market_breadth": 0.17,
+    "kospi_momentum": 0.15,
+    "fx_stress": 0.13,
+    "kosdaq_momentum": 0.12,
+    "foreign_flow": 0.10,
+    "price_strength": 0.08,
+    "safe_haven": 0.07,
+}  # 합 1.00 — 2026-08-18 yasun.gg 대비 캘리브레이션 반영
+
 INDICATOR_LABELS = {
     "kospi_momentum": "KOSPI 모멘텀",
     "kosdaq_momentum": "KOSDAQ 모멘텀",
     "volatility": "변동성 (KOSPI)",
     "fx_stress": "환율 스트레스",
+    "market_breadth": "시장 폭 (KS-KQ)",
+    "foreign_flow": "외국인 5일 수급",
+    "price_strength": "주가 강도 (52주)",
     "safe_haven": "안전자산 수요",
 }
-# 대시보드/일일 스크립트와 동일한 가중치 중 백필 대상 5개만 사용 (합 기준으로 재정규화됨)
-INDICATOR_WEIGHTS = {
-    "volatility": 0.18,
-    "kospi_momentum": 0.15,
-    "fx_stress": 0.13,
-    "kosdaq_momentum": 0.12,
-    "safe_haven": 0.07,
+
+# True: raw값이 클수록 탐욕(점수↑) / False: raw값이 클수록 공포(점수↓, 반전)
+GREEDY_WHEN_HIGH = {
+    "kospi_momentum": True,
+    "kosdaq_momentum": True,
+    "volatility": False,
+    "fx_stress": False,
+    "market_breadth": True,
+    "foreign_flow": True,
+    "price_strength": True,
+    "safe_haven": True,
 }
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_PATH = REPO_ROOT / "docs" / "data" / "history.json"
 
 
+# ── 날짜 유틸 ─────────────────────────────────────────────
+def now_kst() -> datetime:
+    return datetime.now(ZoneInfo(TIMEZONE))
+
+
+def today_str(fmt: str = "%Y%m%d") -> str:
+    return now_kst().strftime(fmt)
+
+
+def days_ago_str(n: int, fmt: str = "%Y%m%d") -> str:
+    return (now_kst() - timedelta(days=n)).strftime(fmt)
+
+
+def _retry(fn, tries=3, delay=4):
+    """KRX 서버가 간헐적으로 빈 응답을 줄 때(Expecting value 에러) 잠깐 쉬었다가 재시도."""
+    last_err = None
+    for i in range(tries):
+        try:
+            return fn()
+        except Exception as e:
+            last_err = e
+            if i < tries - 1:
+                print(f"[RETRY] {i+1}/{tries} 실패({e}), {delay}초 후 재시도")
+                time.sleep(delay)
+    raise last_err
+
+
+def _close(df) -> pd.Series:
+    """yf.download 결과에서 진짜 1차원 Series로 종가를 뽑는다.
+    최신 yfinance는 단일 종목이어도 MultiIndex 컬럼을 줘서 df["Close"]가
+    Series가 아니라 1개짜리 DataFrame으로 나올 수 있다."""
+    close = df["Close"]
+    if isinstance(close, pd.DataFrame):
+        close = close.iloc[:, 0]
+    return close.dropna()
+
+
+# ── 지표 수집 ─────────────────────────────────────────────
+def collect_market_index() -> dict:
+    """KOSPI/KOSDAQ 모멘텀(60일 이평 괴리율), KOSPI 변동성(20일 실현변동성 연율화)"""
+    out = {}
+    try:
+        for key, ticker in (("kospi_momentum", YF_KOSPI), ("kosdaq_momentum", YF_KOSDAQ)):
+            df = yf.download(ticker, period="1y", interval="1d", progress=False, auto_adjust=True)
+            close = _close(df)
+            ma = close.rolling(60).mean()  # 60거래일(약 1분기) 이평 — 급락 후 하루 반등에 과민반응 방지
+            out[key] = round(float((close.iloc[-1] - ma.iloc[-1]) / ma.iloc[-1] * 100), 2)
+
+        df = yf.download(YF_KOSPI, period="1y", interval="1d", progress=False, auto_adjust=True)
+        close = _close(df)
+        log_ret = np.log(close / close.shift(1)).dropna().tail(20)
+        out["volatility"] = round(float(log_ret.std() * np.sqrt(252) * 100), 2)
+    except Exception as e:
+        print(f"[WARN] market_index 수집 실패: {e}")
+    return out
+
+
+def collect_fx() -> dict:
+    """원/달러 5일 변동률(%). 클수록(원화 약세 심화) 공포."""
+    out = {}
+    try:
+        df = yf.download(YF_USDKRW, period="6mo", interval="1d", progress=False, auto_adjust=True)
+        close = _close(df)
+        last, prior = float(close.iloc[-1]), float(close.iloc[-6])
+        out["fx_stress"] = round((last - prior) / prior * 100, 2)
+    except Exception as e:
+        print(f"[WARN] fx_stress 수집 실패: {e}")
+    return out
+
+
+def collect_safe_haven() -> dict:
+    """KOSPI 60일 수익률 - 금 60일 수익률 스프레드(모멘텀과 윈도우 통일). 낮을수록(주식이 금 대비 부진) 공포."""
+    out = {}
+    try:
+        def n_day_return(ticker, window=60):
+            df = yf.download(ticker, period="1y", interval="1d", progress=False, auto_adjust=True)
+            close = _close(df)
+            return (float(close.iloc[-1]) - float(close.iloc[-1 - window])) / float(close.iloc[-1 - window]) * 100
+
+        out["safe_haven"] = round(n_day_return(YF_KOSPI) - n_day_return(YF_GOLD), 2)
+    except Exception as e:
+        print(f"[WARN] safe_haven 수집 실패: {e}")
+    return out
+
+
+def collect_breadth() -> dict:
+    """코스피+코스닥 전종목 중 상승-하락 종목 비율(%). 낮을수록 공포."""
+    out = {}
+    try:
+        df = _retry(lambda: stock.get_market_ohlcv_by_ticker(today_str(), market="ALL", alternative=True))
+        chg = df["등락률"]
+        adv, dec = int((chg > 0).sum()), int((chg < 0).sum())
+        total = adv + dec
+        if total:
+            out["market_breadth"] = round((adv - dec) / total * 100, 2)
+    except Exception as e:
+        print(f"[WARN] market_breadth 수집 실패: {e}")
+    return out
+
+
+def collect_foreign_flow() -> dict:
+    """최근 5거래일 외국인 순매수 대금 합계(억원). 클수록 탐욕."""
+    out = {}
+    try:
+        df = _retry(lambda: stock.get_market_net_purchases_of_equities(
+            days_ago_str(7), today_str(), market="ALL", investor="외국인"
+        ))
+        out["foreign_flow"] = round(float(df["순매수거래대금"].sum()) / 100_000_000, 1)
+    except Exception as e:
+        print(f"[WARN] foreign_flow 수집 실패: {e}")
+    return out
+
+
+def collect_strength() -> dict:
+    """시총 상위 N종목 중 52주 신고가 근접 - 신저가 근접 비율(%). 낮을수록 공포."""
+    out = {}
+    try:
+        date_s = today_str()
+        cap_df = _retry(lambda: stock.get_market_cap_by_ticker(date_s, market="ALL", alternative=True))
+        tickers = list(cap_df.sort_values("시가총액", ascending=False).index[:TOP_N_BY_CAP])
+
+        near_high, near_low, counted = 0, 0, 0
+        fromdate = days_ago_str(365)
+        for ticker in tickers:
+            try:
+                ohlcv = _retry(lambda t=ticker: stock.get_market_ohlcv_by_date(fromdate, date_s, t), tries=2, delay=2)
+                if ohlcv.empty:
+                    continue
+                hi, lo = float(ohlcv["고가"].max()), float(ohlcv["저가"].min())
+                last = float(ohlcv["종가"].iloc[-1])
+                if hi > 0 and (hi - last) / hi * 100 <= NEAR_BAND_PCT:
+                    near_high += 1
+                if lo > 0 and (last - lo) / lo * 100 <= NEAR_BAND_PCT:
+                    near_low += 1
+                counted += 1
+            except Exception:
+                continue
+        if counted:
+            out["price_strength"] = round((near_high - near_low) / counted * 100, 2)
+    except Exception as e:
+        print(f"[WARN] price_strength 수집 실패: {e}")
+    return out
+
+
+COLLECTORS = [
+    collect_market_index, collect_fx, collect_safe_haven,
+    collect_breadth, collect_foreign_flow, collect_strength,
+]
+
+
+MIN_HISTORY_FOR_SCORE = 5  # 이 개수 미만이면 percentile이 무의미(무조건 0 또는 100) → 중립으로 대체
+
+
+# ── 점수화 ────────────────────────────────────────────────
 def percentile_score(value: float, history: list) -> float:
     if not history:
         return 50.0
@@ -83,41 +245,13 @@ def label_for(score: float) -> str:
     return "극단적 탐욕"
 
 
-def _close(ticker: str) -> pd.Series:
-    df = yf.download(ticker, period="1y", interval="1d", progress=False, auto_adjust=True)
-    return df["Close"].dropna()
-
-
-def build_raw_series() -> pd.DataFrame:
-    """KOSPI 거래일을 기준 달력으로 삼아 5개 지표의 raw 시계열을 만든다."""
-    kospi = _close(YF_KOSPI)
-    kosdaq = _close(YF_KOSDAQ).reindex(kospi.index, method="ffill")
-    usdkrw = _close(YF_USDKRW).reindex(kospi.index, method="ffill")
-    gold = _close(YF_GOLD).reindex(kospi.index, method="ffill")
-
-    kospi_ma = kospi.rolling(MOMENTUM_WINDOW).mean()
-    kosdaq_ma = kosdaq.rolling(MOMENTUM_WINDOW).mean()
-    log_ret = np.log(kospi / kospi.shift(1))
-
-    df = pd.DataFrame({
-        "kospi_momentum": (kospi - kospi_ma) / kospi_ma * 100,
-        "kosdaq_momentum": (kosdaq - kosdaq_ma) / kosdaq_ma * 100,
-        "volatility": log_ret.rolling(VOL_WINDOW).std() * np.sqrt(252) * 100,
-        "fx_stress": (usdkrw - usdkrw.shift(FX_WINDOW)) / usdkrw.shift(FX_WINDOW) * 100,
-        "safe_haven": (
-            (kospi - kospi.shift(SAFE_HAVEN_WINDOW)) / kospi.shift(SAFE_HAVEN_WINDOW) * 100
-            - (gold - gold.shift(SAFE_HAVEN_WINDOW)) / gold.shift(SAFE_HAVEN_WINDOW) * 100
-        ),
-    })
-    return df.dropna()  # 모든 지표의 lookback이 채워지는 시점부터만 사용
-
-
+# ── 저장소 I/O ────────────────────────────────────────────
 def load_history() -> list:
     if DATA_PATH.exists():
         try:
             return json.loads(DATA_PATH.read_text(encoding="utf-8"))
         except json.JSONDecodeError:
-            return []
+            print("[WARN] 기존 history.json 파싱 실패 - 빈 배열로 시작합니다")
     return []
 
 
@@ -126,51 +260,59 @@ def save_history(records: list):
     DATA_PATH.write_text(json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
+# ── 메인 ──────────────────────────────────────────────────
 def main():
-    existing = load_history()
-    existing_dates = {r["date"] for r in existing}
+    today = date.today().isoformat()
+    history = [r for r in load_history() if r["date"] != today]
 
-    raw_df = build_raw_series()
-    print(f"소급 계산 가능한 거래일 수: {len(raw_df)}")
+    raw = {}
+    for fn in COLLECTORS:
+        try:
+            raw.update(fn())
+        except Exception as e:
+            print(f"[WARN] {fn.__name__} 전체 실패: {e}")
 
-    new_records = []
-    per_indicator_hist = {k: [] for k in GREEDY_WHEN_HIGH}
+    if not raw:
+        print("[ERROR] 모든 지표 수집 실패 - 이번 실행은 기록하지 않습니다")
+        sys.exit(1)
 
-    for ts, row in raw_df.iterrows():
-        date_str = ts.strftime("%Y-%m-%d")
+    print("수집된 raw 지표:", raw)
 
-        components, scores = [], {}
-        for key in GREEDY_WHEN_HIGH:
-            value = round(float(row[key]), 2)
-            hist = per_indicator_hist[key] + [value]
+    per_indicator_hist = {k: [] for k in raw}
+    for rec in history[-LOOKBACK_DAYS:]:
+        for c in rec.get("components", []):
+            if c["key"] in per_indicator_hist:
+                per_indicator_hist[c["key"]].append(c["raw"])
+
+    components, scores = [], {}
+    for key, value in raw.items():
+        hist = per_indicator_hist[key] + [value]
+        if len(hist) < MIN_HISTORY_FOR_SCORE:
+            score = 50.0  # 이력 부족 - 판단 유보(중립)
+        else:
             pct = percentile_score(value, hist)
-            score = pct if GREEDY_WHEN_HIGH[key] else round(100 - pct, 1)
-            scores[key] = score
-            components.append({
-                "key": key, "label": INDICATOR_LABELS[key],
-                "raw": value, "score": score, "verdict": label_for(score),
-            })
-            per_indicator_hist[key].append(value)  # 다음 날 계산을 위해 이력에 추가(당일 시점까지만 사용 = 미래참조 없음)
-
-        if date_str in existing_dates:
-            continue  # 이미 실제로 수집된 날짜(오늘 등)는 건드리지 않음
-
-        total_w, acc = 0.0, 0.0
-        for k, w in INDICATOR_WEIGHTS.items():
-            acc += scores[k] * w
-            total_w += w
-        composite = round(acc / total_w, 1)
-
-        new_records.append({
-            "date": date_str, "composite_score": composite,
-            "verdict": label_for(composite), "components": components,
+            score = pct if GREEDY_WHEN_HIGH.get(key, True) else round(100 - pct, 1)
+        scores[key] = score
+        components.append({
+            "key": key, "label": INDICATOR_LABELS.get(key, key),
+            "raw": value, "score": score, "verdict": label_for(score),
         })
 
-    merged = existing + new_records
-    merged.sort(key=lambda r: r["date"])
-    save_history(merged)
+    total_w, acc = 0.0, 0.0
+    for k, w in INDICATOR_WEIGHTS.items():
+        if k in scores:
+            acc += scores[k] * w
+            total_w += w
+    composite = round(acc / total_w, 1) if total_w else 50.0
 
-    print(f"✅ 백필 완료 - {len(new_records)}일 추가, 전체 {len(merged)}일")
+    history.append({
+        "date": today, "composite_score": composite,
+        "verdict": label_for(composite), "components": components,
+    })
+    history.sort(key=lambda r: r["date"])
+    save_history(history[-MAX_RECORDS:])
+
+    print(f"✅ {today} 저장 완료 - 합성지수 {composite}점 ({label_for(composite)})")
 
 
 if __name__ == "__main__":
