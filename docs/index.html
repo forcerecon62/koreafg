@@ -8,385 +8,392 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{
---bg: #0A0D13;
---panel: #12161F;
---panel-border: #1F2532;
---ink: #E8EBF2;
---ink-dim: #8A93A6;
---fear: #5B8DEF; /* 공포 극(파랑) /
---greed: #E1554F; / 탐욕 극(빨강) /
---neutral: #4C5568;
---signal: #F2B84B; / 지수 추이선 시그니처 컬러(호박색) */
---radius: 14px;
-}
-*{box-sizing:border-box;}
-html,body{margin:0;padding:0;}
-body{
-background:
-radial-gradient(1200px 600px at 50% -10%, #151B29 0%, var(--bg) 55%);
-color:var(--ink);
-font-family:'IBM Plex Sans KR', -apple-system, sans-serif;
-min-height:100vh;
-padding:20px 16px 48px;
-}
-.wrap{max-width:720px;margin:0 auto;}
+  :root{
+    --bg: #0A0D13;
+    --panel: #12161F;
+    --panel-border: #1F2532;
+    --ink: #E8EBF2;
+    --ink-dim: #8A93A6;
+    --fear: #5B8DEF;
+    --greed: #E1554F;
+    --neutral: #4C5568;
+    --signal: #F2B84B;
+    --radius: 14px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(1200px 600px at 50% -10%, #151B29 0%, var(--bg) 55%);
+    color:var(--ink);
+    font-family:'IBM Plex Sans KR', -apple-system, sans-serif;
+    min-height:100vh;
+    padding:20px 16px 48px;
+  }
+  .wrap{max-width:720px;margin:0 auto;}
 
-.topbar{
-display:flex;justify-content:space-between;align-items:baseline;
-margin-bottom:22px;
-}
-.brand{display:flex;align-items:baseline;gap:8px;}
-.brand .mark{
-font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:15px;
-color:var(--signal); letter-spacing:0.02em;
-}
-.brand h1{font-size:15px;font-weight:600;margin:0;color:var(--ink);}
-.clock{
-font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-dim);
-font-variant-numeric: tabular-nums;
-}
+  .topbar{
+    display:flex;justify-content:space-between;align-items:baseline;
+    margin-bottom:22px;
+  }
+  .brand{display:flex;align-items:baseline;gap:8px;}
+  .brand .mark{
+    font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:15px;
+    color:var(--signal); letter-spacing:0.02em;
+  }
+  .brand h1{font-size:15px;font-weight:600;margin:0;color:var(--ink);}
+  .clock{
+    font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-dim);
+    font-variant-numeric: tabular-nums;
+  }
 
-.lede{color:var(--ink-dim);font-size:13px;line-height:1.6;margin:0 0 20px;}
+  .lede{color:var(--ink-dim);font-size:13px;line-height:1.6;margin:0 0 20px;}
 
-.card{
-background:var(--panel);
-border:1px solid var(--panel-border);
-border-radius:var(--radius);
-padding:20px;
-}
+  .card{
+    background:var(--panel);
+    border:1px solid var(--panel-border);
+    border-radius:var(--radius);
+    padding:20px;
+  }
 
-/* ── 게이지 히어로 ── */
-.hero{margin-bottom:16px;}
-.gauge-wrap{position:relative;display:flex;flex-direction:column;align-items:center;padding-top:6px;}
-svg.gauge{width:100%;max-width:380px;height:auto;}
-.needle{transition:transform 900ms cubic-bezier(.22,1,.36,1);transform-origin:200px 190px;}
-.score-block{text-align:center;margin-top:-18px;}
-.score-num{
-font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:56px;
-line-height:1;letter-spacing:-0.02em;
-}
-.verdict{
-display:inline-block;margin-top:8px;padding:4px 14px;border-radius:999px;
-font-size:12px;font-weight:600;letter-spacing:0.02em;
-}
-.asof{color:var(--ink-dim);font-size:12px;margin-top:12px;font-family:'IBM Plex Mono',monospace;}
+  /* ── 게이지 히어로 ── */
+  .hero{margin-bottom:16px;}
+  .gauge-wrap{position:relative;display:flex;flex-direction:column;align-items:center;padding-top:6px;}
+  svg.gauge{width:100%;max-width:380px;height:auto;}
+  .needle{transition:transform 900ms cubic-bezier(.22,1,.36,1);transform-origin:200px 190px;}
+  .score-block{text-align:center;margin-top:-18px;}
+  .score-num{
+    font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:56px;
+    line-height:1;letter-spacing:-0.02em;
+  }
+  .verdict{
+    display:inline-block;margin-top:8px;padding:4px 14px;border-radius:999px;
+    font-size:12px;font-weight:600;letter-spacing:0.02em;
+  }
+  .asof{color:var(--ink-dim);font-size:12px;margin-top:12px;font-family:'IBM Plex Mono',monospace;}
 
-/* ── 구성 지표 카드 그리드 ── */
-.section-title{font-size:14px;font-weight:600;margin:28px 0 12px;color:var(--ink);}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
-.ind-card{padding:16px;}
-.ind-label{font-size:12.5px;color:var(--ink-dim);margin-bottom:8px;}
-.ind-score{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:26px;}
-.ind-score .of100{font-size:13px;color:var(--ink-dim);font-weight:400;}
-.ind-verdict{font-size:12px;font-weight:600;margin-top:4px;}
-.ind-raw{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-dim);margin-top:8px;}
+  /* ── 구성 지표 카드 그리드 ── */
+  .section-title{font-size:14px;font-weight:600;margin:28px 0 12px;color:var(--ink);}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .ind-card{padding:16px;}
+  .ind-label{font-size:12.5px;color:var(--ink-dim);margin-bottom:8px;}
+  .ind-score{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:26px;}
+  .ind-score .of100{font-size:13px;color:var(--ink-dim);font-weight:400;}
+  .ind-verdict{font-size:12px;font-weight:600;margin-top:4px;}
+  .ind-raw{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-dim);margin-top:8px;}
 
-/* ── 추이 차트 ── */
-.chart-card{padding:18px 14px 8px;margin-top:8px;}
-.chart-box{height:200px;position:relative;}
-.chart-tooltip{
-display:none;position:absolute;pointer-events:none;
-background:#171C28;border:1px solid #2A3242;border-radius:8px;
-padding:6px 10px;font-family:'IBM Plex Mono',monospace;font-size:11px;
-color:var(--ink);white-space:nowrap;transform:translate(-50%,-115%);
-box-shadow:0 4px 12px rgba(0,0,0,0.4);z-index:2;
-}
-.zoom-bar{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:10px;}
-.zoom-btn{
-width:30px;height:30px;border-radius:8px;border:1px solid var(--panel-border);
-background:#171C28;color:var(--ink);font-size:16px;font-family:'IBM Plex Mono',monospace;
-display:flex;align-items:center;justify-content:center;
-}
-.zoom-btn:active{background:#232A3A;}
-.zoom-btn:disabled{opacity:0.3;}
-.zoom-label{font-size:12px;color:var(--ink-dim);font-family:'IBM Plex Mono',monospace;min-width:76px;text-align:center;}
+  /* ── 추이 차트 ── */
+  .chart-card{padding:18px 14px 8px;margin-top:8px;}
+  .chart-box{height:200px;position:relative;}
+  .chart-tooltip{
+    display:none;position:absolute;pointer-events:none;
+    background:#171C28;border:1px solid #2A3242;border-radius:8px;
+    padding:6px 10px;font-family:'IBM Plex Mono',monospace;font-size:11px;
+    color:var(--ink);white-space:nowrap;transform:translate(-50%,-115%);
+    box-shadow:0 4px 12px rgba(0,0,0,0.4);z-index:2;
+  }
+  .zoom-bar{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:10px;}
+  .zoom-btn{
+    width:30px;height:30px;border-radius:8px;border:1px solid var(--panel-border);
+    background:#171C28;color:var(--ink);font-size:16px;font-family:'IBM Plex Mono',monospace;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .zoom-btn:active{background:#232A3A;}
+  .zoom-btn:disabled{opacity:0.3;}
+  .zoom-label{font-size:12px;color:var(--ink-dim);font-family:'IBM Plex Mono',monospace;min-width:76px;text-align:center;}
 
-/* ── 범례 ── */
-.legend{margin-top:24px;font-size:12.5px;line-height:2;color:var(--ink-dim);}
-.legend b{color:var(--ink);}
-.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;}
+  /* ── 범례 ── */
+  .legend{margin-top:24px;font-size:12.5px;line-height:2;color:var(--ink-dim);}
+  .legend b{color:var(--ink);}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;}
 
-.foot{margin-top:32px;font-size:11.5px;color:#5A6376;line-height:1.7;}
+  .foot{margin-top:32px;font-size:11.5px;color:#5A6376;line-height:1.7;}
 
-@media (max-width:420px){
-.score-num{font-size:46px;}
-.grid{grid-template-columns:1fr 1fr;gap:8px;}
-}
+  @media (max-width:420px){
+    .score-num{font-size:46px;}
+    .grid{grid-template-columns:1fr 1fr;gap:8px;}
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-<div class="topbar">
-<div class="brand">
-<span class="mark">K‑FGI</span>
-<h1>한국 공포 & 탐욕 지수</h1>
-</div>
-<div class="clock" id="clock">--:--:-- KST</div>
-</div>
+  <div class="topbar">
+    <div class="brand">
+      <span class="mark">K‑FGI</span>
+      <h1>한국 공포 & 탐욕 지수</h1>
+    </div>
+    <div class="clock" id="clock">--:--:-- KST</div>
+  </div>
 
-<p class="lede">코스피·코스닥 시장 심리를 0–100 점수로 종합. 8개 지표 자체 산출 — 매일 17:05 KST 갱신.</p>
+  <p class="lede">코스피·코스닥 시장 심리를 0–100 점수로 종합. 8개 지표 자체 산출 — 매일 17:05 KST 갱신.</p>
 
-<div class="card hero" id="hero-card">
-<div class="gauge-wrap">
-<svg class="gauge" viewBox="0 0 400 220">
-<defs>
-<linearGradient id="arcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-<stop offset="0%" stop-color="#3A63C4"/>
-<stop offset="24%" stop-color="#5B8DEF"/>
-<stop offset="48%" stop-color="#4C5568"/>
-<stop offset="52%" stop-color="#4C5568"/>
-<stop offset="76%" stop-color="#E1554F"/>
-<stop offset="100%" stop-color="#B23B36"/>
-</linearGradient>
-</defs>
-<path d="M 30 190 A 170 170 0 0 1 370 190" fill="none" stroke="url(#arcGrad)" stroke-width="22" stroke-linecap="round"/>
-<g class="needle" id="needle">
-<line x1="200" y1="190" x2="200" y2="55" stroke="#E8EBF2" stroke-width="3" stroke-linecap="round"/>
-<circle cx="200" cy="190" r="7" fill="#E8EBF2"/>
-</g>
-</svg>
-<div class="score-block">
-<div class="score-num" id="score-num">--</div>
-<div class="verdict" id="verdict">불러오는 중…</div>
-</div>
-<div class="asof" id="asof"></div>
-</div>
-</div>
+  <div class="card hero" id="hero-card">
+    <div class="gauge-wrap">
+      <svg class="gauge" viewBox="0 0 400 220">
+        <defs>
+          <linearGradient id="arcGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%"  stop-color="#3A63C4"/>
+            <stop offset="24%" stop-color="#5B8DEF"/>
+            <stop offset="48%" stop-color="#4C5568"/>
+            <stop offset="52%" stop-color="#4C5568"/>
+            <stop offset="76%" stop-color="#E1554F"/>
+            <stop offset="100%" stop-color="#B23B36"/>
+          </linearGradient>
+        </defs>
+        <path d="M 30 190 A 170 170 0 0 1 370 190" fill="none" stroke="url(#arcGrad)" stroke-width="22" stroke-linecap="round"/>
+        <g class="needle" id="needle">
+          <line x1="200" y1="190" x2="200" y2="55" stroke="#E8EBF2" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="200" cy="190" r="7" fill="#E8EBF2"/>
+        </g>
+      </svg>
+      <div class="score-block">
+        <div class="score-num" id="score-num">--</div>
+        <div class="verdict" id="verdict">불러오는 중…</div>
+      </div>
+      <div class="asof" id="asof"></div>
+    </div>
+  </div>
 
-<div class="section-title">구성 지표</div>
-<div class="grid" id="components-grid"></div>
+  <div class="section-title">구성 지표</div>
+  <div class="grid" id="components-grid"></div>
 
-<div class="section-title">점수 추이</div>
-<div class="card chart-card">
-<div class="zoom-bar">
-<button class="zoom-btn" id="zoom-out" aria-label="축소">−</button>
-<span class="zoom-label" id="zoom-label">최근 1년</span>
-<button class="zoom-btn" id="zoom-in" aria-label="확대">+</button>
-</div>
-<div class="chart-box" id="history-chart"></div>
-</div>
+  <div class="section-title">점수 추이</div>
+  <div class="card chart-card">
+    <div class="zoom-bar">
+      <button class="zoom-btn" id="zoom-out" aria-label="축소">−</button>
+      <span class="zoom-label" id="zoom-label">최근 1년</span>
+      <button class="zoom-btn" id="zoom-in" aria-label="확대">+</button>
+    </div>
+    <div class="chart-box" id="history-chart"></div>
+  </div>
 
-<div class="legend">
-<div style="margin-bottom:12px;color:var(--ink-dim);">지표들이 서로 다른 방향을 가리킬 때는 종합 점수가 중립 쪽으로 모입니다 — 여러 지표가 같은 방향에 동의할 때만 극단(공포/탐욕) 판정이 나옵니다.</div>
-<div><span class="dot" style="background:#E1554F"></span><b>0–24 극단적 공포</b> — 시장 심리가 과도하게 비관적. 역사적으로 반등 신호 가능성.</div>
-<div><span class="dot" style="background:#9B6FD6"></span><b>25–44 공포</b> — 위험 회피 분위기 확산.</div>
-<div><span class="dot" style="background:#4CAF7D"></span><b>45–55 중립</b> — 방향성 불분명.</div>
-<div><span class="dot" style="background:#4A90E2"></span><b>56–75 탐욕</b> — 매수 우위, 추세 강화.</div>
-<div><span class="dot" style="background:#F5F5F5;border:1px solid #5A6376"></span><b>76–100 극단적 탐욕</b> — 과열 가능성, 단기 조정 위험.</div>
-</div>
+  <div class="legend">
+    <div style="margin-bottom:12px;color:var(--ink-dim);">지표들이 서로 다른 방향을 가리킬 때는 종합 점수가 중립 쪽으로 모입니다 — 여러 지표가 같은 방향에 동의할 때만 극단(공포/탐욕) 판정이 나옵니다.</div>
+    <div><span class="dot" style="background:#E1554F"></span><b>0–24 극단적 공포</b> — 시장 심리가 과도하게 비관적. 역사적으로 반등 신호 가능성.</div>
+    <div><span class="dot" style="background:#9B6FD6"></span><b>25–44 공포</b> — 위험 회피 분위기 확산.</div>
+    <div><span class="dot" style="background:#4CAF7D"></span><b>45–55 중립</b> — 방향성 불분명.</div>
+    <div><span class="dot" style="background:#4A90E2"></span><b>56–75 탐욕</b> — 매수 우위, 추세 강화.</div>
+    <div><span class="dot" style="background:#F5F5F5;border:1px solid #5A6376"></span><b>76–100 극단적 탐욕</b> — 과열 가능성, 단기 조정 위험.</div>
+  </div>
 
-<div class="foot">
-데이터: KOSPI·KOSDAQ 지수/환율/금 시세(Yahoo Finance), 수급·시장폭·52주 강도(KRX, pykrx). 참고용 지표이며 투자 조언이 아닙니다.
-</div>
+  <div class="foot">
+    데이터: KOSPI·KOSDAQ 지수/환율/금 시세(Yahoo Finance), 수급·시장폭·52주 강도(KRX, pykrx). 참고용 지표이며 투자 조언이 아닙니다.
+  </div>
 
 </div>
 
 <script>
-const DATA_URL = "./data/history.json"; // GitHub Actions가 매일 커밋하는 정적 JSON
+var DATA_URL = "./data/history.json"; // GitHub Actions가 매일 커밋하는 정적 JSON
 
 function verdictColor(score){
-if(score < 25) return "#3A63C4";
-if(score < 45) return "#5B8DEF";
-if(score <= 55) return "#8A93A6";
-if(score <= 75) return "#E1554F";
-return "#B23B36";
+  if(score < 25) return "#3A63C4";
+  if(score < 45) return "#5B8DEF";
+  if(score <= 55) return "#8A93A6";
+  if(score <= 75) return "#E1554F";
+  return "#B23B36";
 }
-function verdictBg(score){ return verdictColor(score) + "26"; } // ~15% alpha
+function verdictBg(score){ return verdictColor(score) + "26"; }
 
 function tickClock(){
-const now = new Date(new Date().toLocaleString("en-US", {timeZone:"Asia/Seoul"}));
-const hh = String(now.getHours()).padStart(2,"0");
-const mm = String(now.getMinutes()).padStart(2,"0");
-const ss = String(now.getSeconds()).padStart(2,"0");
-document.getElementById("clock").textContent = ${hh}:${mm}:${ss} KST`;
+  var now = new Date(new Date().toLocaleString("en-US", {timeZone:"Asia/Seoul"}));
+  var hh = String(now.getHours()).padStart(2,"0");
+  var mm = String(now.getMinutes()).padStart(2,"0");
+  var ss = String(now.getSeconds()).padStart(2,"0");
+  document.getElementById("clock").textContent = hh + ":" + mm + ":" + ss + " KST";
 }
 setInterval(tickClock, 1000); tickClock();
 
 function setNeedle(score){
-// 0점 = -90deg(왼쪽 끝), 100점 = +90deg(오른쪽 끝)
-const deg = -90 + (score/100)*180;
-document.getElementById("needle").setAttribute("transform", rotate(${deg} 200 190)`);
+  var deg = -90 + (score/100)*180;
+  document.getElementById("needle").setAttribute("transform", "rotate(" + deg + " 200 190)");
 }
 
 function renderLatest(rec){
-document.getElementById("score-num").textContent = Math.round(rec.composite_score);
-document.getElementById("score-num").style.color = verdictColor(rec.composite_score);
-const v = document.getElementById("verdict");
-v.textContent = rec.verdict;
-v.style.color = verdictColor(rec.composite_score);
-v.style.background = verdictBg(rec.composite_score);
-document.getElementById("asof").textContent = 기준일 ${rec.date} · 다음 갱신 17:05 KST`;
-setNeedle(rec.composite_score);
+  document.getElementById("score-num").textContent = Math.round(rec.composite_score);
+  document.getElementById("score-num").style.color = verdictColor(rec.composite_score);
+  var v = document.getElementById("verdict");
+  v.textContent = rec.verdict;
+  v.style.color = verdictColor(rec.composite_score);
+  v.style.background = verdictBg(rec.composite_score);
+  document.getElementById("asof").textContent = "기준일 " + rec.date + " · 다음 갱신 17:05 KST";
+  setNeedle(rec.composite_score);
 
-const grid = document.getElementById("components-grid");
-grid.innerHTML = "";
-rec.components.forEach(c=>{
-const el = document.createElement("div");
-el.className = "card ind-card";
-el.innerHTML = &lt;div class="ind-label"&gt;${c.label}</div>
-<div class="ind-score"> {verdictColor(c.score)}"> {c.raw}</div>
-`;
-grid.appendChild(el);
-});
+  var grid = document.getElementById("components-grid");
+  grid.innerHTML = "";
+  rec.components.forEach(function(c){
+    var el = document.createElement("div");
+    el.className = "card ind-card";
+    el.innerHTML =
+      '<div class="ind-label">' + c.label + '</div>' +
+      '<div class="ind-score">' + Math.round(c.score) + '<span class="of100"> / 100</span></div>' +
+      '<div class="ind-verdict" style="color:' + verdictColor(c.score) + '">' + c.verdict + '</div>' +
+      '<div class="ind-raw">raw: ' + c.raw + '</div>';
+    grid.appendChild(el);
+  });
 }
 
-// 구간별 색상 (요청 반영: 극단적공포=빨강, 공포=보라, 중립=초록, 탐욕=파랑, 극단적탐욕=흰색)
+// 구간별 색상 (극단적공포=빨강, 공포=보라, 중립=초록, 탐욕=파랑, 극단적탐욕=흰색)
 function zoneColor(score){
-if(score < 25) return "#E1554F";
-if(score < 45) return "#9B6FD6";
-if(score <= 55) return "#4CAF7D";
-if(score <= 75) return "#4A90E2";
-return "#F5F5F5";
+  if(score < 25) return "#E1554F";
+  if(score < 45) return "#9B6FD6";
+  if(score <= 55) return "#4CAF7D";
+  if(score <= 75) return "#4A90E2";
+  return "#F5F5F5";
 }
 function zoneOf(score){
-if(score < 25) return 0;
-if(score < 45) return 1;
-if(score <= 55) return 2;
-if(score <= 75) return 3;
-return 4;
+  if(score < 25) return 0;
+  if(score < 45) return 1;
+  if(score <= 55) return 2;
+  if(score <= 75) return 3;
+  return 4;
 }
 
 // 줌 레벨: 최대 확대 = 최근 1주, 최대 축소 = 최근 5년
-const ZOOM_PRESETS = [7, 30, 90, 180, 365, 1095, 1825];
-const ZOOM_LABELS = ["최근 1주", "최근 1개월", "최근 3개월", "최근 6개월", "최근 1년", "최근 3년", "최근 5년"];
-let zoomIndex = 4; // 기본: 최근 1년
-let fullHistory = [];
+var ZOOM_PRESETS = [7, 30, 90, 180, 365, 1095, 1825];
+var ZOOM_LABELS  = ["최근 1주", "최근 1개월", "최근 3개월", "최근 6개월", "최근 1년", "최근 3년", "최근 5년"];
+var zoomIndex = 4; // 기본: 최근 1년
+var fullHistory = [];
 
 function updateZoomUI(){
-const nDays = ZOOM_PRESETS[zoomIndex];
-const label = (fullHistory.length > 0 && fullHistory.length <= nDays)
-? 전체 (${fullHistory.length}일)`
-: ZOOM_LABELS[zoomIndex];
-document.getElementById("zoom-label").textContent = label;
-document.getElementById("zoom-in").disabled = (zoomIndex === 0);
-document.getElementById("zoom-out").disabled = (zoomIndex === ZOOM_PRESETS.length - 1);
+  var nDays = ZOOM_PRESETS[zoomIndex];
+  var label = (fullHistory.length > 0 && fullHistory.length <= nDays)
+    ? ("전체 (" + fullHistory.length + "일)")
+    : ZOOM_LABELS[zoomIndex];
+  document.getElementById("zoom-label").textContent = label;
+  document.getElementById("zoom-in").disabled = (zoomIndex === 0);
+  document.getElementById("zoom-out").disabled = (zoomIndex === ZOOM_PRESETS.length - 1);
 }
 
 function renderHistoryChart(){
-const box = document.getElementById("history-chart");
-const nDays = ZOOM_PRESETS[zoomIndex];
-const records = fullHistory.slice(-nDays);
-const scores = records.map(r=>r.composite_score);
-const n = scores.length;
-const W = 600, H = 200, padL = 30, padR = 8, padT = 10, padB = 20;
-const innerW = W - padL - padR, innerH = H - padT - padB;
-const x = i => padL + (n<=1?0:(i/(n-1))innerW);
-const y = s => padT + (100-s)/100innerH;
+  var box = document.getElementById("history-chart");
+  var nDays = ZOOM_PRESETS[zoomIndex];
+  var records = fullHistory.slice(-nDays);
+  var scores = records.map(function(r){ return r.composite_score; });
+  var n = scores.length;
+  var W = 600, H = 200, padL = 30, padR = 8, padT = 10, padB = 20;
+  var innerW = W - padL - padR, innerH = H - padT - padB;
+  var x = function(i){ return padL + (n<=1?0:(i/(n-1))*innerW); };
+  var y = function(s){ return padT + (100-s)/100*innerH; };
 
-// 구간별 색상이 입혀진 선분들
-let segments = "";
-for(let i=0;i<n-1;i++){
-const x1=x(i).toFixed(1), y1=y(scores[i]).toFixed(1);
-const x2=x(i+1).toFixed(1), y2=y(scores[i+1]).toFixed(1);
-segments += <line x1="${x1}" y1=" {x2}" y2=" {zoneColor(scores[i+1])}" stroke-width="2.2" stroke-linecap="round"/>; } if(n === 1){ segments +=`;
-}
+  var segments = "";
+  for(var i=0;i<n-1;i++){
+    var x1=x(i).toFixed(1), y1=y(scores[i]).toFixed(1);
+    var x2=x(i+1).toFixed(1), y2=y(scores[i+1]).toFixed(1);
+    segments += '<line x1="' + x1 + '" y1="' + y1 + '" x2="' + x2 + '" y2="' + y2 +
+      '" stroke="' + zoneColor(scores[i+1]) + '" stroke-width="2.2" stroke-linecap="round"/>';
+  }
+  if(n === 1){
+    segments += '<circle cx="' + x(0).toFixed(1) + '" cy="' + y(scores[0]).toFixed(1) +
+      '" r="3" fill="' + zoneColor(scores[0]) + '"/>';
+  }
 
-// 공포/탐욕 "단계"가 바뀌는 지점마다 세로 점선
-let transitions = "";
-for(let i=1;i<n;i++){
-if(zoneOf(scores[i]) !== zoneOf(scores[i-1])){
-const xi = x(i).toFixed(1);
-transitions += <line x1="${xi}" y1=" {xi}" y2="${padT+innerH}" stroke="#3A4152" stroke-width="1" stroke-dasharray="3,3"/>;
-}
-}
+  var transitions = "";
+  for(var i2=1;i2<n;i2++){
+    if(zoneOf(scores[i2]) !== zoneOf(scores[i2-1])){
+      var xi = x(i2).toFixed(1);
+      transitions += '<line x1="' + xi + '" y1="' + padT + '" x2="' + xi + '" y2="' + (padT+innerH) +
+        '" stroke="#3A4152" stroke-width="1" stroke-dasharray="3,3"/>';
+    }
+  }
 
-// 가로 그리드 - 단계 경계값(0/25/45/55/75/100)에 맞춤
-let grid = "";
-[0,25,45,55,75,100].forEach(v=>{
-const gy = y(v);
-grid += <line x1="${padL}" y1=" {W-padR}" y2="latex
-{gy}" stroke="#1F2532" stroke-width="1"/>`; grid += `<text x="
+  var grid = "";
+  [0,25,45,55,75,100].forEach(function(v){
+    var gy = y(v);
+    grid += '<line x1="' + padL + '" y1="' + gy + '" x2="' + (W-padR) + '" y2="' + gy +
+      '" stroke="#1F2532" stroke-width="1"/>';
+    grid += '<text x="' + (padL-6) + '" y="' + (gy+3) +
+      '" text-anchor="end" font-size="9" fill="#5A6376" font-family="IBM Plex Mono, monospace">' + v + '</text>';
+  });
 
-{padL-6}" y="latex
-{gy+3}" text-anchor="end" font-size="9" fill="#5A6376" font-family="IBM Plex Mono, monospace"&gt;
+  var xLabels = "";
+  var labelCount = Math.min(6, n);
+  for(var k=0;k<labelCount;k++){
+    var idx = Math.round(k*(n-1)/(labelCount-1||1));
+    var dateStr = (records[idx].date||"").slice(5);
+    xLabels += '<text x="' + x(idx).toFixed(1) + '" y="' + (H-6) +
+      '" text-anchor="middle" font-size="9" fill="#5A6376" font-family="IBM Plex Mono, monospace">' + dateStr + '</text>';
+  }
 
-{v}</text>`;
-});
+  box.innerHTML =
+    '<svg id="hist-svg" viewBox="0 0 ' + W + ' ' + H + '" width="100%" height="100%" preserveAspectRatio="none" style="touch-action:none;">' +
+    grid + transitions + segments + xLabels +
+    '<line id="hover-line" x1="0" y1="' + padT + '" x2="0" y2="' + (padT+innerH) +
+      '" stroke="#8A93A6" stroke-width="1" stroke-dasharray="2,2" style="display:none;"/>' +
+    '<circle id="hover-dot" r="4" fill="#fff" stroke="#0A0D13" stroke-width="1.5" style="display:none;"/>' +
+    '</svg><div class="chart-tooltip" id="chart-tooltip"></div>';
 
-let xLabels = "";
-const labelCount = Math.min(6, n);
-for(let k=0;k<labelCount;k++){
-const idx = Math.round(k*(n-1)/(labelCount-1||1));
-const dateStr = (records[idx].date||"").slice(5);
-xLabels += <text x="${x(idx).toFixed(1)}" y="${H-6}" text-anchor="middle" font-size="9" fill="#5A6376" font-family="IBM Plex Mono, monospace"&gt;${dateStr}</text>`;
-}
-
-box.innerHTML = <svg id="hist-svg" viewBox="0 0${W}  {grid}
- {segments}
- {padT}" x2="0" y2="${padT+innerH}" stroke="#8A93A6" stroke-width="1" stroke-dasharray="2,2" style="display:none;"/&gt; &lt;circle id="hover-dot" r="4" fill="#fff" stroke="#0A0D13" stroke-width="1.5" style="display:none;"/&gt; &lt;/svg&gt;&lt;div class="chart-tooltip" id="chart-tooltip"&gt;&lt;/div>;
-
-attachChartHover(box, records, { W, H, padL, innerW, x, y });
+  attachChartHover(box, records, { W: W, H: H, padL: padL, innerW: innerW, x: x, y: y });
 }
 
 function attachChartHover(box, records, dims){
-const svg = box.querySelector("#hist-svg");
-const tooltip = box.querySelector("#chart-tooltip");
-const hoverLine = box.querySelector("#hover-line");
-const hoverDot = box.querySelector("#hover-dot");
-const n = records.length;
-if(n === 0 || !svg) return;
+  var svg = box.querySelector("#hist-svg");
+  var tooltip = box.querySelector("#chart-tooltip");
+  var hoverLine = box.querySelector("#hover-line");
+  var hoverDot = box.querySelector("#hover-dot");
+  var n = records.length;
+  if(n === 0 || !svg) return;
 
-function indexFromClientX(clientX){
-const rect = svg.getBoundingClientRect();
-const relX = (clientX - rect.left) / rect.width * dims.W; // 실제 픽셀 -> viewBox 좌표
-let idx = Math.round((relX - dims.padL) / (dims.innerW || 1) * (n - 1));
-return Math.max(0, Math.min(n - 1, idx));
+  function indexFromClientX(clientX){
+    var rect = svg.getBoundingClientRect();
+    var relX = (clientX - rect.left) / rect.width * dims.W;
+    var idx = Math.round((relX - dims.padL) / (dims.innerW || 1) * (n - 1));
+    return Math.max(0, Math.min(n - 1, idx));
+  }
+
+  function showAt(clientX){
+    var idx = indexFromClientX(clientX);
+    var rec = records[idx];
+    var px = dims.x(idx), py = dims.y(rec.composite_score);
+
+    hoverLine.setAttribute("x1", px); hoverLine.setAttribute("x2", px);
+    hoverLine.style.display = "block";
+    hoverDot.setAttribute("cx", px); hoverDot.setAttribute("cy", py);
+    hoverDot.style.display = "block";
+
+    var svgRect = svg.getBoundingClientRect();
+    tooltip.style.left = (px / dims.W * svgRect.width) + "px";
+    tooltip.style.top = (py / dims.H * svgRect.height) + "px";
+    tooltip.textContent = rec.date + " · " + Math.round(rec.composite_score) + "점 (" + rec.verdict + ")";
+    tooltip.style.display = "block";
+  }
+
+  function hide(){
+    hoverLine.style.display = "none";
+    hoverDot.style.display = "none";
+    tooltip.style.display = "none";
+  }
+
+  svg.addEventListener("mousemove", function(e){ showAt(e.clientX); });
+  svg.addEventListener("mouseleave", hide);
+  svg.addEventListener("touchstart", function(e){ e.preventDefault(); showAt(e.touches[0].clientX); }, {passive:false});
+  svg.addEventListener("touchmove", function(e){ e.preventDefault(); showAt(e.touches[0].clientX); }, {passive:false});
+  svg.addEventListener("touchend", hide);
 }
 
-function showAt(clientX){
-const idx = indexFromClientX(clientX);
-const rec = records[idx];
-const px = dims.x(idx), py = dims.y(rec.composite_score);
-
-hoverLine.setAttribute("x1", px); hoverLine.setAttribute("x2", px);
-hoverLine.style.display = "block";
-hoverDot.setAttribute("cx", px); hoverDot.setAttribute("cy", py);
-hoverDot.style.display = "block";
-
-const svgRect = svg.getBoundingClientRect();
-tooltip.style.left = (px / dims.W * svgRect.width) + "px";
-tooltip.style.top = (py / dims.H * svgRect.height) + "px";
-tooltip.textContent = ``${rec.date} ·  {rec.verdict})`;
-tooltip.style.display = "block";
-}
-
-function hide(){
-hoverLine.style.display = "none";
-hoverDot.style.display = "none";
-tooltip.style.display = "none";
-}
-
-svg.addEventListener("mousemove", (e)=> showAt(e.clientX));
-svg.addEventListener("mouseleave", hide);
-svg.addEventListener("touchstart", (e)=>{ e.preventDefault(); showAt(e.touches[0].clientX); }, {passive:false});
-svg.addEventListener("touchmove", (e)=>{ e.preventDefault(); showAt(e.touches[0].clientX); }, {passive:false});
-svg.addEventListener("touchend", hide);
-}
-
-document.getElementById("zoom-in").addEventListener("click", ()=>{
-if(zoomIndex > 0){ zoomIndex--; updateZoomUI(); renderHistoryChart(); }
+document.getElementById("zoom-in").addEventListener("click", function(){
+  if(zoomIndex > 0){ zoomIndex--; updateZoomUI(); renderHistoryChart(); }
 });
-document.getElementById("zoom-out").addEventListener("click", ()=>{
-if(zoomIndex < ZOOM_PRESETS.length - 1){ zoomIndex++; updateZoomUI(); renderHistoryChart(); }
+document.getElementById("zoom-out").addEventListener("click", function(){
+  if(zoomIndex < ZOOM_PRESETS.length - 1){ zoomIndex++; updateZoomUI(); renderHistoryChart(); }
 });
 
-async function main(){
-try{
-const res = await fetch(${DATA_URL}?t=${Date.now()}); // 캐시 우회
-const records = await res.json();
-if(!Array.isArray(records) || records.length === 0){
-document.getElementById("verdict").textContent = "데이터 없음 — 첫 배치가 아직 실행 전입니다";
-return;
-}
-renderLatest(records[records.length - 1]);
-fullHistory = records;
-updateZoomUI();
-renderHistoryChart();
-}catch(e){
-document.getElementById("verdict").textContent = "데이터를 불러오지 못했습니다";
-}
+function main(){
+  fetch(DATA_URL + "?t=" + Date.now())
+    .then(function(res){ return res.json(); })
+    .then(function(records){
+      if(!Array.isArray(records) || records.length === 0){
+        document.getElementById("verdict").textContent = "데이터 없음 — 첫 배치가 아직 실행 전입니다";
+        return;
+      }
+      renderLatest(records[records.length - 1]);
+      fullHistory = records;
+      updateZoomUI();
+      renderHistoryChart();
+    })
+    .catch(function(e){
+      document.getElementById("verdict").textContent = "데이터를 불러오지 못했습니다";
+    });
 }
 
 main();
