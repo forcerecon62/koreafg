@@ -31,6 +31,7 @@
     padding:20px 16px 48px;
   }
   .wrap{max-width:720px;margin:0 auto;}
+
   .topbar{
     display:flex;justify-content:space-between;align-items:baseline;
     margin-bottom:22px;
@@ -45,13 +46,17 @@
     font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-dim);
     font-variant-numeric: tabular-nums;
   }
+
   .lede{color:var(--ink-dim);font-size:13px;line-height:1.6;margin:0 0 20px;}
+
   .card{
     background:var(--panel);
     border:1px solid var(--panel-border);
     border-radius:var(--radius);
     padding:20px;
   }
+
+  /* ── 게이지 히어로 ── */
   .hero{margin-bottom:16px;}
   .gauge-wrap{position:relative;display:flex;flex-direction:column;align-items:center;padding-top:6px;}
   svg.gauge{width:100%;max-width:380px;height:auto;}
@@ -66,6 +71,8 @@
     font-size:12px;font-weight:600;letter-spacing:0.02em;
   }
   .asof{color:var(--ink-dim);font-size:12px;margin-top:12px;font-family:'IBM Plex Mono',monospace;}
+
+  /* ── 구성 지표 카드 그리드 ── */
   .section-title{font-size:14px;font-weight:600;margin:28px 0 12px;color:var(--ink);}
   .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
   .ind-card{padding:16px;}
@@ -74,12 +81,27 @@
   .ind-score .of100{font-size:13px;color:var(--ink-dim);font-weight:400;}
   .ind-verdict{font-size:12px;font-weight:600;margin-top:4px;}
   .ind-raw{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-dim);margin-top:8px;}
+
+  /* ── 추이 차트 ── */
   .chart-card{padding:18px 14px 8px;margin-top:8px;}
   .chart-box{height:200px;}
+  .zoom-bar{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:10px;}
+  .zoom-btn{
+    width:30px;height:30px;border-radius:8px;border:1px solid var(--panel-border);
+    background:#171C28;color:var(--ink);font-size:16px;font-family:'IBM Plex Mono',monospace;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .zoom-btn:active{background:#232A3A;}
+  .zoom-btn:disabled{opacity:0.3;}
+  .zoom-label{font-size:12px;color:var(--ink-dim);font-family:'IBM Plex Mono',monospace;min-width:76px;text-align:center;}
+
+  /* ── 범례 ── */
   .legend{margin-top:24px;font-size:12.5px;line-height:2;color:var(--ink-dim);}
   .legend b{color:var(--ink);}
   .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;}
+
   .foot{margin-top:32px;font-size:11.5px;color:#5A6376;line-height:1.7;}
+
   @media (max-width:420px){
     .score-num{font-size:46px;}
     .grid{grid-template-columns:1fr 1fr;gap:8px;}
@@ -131,16 +153,21 @@
 
   <div class="section-title">점수 추이</div>
   <div class="card chart-card">
+    <div class="zoom-bar">
+      <button class="zoom-btn" id="zoom-out" aria-label="축소">−</button>
+      <span class="zoom-label" id="zoom-label">최근 1년</span>
+      <button class="zoom-btn" id="zoom-in" aria-label="확대">+</button>
+    </div>
     <div class="chart-box" id="history-chart"></div>
   </div>
 
   <div class="legend">
     <div style="margin-bottom:12px;color:var(--ink-dim);">지표들이 서로 다른 방향을 가리킬 때는 종합 점수가 중립 쪽으로 모입니다 — 여러 지표가 같은 방향에 동의할 때만 극단(공포/탐욕) 판정이 나옵니다.</div>
-    <div><span class="dot" style="background:#3A63C4"></span><b>0–24 극단적 공포</b> — 시장 심리가 과도하게 비관적. 역사적으로 반등 신호 가능성.</div>
-    <div><span class="dot" style="background:#5B8DEF"></span><b>25–44 공포</b> — 위험 회피 분위기 확산.</div>
-    <div><span class="dot" style="background:#4C5568"></span><b>45–55 중립</b> — 방향성 불분명.</div>
-    <div><span class="dot" style="background:#E1554F"></span><b>56–75 탐욕</b> — 매수 우위, 추세 강화.</div>
-    <div><span class="dot" style="background:#B23B36"></span><b>76–100 극단적 탐욕</b> — 과열 가능성, 단기 조정 위험.</div>
+    <div><span class="dot" style="background:#E1554F"></span><b>0–24 극단적 공포</b> — 시장 심리가 과도하게 비관적. 역사적으로 반등 신호 가능성.</div>
+    <div><span class="dot" style="background:#9B6FD6"></span><b>25–44 공포</b> — 위험 회피 분위기 확산.</div>
+    <div><span class="dot" style="background:#4CAF7D"></span><b>45–55 중립</b> — 방향성 불분명.</div>
+    <div><span class="dot" style="background:#4A90E2"></span><b>56–75 탐욕</b> — 매수 우위, 추세 강화.</div>
+    <div><span class="dot" style="background:#F5F5F5;border:1px solid #5A6376"></span><b>76–100 극단적 탐욕</b> — 과열 가능성, 단기 조정 위험.</div>
   </div>
 
   <div class="foot">
@@ -159,7 +186,7 @@ function verdictColor(score){
   if(score <= 75) return "#E1554F";
   return "#B23B36";
 }
-function verdictBg(score){ return verdictColor(score) + "26"; }
+function verdictBg(score){ return verdictColor(score) + "26"; } // ~15% alpha
 
 function tickClock(){
   const now = new Date(new Date().toLocaleString("en-US", {timeZone:"Asia/Seoul"}));
@@ -171,6 +198,7 @@ function tickClock(){
 setInterval(tickClock, 1000); tickClock();
 
 function setNeedle(score){
+  // 0점 = -90deg(왼쪽 끝), 100점 = +90deg(오른쪽 끝)
   const deg = -90 + (score/100)*180;
   document.getElementById("needle").setAttribute("transform", `rotate(${deg} 200 190)`);
 }
@@ -200,8 +228,42 @@ function renderLatest(rec){
   });
 }
 
-function renderHistoryChart(records){
+// 구간별 색상 (요청 반영: 극단적공포=빨강, 공포=보라, 중립=초록, 탐욕=파랑, 극단적탐욕=흰색)
+function zoneColor(score){
+  if(score < 25) return "#E1554F";
+  if(score < 45) return "#9B6FD6";
+  if(score <= 55) return "#4CAF7D";
+  if(score <= 75) return "#4A90E2";
+  return "#F5F5F5";
+}
+function zoneOf(score){
+  if(score < 25) return 0;
+  if(score < 45) return 1;
+  if(score <= 55) return 2;
+  if(score <= 75) return 3;
+  return 4;
+}
+
+// 줌 레벨: 최대 확대 = 최근 1주, 최대 축소 = 최근 5년
+const ZOOM_PRESETS = [7, 30, 90, 180, 365, 1095, 1825];
+const ZOOM_LABELS  = ["최근 1주", "최근 1개월", "최근 3개월", "최근 6개월", "최근 1년", "최근 3년", "최근 5년"];
+let zoomIndex = 4; // 기본: 최근 1년
+let fullHistory = [];
+
+function updateZoomUI(){
+  const nDays = ZOOM_PRESETS[zoomIndex];
+  const label = (fullHistory.length > 0 && fullHistory.length <= nDays)
+    ? `전체 (${fullHistory.length}일)`
+    : ZOOM_LABELS[zoomIndex];
+  document.getElementById("zoom-label").textContent = label;
+  document.getElementById("zoom-in").disabled = (zoomIndex === 0);
+  document.getElementById("zoom-out").disabled = (zoomIndex === ZOOM_PRESETS.length - 1);
+}
+
+function renderHistoryChart(){
   const box = document.getElementById("history-chart");
+  const nDays = ZOOM_PRESETS[zoomIndex];
+  const records = fullHistory.slice(-nDays);
   const scores = records.map(r=>r.composite_score);
   const n = scores.length;
   const W = 600, H = 200, padL = 30, padR = 8, padT = 10, padB = 20;
@@ -209,12 +271,29 @@ function renderHistoryChart(records){
   const x = i => padL + (n<=1?0:(i/(n-1))*innerW);
   const y = s => padT + (100-s)/100*innerH;
 
-  let linePath = "";
-  scores.forEach((s,i)=>{ linePath += (i===0?"M":"L") + x(i).toFixed(1) + "," + y(s).toFixed(1) + " "; });
-  const areaPath = linePath + `L ${x(n-1).toFixed(1)},${(padT+innerH).toFixed(1)} L ${x(0).toFixed(1)},${(padT+innerH).toFixed(1)} Z`;
+  // 구간별 색상이 입혀진 선분들
+  let segments = "";
+  for(let i=0;i<n-1;i++){
+    const x1=x(i).toFixed(1), y1=y(scores[i]).toFixed(1);
+    const x2=x(i+1).toFixed(1), y2=y(scores[i+1]).toFixed(1);
+    segments += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${zoneColor(scores[i+1])}" stroke-width="2.2" stroke-linecap="round"/>`;
+  }
+  if(n === 1){
+    segments += `<circle cx="${x(0).toFixed(1)}" cy="${y(scores[0]).toFixed(1)}" r="3" fill="${zoneColor(scores[0])}"/>`;
+  }
 
+  // 공포/탐욕 "단계"가 바뀌는 지점마다 세로 점선
+  let transitions = "";
+  for(let i=1;i<n;i++){
+    if(zoneOf(scores[i]) !== zoneOf(scores[i-1])){
+      const xi = x(i).toFixed(1);
+      transitions += `<line x1="${xi}" y1="${padT}" x2="${xi}" y2="${padT+innerH}" stroke="#3A4152" stroke-width="1" stroke-dasharray="3,3"/>`;
+    }
+  }
+
+  // 가로 그리드 - 단계 경계값(0/25/45/55/75/100)에 맞춤
   let grid = "";
-  [0,25,50,75,100].forEach(v=>{
+  [0,25,45,55,75,100].forEach(v=>{
     const gy = y(v);
     grid += `<line x1="${padL}" y1="${gy}" x2="${W-padR}" y2="${gy}" stroke="#1F2532" stroke-width="1"/>`;
     grid += `<text x="${padL-6}" y="${gy+3}" text-anchor="end" font-size="9" fill="#5A6376" font-family="IBM Plex Mono, monospace">${v}</text>`;
@@ -223,39 +302,4 @@ function renderHistoryChart(records){
   let xLabels = "";
   const labelCount = Math.min(6, n);
   for(let k=0;k<labelCount;k++){
-    const idx = Math.round(k*(n-1)/(labelCount-1||1));
-    const dateStr = (records[idx].date||"").slice(5);
-    xLabels += `<text x="${x(idx).toFixed(1)}" y="${H-6}" text-anchor="middle" font-size="9" fill="#5A6376" font-family="IBM Plex Mono, monospace">${dateStr}</text>`;
-  }
-
-  box.innerHTML = `<svg viewBox="0 0 ${W} ${H}" width="100%" height="100%" preserveAspectRatio="none">
-    <defs><linearGradient id="histFill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#F2B84B" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#F2B84B" stop-opacity="0"/>
-    </linearGradient></defs>
-    ${grid}
-    <path d="${areaPath}" fill="url(#histFill)" stroke="none"/>
-    <path d="${linePath.trim()}" fill="none" stroke="#F2B84B" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-    ${xLabels}
-  </svg>`;
-}
-
-async function main(){
-  try{
-    const res = await fetch(`${DATA_URL}?t=${Date.now()}`);
-    const records = await res.json();
-    if(!Array.isArray(records) || records.length === 0){
-      document.getElementById("verdict").textContent = "데이터 없음 — 첫 배치가 아직 실행 전입니다";
-      return;
-    }
-    renderLatest(records[records.length - 1]);
-    renderHistoryChart(records.slice(-180));
-  }catch(e){
-    document.getElementById("verdict").textContent = "데이터를 불러오지 못했습니다";
-  }
-}
-
-main();
-</script>
-</body>
-</html>
+    const idx = Math.round(k*(n-1)/(labelCount-
