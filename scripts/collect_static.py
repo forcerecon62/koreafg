@@ -35,15 +35,15 @@ TOP_N_BY_CAP = 100        # 주가 강도 지표에 사용할 시총 상위 표�
 NEAR_BAND_PCT = 5.0        # 52주 고/저가 대비 근접 판정 기준(%)
 
 INDICATOR_WEIGHTS = {
-    "volatility": 0.18,
+    "volatility": 0.20,
     "market_breadth": 0.17,
-    "kospi_momentum": 0.15,
-    "fx_stress": 0.13,
-    "kosdaq_momentum": 0.12,
+    "kospi_momentum": 0.17,
+    "kosdaq_momentum": 0.14,
     "foreign_flow": 0.10,
     "price_strength": 0.08,
+    "fx_stress": 0.07,
     "safe_haven": 0.07,
-}  # 합 1.00 — 2026-08-18 yasun.gg 대비 캘리브레이션 반영
+}  # 합 1.00 — 2026-08-20 재캘리브레이션: 환율 비중 축소, 가격지표 비중 확대
 
 INDICATOR_LABELS = {
     "kospi_momentum": "KOSPI 모멘텀",
