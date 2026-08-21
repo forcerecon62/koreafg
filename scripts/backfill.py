@@ -17,8 +17,9 @@ collect_static.py는 매일 딱 하루치씩만 쌓기 때문에, 서비스를 �
 지표 중 일부만 그날 결측이어도(야후 데이터 자체의 자잘한 누락 등) 그 지표만 빼고
 나머지로 그날을 계산한다 - 5개가 전부 없는 날만 통으로 건너뛴다.
 
-8개 지표가 다 채워진 "완전한" 실제 수집일은 그대로 보존하고, 그 외(백필된 날 / 일부
-지표만 있는 날)는 매번 최신 가중치로 다시 계산한다.
+8개 지표가 다 채워진 "완전한" 실제 수집일은 점수는 그대로 보존하고, 가격 필드(코스피/코스닥
+종가)가 비어 있으면 그것만 채워넣는다. 그 외(백필된 날 / 일부 지표만 있는 날)는 매번 최신
+가중치로 다시 계산한다.
 
 실행: GitHub Actions의 "Backfill History" 워크플로를 Run workflow로 실행.
 """
@@ -118,6 +119,9 @@ def build_raw_series() -> pd.DataFrame:
             (kospi - kospi.shift(SAFE_HAVEN_WINDOW)) / kospi.shift(SAFE_HAVEN_WINDOW) * 100
             - (gold - gold.shift(SAFE_HAVEN_WINDOW)) / gold.shift(SAFE_HAVEN_WINDOW) * 100
         ),
+        # 가격 차트용 실제 종가 (지표 아님, 점수화 대상 아님)
+        "kospi_close": kospi,
+        "kosdaq_close": kosdaq,
     })
     return df  # dropna 하지 않음 - 지표 중 일부만 결측이어도 나머지로 그날을 계산하기 위함
 
@@ -149,6 +153,11 @@ def main():
     for ts, row in raw_df.iterrows():
         date_str = ts.strftime("%Y-%m-%d")
 
+        price_levels = {}
+        for pk in ("kospi_close", "kosdaq_close"):
+            if pd.notna(row.get(pk)):
+                price_levels[pk] = round(float(row[pk]), 2)
+
         components, scores = [], {}
         for key in GREEDY_WHEN_HIGH:
             raw_value = row[key]
@@ -165,12 +174,15 @@ def main():
             })
             per_indicator_hist[key].append(value)  # 다음 날 계산을 위해 이력에 추가(당일 시점까지만 사용 = 미래참조 없음)
 
-        if not components:
-            continue  # 5개 지표가 그날 전부 결측이면 진짜로 건너뜀
-
         prior = existing_by_date.get(date_str)
         if prior and len(prior.get("components", [])) >= 8:
-            continue  # 8개 지표가 다 채워진 "완전한" 실제 수집일은 건드리지 않음
+            # 점수는 건드리지 않지만, 가격 필드가 비어 있으면 채워넣는다(과거 버전 호환)
+            for pk, pv in price_levels.items():
+                prior.setdefault(pk, pv)
+            continue  # 8개 지표가 다 채워진 "완전한" 실제 수집일은 점수 재계산하지 않음
+
+        if not components:
+            continue  # 5개 지표가 그날 전부 결측이면 진짜로 건너뜀
 
         total_w, acc = 0.0, 0.0
         for k, w in INDICATOR_WEIGHTS.items():
@@ -179,10 +191,12 @@ def main():
                 total_w += w
         composite = round(acc / total_w, 1) if total_w else 50.0
 
-        existing_by_date[date_str] = {
+        record = {
             "date": date_str, "composite_score": composite,
             "verdict": label_for(composite), "components": components,
         }
+        record.update(price_levels)
+        existing_by_date[date_str] = record
         computed_count += 1
 
     merged = sorted(existing_by_date.values(), key=lambda r: r["date"])
