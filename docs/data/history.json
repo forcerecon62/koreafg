@@ -11,7 +11,9 @@
         "score": 100.0,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 3196.32,
+    "kosdaq_close": 798.43
   },
   {
     "date": "2025-08-29",
@@ -25,7 +27,9 @@
         "score": 100.0,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 3186.01,
+    "kosdaq_close": 796.91
   },
   {
     "date": "2025-09-01",
@@ -39,7 +43,9 @@
         "score": 33.3,
         "verdict": "공포"
       }
-    ]
+    ],
+    "kospi_close": 3142.93,
+    "kosdaq_close": 785.0
   },
   {
     "date": "2025-09-02",
@@ -53,7 +59,9 @@
         "score": 50.0,
         "verdict": "중립"
       }
-    ]
+    ],
+    "kospi_close": 3172.35,
+    "kosdaq_close": 794.0
   },
   {
     "date": "2025-09-03",
@@ -67,7 +75,9 @@
         "score": 60.0,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 3184.42,
+    "kosdaq_close": 796.81
   },
   {
     "date": "2025-09-04",
@@ -81,7 +91,9 @@
         "score": 66.7,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 3200.83,
+    "kosdaq_close": 805.42
   },
   {
     "date": "2025-09-05",
@@ -95,7 +107,9 @@
         "score": 14.3,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 3205.12,
+    "kosdaq_close": 811.4
   },
   {
     "date": "2025-09-08",
@@ -109,7 +123,9 @@
         "score": 75.0,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 3219.59,
+    "kosdaq_close": 818.6
   },
   {
     "date": "2025-09-09",
@@ -123,7 +139,9 @@
         "score": 88.9,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 3260.05,
+    "kosdaq_close": 824.82
   },
   {
     "date": "2025-09-10",
@@ -137,7 +155,9 @@
         "score": 90.0,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 3314.53,
+    "kosdaq_close": 833.0
   },
   {
     "date": "2025-09-11",
@@ -151,7 +171,9 @@
         "score": 45.5,
         "verdict": "중립"
       }
-    ]
+    ],
+    "kospi_close": 3344.2,
+    "kosdaq_close": 834.76
   },
   {
     "date": "2025-09-12",
@@ -165,7 +187,9 @@
         "score": 50.0,
         "verdict": "중립"
       }
-    ]
+    ],
+    "kospi_close": 3395.54,
+    "kosdaq_close": 847.08
   },
   {
     "date": "2025-09-15",
@@ -179,7 +203,9 @@
         "score": 7.7,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 3407.31,
+    "kosdaq_close": 852.69
   },
   {
     "date": "2025-09-16",
@@ -193,7 +219,9 @@
         "score": 42.9,
         "verdict": "공포"
       }
-    ]
+    ],
+    "kospi_close": 3449.62,
+    "kosdaq_close": 851.84
   },
   {
     "date": "2025-09-17",
@@ -207,7 +235,9 @@
         "score": 93.3,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 3413.4,
+    "kosdaq_close": 845.53
   },
   {
     "date": "2025-09-18",
@@ -228,7 +258,9 @@
         "score": 87.5,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 3461.3,
+    "kosdaq_close": 857.11
   },
   {
     "date": "2025-09-19",
@@ -249,7 +281,9 @@
         "score": 52.9,
         "verdict": "중립"
       }
-    ]
+    ],
+    "kospi_close": 3445.24,
+    "kosdaq_close": 863.11
   },
   {
     "date": "2025-09-22",
@@ -270,7 +304,9 @@
         "score": 27.8,
         "verdict": "공포"
       }
-    ]
+    ],
+    "kospi_close": 3468.65,
+    "kosdaq_close": 874.36
   },
   {
     "date": "2025-09-23",
@@ -291,7 +327,9 @@
         "score": 21.1,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 3486.19,
+    "kosdaq_close": 872.21
   },
   {
     "date": "2025-09-24",
@@ -312,7 +350,9 @@
         "score": 5.0,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 3472.14,
+    "kosdaq_close": 860.94
   },
   {
     "date": "2025-09-25",
@@ -333,7 +373,9 @@
         "score": 4.8,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 3471.11,
+    "kosdaq_close": 852.48
   },
   {
     "date": "2025-09-26",
@@ -354,7 +396,9 @@
         "score": 9.1,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 3386.05,
+    "kosdaq_close": 835.19
   },
   {
     "date": "2025-09-29",
@@ -375,7 +419,9 @@
         "score": 17.4,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 3431.21,
+    "kosdaq_close": 846.71
   },
   {
     "date": "2025-09-30",
@@ -396,7 +442,9 @@
         "score": 20.8,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 3424.6,
+    "kosdaq_close": 841.99
   },
   {
     "date": "2025-10-01",
@@ -417,7 +465,9 @@
         "score": 20.0,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 3455.83,
+    "kosdaq_close": 845.34
   },
   {
     "date": "2025-10-02",
@@ -438,7 +488,9 @@
         "score": 57.7,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 3549.21,
+    "kosdaq_close": 854.25
   },
   {
     "date": "2025-10-10",
@@ -459,7 +511,9 @@
         "score": 18.5,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 3610.6,
+    "kosdaq_close": 859.49
   },
   {
     "date": "2025-10-13",
@@ -480,7 +534,9 @@
         "score": 10.7,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 3584.55,
+    "kosdaq_close": 860.49
   },
   {
     "date": "2025-10-14",
@@ -501,7 +557,9 @@
         "score": 3.4,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 3561.81,
+    "kosdaq_close": 847.96
   },
   {
     "date": "2025-10-15",
@@ -522,7 +580,9 @@
         "score": 6.7,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 3657.28,
+    "kosdaq_close": 864.72
   },
   {
     "date": "2025-10-16",
@@ -543,7 +603,9 @@
         "score": 19.4,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 3748.37,
+    "kosdaq_close": 865.41
   },
   {
     "date": "2025-10-17",
@@ -564,7 +626,9 @@
         "score": 84.4,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 3748.89,
+    "kosdaq_close": 859.54
   },
   {
     "date": "2025-10-20",
@@ -585,7 +649,9 @@
         "score": 93.9,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 3814.69,
+    "kosdaq_close": 875.77
   },
   {
     "date": "2025-10-21",
@@ -606,7 +672,9 @@
         "score": 82.4,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 3823.84,
+    "kosdaq_close": 872.5
   },
   {
     "date": "2025-10-22",
@@ -627,7 +695,9 @@
         "score": 51.4,
         "verdict": "중립"
       }
-    ]
+    ],
+    "kospi_close": 3883.68,
+    "kosdaq_close": 879.15
   },
   {
     "date": "2025-10-23",
@@ -648,7 +718,9 @@
         "score": 30.6,
         "verdict": "공포"
       }
-    ]
+    ],
+    "kospi_close": 3845.56,
+    "kosdaq_close": 872.03
   },
   {
     "date": "2025-10-24",
@@ -669,7 +741,9 @@
         "score": 16.2,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 3941.59,
+    "kosdaq_close": 883.08
   },
   {
     "date": "2025-10-27",
@@ -690,7 +764,9 @@
         "score": 21.1,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 4042.83,
+    "kosdaq_close": 902.7
   },
   {
     "date": "2025-10-28",
@@ -711,7 +787,9 @@
         "score": 33.3,
         "verdict": "공포"
       }
-    ]
+    ],
+    "kospi_close": 4010.41,
+    "kosdaq_close": 903.3
   },
   {
     "date": "2025-10-29",
@@ -732,7 +810,9 @@
         "score": 80.0,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4081.15,
+    "kosdaq_close": 901.59
   },
   {
     "date": "2025-10-30",
@@ -753,7 +833,9 @@
         "score": 85.4,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4086.89,
+    "kosdaq_close": 890.86
   },
   {
     "date": "2025-10-31",
@@ -774,7 +856,9 @@
         "score": 97.6,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4107.5,
+    "kosdaq_close": 900.42
   },
   {
     "date": "2025-11-03",
@@ -795,7 +879,9 @@
         "score": 93.0,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4221.87,
+    "kosdaq_close": 914.55
   },
   {
     "date": "2025-11-04",
@@ -816,7 +902,9 @@
         "score": 59.1,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4121.74,
+    "kosdaq_close": 926.57
   },
   {
     "date": "2025-11-05",
@@ -837,7 +925,9 @@
         "score": 22.2,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 4004.42,
+    "kosdaq_close": 901.89
   },
   {
     "date": "2025-11-06",
@@ -858,7 +948,9 @@
         "score": 19.6,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 4026.45,
+    "kosdaq_close": 898.17
   },
   {
     "date": "2025-11-07",
@@ -879,7 +971,9 @@
         "score": 8.5,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 3953.76,
+    "kosdaq_close": 876.81
   },
   {
     "date": "2025-11-10",
@@ -900,7 +994,9 @@
         "score": 4.2,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 4073.24,
+    "kosdaq_close": 888.35
   },
   {
     "date": "2025-11-11",
@@ -921,7 +1017,9 @@
         "score": 4.1,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 4106.39,
+    "kosdaq_close": 884.27
   },
   {
     "date": "2025-11-12",
@@ -942,7 +1040,9 @@
         "score": 20.0,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 4150.39,
+    "kosdaq_close": 906.51
   },
   {
     "date": "2025-11-13",
@@ -963,7 +1063,9 @@
         "score": 2.0,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 4170.63,
+    "kosdaq_close": 918.37
   },
   {
     "date": "2025-11-14",
@@ -984,7 +1086,9 @@
         "score": 19.2,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 4011.57,
+    "kosdaq_close": 897.9
   },
   {
     "date": "2025-11-17",
@@ -1005,7 +1109,9 @@
         "score": 84.9,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4089.25,
+    "kosdaq_close": 902.67
   },
   {
     "date": "2025-11-18",
@@ -1026,7 +1132,9 @@
         "score": 50.0,
         "verdict": "중립"
       }
-    ]
+    ],
+    "kospi_close": 3953.62,
+    "kosdaq_close": 878.7
   },
   {
     "date": "2025-11-19",
@@ -1061,7 +1169,9 @@
         "score": 72.7,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 3929.51,
+    "kosdaq_close": 871.32
   },
   {
     "date": "2025-11-20",
@@ -1103,7 +1213,9 @@
         "score": 0.0,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 4004.85,
+    "kosdaq_close": 891.94
   },
   {
     "date": "2025-11-21",
@@ -1145,7 +1257,9 @@
         "score": 0.0,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 3853.26,
+    "kosdaq_close": 863.95
   },
   {
     "date": "2025-11-24",
@@ -1187,7 +1301,9 @@
         "score": 0.0,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 3846.06,
+    "kosdaq_close": 856.44
   },
   {
     "date": "2025-11-25",
@@ -1229,7 +1345,9 @@
         "score": 25.0,
         "verdict": "공포"
       }
-    ]
+    ],
+    "kospi_close": 3857.78,
+    "kosdaq_close": 856.03
   },
   {
     "date": "2025-11-26",
@@ -1271,7 +1389,9 @@
         "score": 60.0,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 3960.87,
+    "kosdaq_close": 877.32
   },
   {
     "date": "2025-11-27",
@@ -1313,7 +1433,9 @@
         "score": 66.7,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 3986.91,
+    "kosdaq_close": 880.06
   },
   {
     "date": "2025-11-28",
@@ -1355,7 +1477,9 @@
         "score": 42.9,
         "verdict": "공포"
       }
-    ]
+    ],
+    "kospi_close": 3926.59,
+    "kosdaq_close": 912.67
   },
   {
     "date": "2025-12-01",
@@ -1397,7 +1521,9 @@
         "score": 62.5,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 3920.37,
+    "kosdaq_close": 922.38
   },
   {
     "date": "2025-12-02",
@@ -1439,7 +1565,9 @@
         "score": 88.9,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 3994.93,
+    "kosdaq_close": 928.42
   },
   {
     "date": "2025-12-03",
@@ -1481,7 +1609,9 @@
         "score": 90.0,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4036.3,
+    "kosdaq_close": 932.01
   },
   {
     "date": "2025-12-04",
@@ -1523,7 +1653,9 @@
         "score": 72.7,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4028.51,
+    "kosdaq_close": 929.83
   },
   {
     "date": "2025-12-05",
@@ -1565,7 +1697,9 @@
         "score": 91.7,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4100.05,
+    "kosdaq_close": 924.74
   },
   {
     "date": "2025-12-08",
@@ -1607,7 +1741,9 @@
         "score": 92.3,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4154.85,
+    "kosdaq_close": 927.79
   },
   {
     "date": "2025-12-09",
@@ -1649,7 +1785,9 @@
         "score": 85.7,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4143.55,
+    "kosdaq_close": 931.35
   },
   {
     "date": "2025-12-10",
@@ -1691,7 +1829,9 @@
         "score": 66.7,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4135.0,
+    "kosdaq_close": 935.0
   },
   {
     "date": "2025-12-11",
@@ -1733,7 +1873,9 @@
         "score": 43.8,
         "verdict": "공포"
       }
-    ]
+    ],
+    "kospi_close": 4110.62,
+    "kosdaq_close": 934.64
   },
   {
     "date": "2025-12-12",
@@ -1775,7 +1917,9 @@
         "score": 41.2,
         "verdict": "공포"
       }
-    ]
+    ],
+    "kospi_close": 4167.16,
+    "kosdaq_close": 937.34
   },
   {
     "date": "2025-12-15",
@@ -1817,7 +1961,9 @@
         "score": 33.3,
         "verdict": "공포"
       }
-    ]
+    ],
+    "kospi_close": 4090.59,
+    "kosdaq_close": 938.83
   },
   {
     "date": "2025-12-16",
@@ -1859,7 +2005,9 @@
         "score": 10.5,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 3999.13,
+    "kosdaq_close": 916.11
   },
   {
     "date": "2025-12-17",
@@ -1901,7 +2049,9 @@
         "score": 15.0,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 4056.41,
+    "kosdaq_close": 911.07
   },
   {
     "date": "2025-12-18",
@@ -1943,7 +2093,9 @@
         "score": 0.0,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 3994.51,
+    "kosdaq_close": 901.33
   },
   {
     "date": "2025-12-19",
@@ -1985,7 +2137,9 @@
         "score": 4.5,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 4020.55,
+    "kosdaq_close": 915.27
   },
   {
     "date": "2025-12-22",
@@ -2027,7 +2181,9 @@
         "score": 21.7,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 4105.93,
+    "kosdaq_close": 929.14
   },
   {
     "date": "2025-12-23",
@@ -2069,7 +2225,9 @@
         "score": 20.8,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 4117.32,
+    "kosdaq_close": 919.56
   },
   {
     "date": "2025-12-24",
@@ -2111,7 +2269,9 @@
         "score": 8.0,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 4108.62,
+    "kosdaq_close": 915.2
   },
   {
     "date": "2025-12-26",
@@ -2153,7 +2313,9 @@
         "score": 3.8,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 4129.68,
+    "kosdaq_close": 919.67
   },
   {
     "date": "2025-12-29",
@@ -2195,7 +2357,9 @@
         "score": 85.2,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4220.56,
+    "kosdaq_close": 932.59
   },
   {
     "date": "2025-12-30",
@@ -2237,7 +2401,9 @@
         "score": 75.0,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4214.17,
+    "kosdaq_close": 925.47
   },
   {
     "date": "2026-01-02",
@@ -2279,7 +2445,9 @@
         "score": 93.1,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4309.63,
+    "kosdaq_close": 945.57
   },
   {
     "date": "2026-01-05",
@@ -2321,7 +2489,9 @@
         "score": 96.7,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4457.52,
+    "kosdaq_close": 957.5
   },
   {
     "date": "2026-01-06",
@@ -2363,7 +2533,9 @@
         "score": 80.6,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4525.48,
+    "kosdaq_close": 955.97
   },
   {
     "date": "2026-01-07",
@@ -2405,7 +2577,9 @@
         "score": 93.8,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4551.06,
+    "kosdaq_close": 947.39
   },
   {
     "date": "2026-01-08",
@@ -2447,7 +2621,9 @@
         "score": 97.0,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4552.37,
+    "kosdaq_close": 944.06
   },
   {
     "date": "2026-01-09",
@@ -2489,7 +2665,9 @@
         "score": 97.1,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4586.32,
+    "kosdaq_close": 947.92
   },
   {
     "date": "2026-01-12",
@@ -2531,7 +2709,9 @@
         "score": 91.4,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4624.79,
+    "kosdaq_close": 949.81
   },
   {
     "date": "2026-01-13",
@@ -2573,7 +2753,9 @@
         "score": 91.7,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4692.64,
+    "kosdaq_close": 948.98
   },
   {
     "date": "2026-01-14",
@@ -2615,7 +2797,9 @@
         "score": 86.5,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4723.1,
+    "kosdaq_close": 942.18
   },
   {
     "date": "2026-01-15",
@@ -2657,7 +2841,9 @@
         "score": 94.7,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4797.55,
+    "kosdaq_close": 951.16
   },
   {
     "date": "2026-01-16",
@@ -2699,7 +2885,9 @@
         "score": 82.1,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4840.74,
+    "kosdaq_close": 954.59
   },
   {
     "date": "2026-01-19",
@@ -2741,7 +2929,9 @@
         "score": 70.0,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4904.66,
+    "kosdaq_close": 968.36
   },
   {
     "date": "2026-01-20",
@@ -2783,7 +2973,9 @@
         "score": 68.3,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 4885.75,
+    "kosdaq_close": 976.37
   },
   {
     "date": "2026-01-21",
@@ -2825,7 +3017,9 @@
         "score": 45.2,
         "verdict": "중립"
       }
-    ]
+    ],
+    "kospi_close": 4909.93,
+    "kosdaq_close": 951.29
   },
   {
     "date": "2026-01-22",
@@ -2867,7 +3061,9 @@
         "score": 20.9,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 4952.53,
+    "kosdaq_close": 970.35
   },
   {
     "date": "2026-01-23",
@@ -2909,7 +3105,9 @@
         "score": 11.4,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 4990.07,
+    "kosdaq_close": 993.93
   },
   {
     "date": "2026-01-26",
@@ -2951,7 +3149,9 @@
         "score": 0.0,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 4949.59,
+    "kosdaq_close": 1064.41
   },
   {
     "date": "2026-01-27",
@@ -2993,7 +3193,9 @@
         "score": 4.3,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 5084.85,
+    "kosdaq_close": 1082.59
   },
   {
     "date": "2026-01-28",
@@ -3035,7 +3237,9 @@
         "score": 0.0,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 5170.81,
+    "kosdaq_close": 1133.52
   },
   {
     "date": "2026-01-29",
@@ -3077,7 +3281,9 @@
         "score": 0.0,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 5221.25,
+    "kosdaq_close": 1164.41
   },
   {
     "date": "2026-01-30",
@@ -3119,7 +3325,9 @@
         "score": 53.1,
         "verdict": "중립"
       }
-    ]
+    ],
+    "kospi_close": 5224.36,
+    "kosdaq_close": 1149.44
   },
   {
     "date": "2026-02-02",
@@ -3161,7 +3369,9 @@
         "score": 54.0,
         "verdict": "중립"
       }
-    ]
+    ],
+    "kospi_close": 4949.67,
+    "kosdaq_close": 1098.36
   },
   {
     "date": "2026-02-03",
@@ -3203,7 +3413,9 @@
         "score": 58.8,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5288.08,
+    "kosdaq_close": 1144.33
   },
   {
     "date": "2026-02-04",
@@ -3245,7 +3457,9 @@
         "score": 75.0,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5371.1,
+    "kosdaq_close": 1149.43
   },
   {
     "date": "2026-02-05",
@@ -3287,7 +3501,9 @@
         "score": 60.4,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5163.57,
+    "kosdaq_close": 1108.41
   },
   {
     "date": "2026-02-06",
@@ -3329,7 +3545,9 @@
         "score": 40.7,
         "verdict": "공포"
       }
-    ]
+    ],
+    "kospi_close": 5089.14,
+    "kosdaq_close": 1080.77
   },
   {
     "date": "2026-02-09",
@@ -3371,7 +3589,9 @@
         "score": 52.7,
         "verdict": "중립"
       }
-    ]
+    ],
+    "kospi_close": 5298.04,
+    "kosdaq_close": 1127.55
   },
   {
     "date": "2026-02-10",
@@ -3413,7 +3633,9 @@
         "score": 53.6,
         "verdict": "중립"
       }
-    ]
+    ],
+    "kospi_close": 5301.69,
+    "kosdaq_close": 1115.2
   },
   {
     "date": "2026-02-11",
@@ -3455,7 +3677,9 @@
         "score": 63.2,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5354.49,
+    "kosdaq_close": 1114.87
   },
   {
     "date": "2026-02-12",
@@ -3497,7 +3721,9 @@
         "score": 82.8,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5522.27,
+    "kosdaq_close": 1125.99
   },
   {
     "date": "2026-02-13",
@@ -3539,7 +3765,9 @@
         "score": 89.8,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5507.01,
+    "kosdaq_close": 1106.08
   },
   {
     "date": "2026-02-19",
@@ -3581,7 +3809,9 @@
         "score": 98.3,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5677.25,
+    "kosdaq_close": 1160.71
   },
   {
     "date": "2026-02-20",
@@ -3623,7 +3853,9 @@
         "score": 96.7,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5808.53,
+    "kosdaq_close": 1154.0
   },
   {
     "date": "2026-02-23",
@@ -3665,7 +3897,9 @@
         "score": 98.4,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5846.09,
+    "kosdaq_close": 1151.99
   },
   {
     "date": "2026-02-24",
@@ -3707,7 +3941,9 @@
         "score": 98.4,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5969.64,
+    "kosdaq_close": 1165.0
   },
   {
     "date": "2026-02-25",
@@ -3749,7 +3985,9 @@
         "score": 98.4,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 6083.86,
+    "kosdaq_close": 1165.25
   },
   {
     "date": "2026-02-26",
@@ -3791,7 +4029,9 @@
         "score": 98.5,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 6307.27,
+    "kosdaq_close": 1188.15
   },
   {
     "date": "2026-02-27",
@@ -3833,7 +4073,9 @@
         "score": 95.5,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 6244.13,
+    "kosdaq_close": 1192.78
   },
   {
     "date": "2026-03-03",
@@ -3875,7 +4117,9 @@
         "score": 92.5,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5791.91,
+    "kosdaq_close": 1137.7
   },
   {
     "date": "2026-03-04",
@@ -3917,7 +4161,9 @@
         "score": 52.9,
         "verdict": "중립"
       }
-    ]
+    ],
+    "kospi_close": 5093.54,
+    "kosdaq_close": 978.44
   },
   {
     "date": "2026-03-05",
@@ -3959,7 +4205,9 @@
         "score": 84.1,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5583.9,
+    "kosdaq_close": 1116.41
   },
   {
     "date": "2026-03-06",
@@ -4001,7 +4249,9 @@
         "score": 78.6,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5584.87,
+    "kosdaq_close": 1154.67
   },
   {
     "date": "2026-03-09",
@@ -4043,7 +4293,9 @@
         "score": 53.5,
         "verdict": "중립"
       }
-    ]
+    ],
+    "kospi_close": 5251.87,
+    "kosdaq_close": 1102.28
   },
   {
     "date": "2026-03-10",
@@ -4085,7 +4337,9 @@
         "score": 59.7,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5532.59,
+    "kosdaq_close": 1137.68
   },
   {
     "date": "2026-03-11",
@@ -4127,7 +4381,9 @@
         "score": 61.6,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5609.95,
+    "kosdaq_close": 1136.83
   },
   {
     "date": "2026-03-12",
@@ -4169,7 +4425,9 @@
         "score": 67.6,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5583.25,
+    "kosdaq_close": 1148.4
   },
   {
     "date": "2026-03-13",
@@ -4211,7 +4469,9 @@
         "score": 64.0,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5487.24,
+    "kosdaq_close": 1152.96
   },
   {
     "date": "2026-03-16",
@@ -4253,7 +4513,9 @@
         "score": 82.9,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5549.85,
+    "kosdaq_close": 1138.29
   },
   {
     "date": "2026-03-17",
@@ -4295,7 +4557,9 @@
         "score": 85.7,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5640.48,
+    "kosdaq_close": 1136.94
   },
   {
     "date": "2026-03-18",
@@ -4337,7 +4601,9 @@
         "score": 96.2,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5925.03,
+    "kosdaq_close": 1164.38
   },
   {
     "date": "2026-03-19",
@@ -4379,7 +4645,9 @@
         "score": 98.7,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5763.22,
+    "kosdaq_close": 1143.48
   },
   {
     "date": "2026-03-20",
@@ -4421,7 +4689,9 @@
         "score": 98.8,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5781.2,
+    "kosdaq_close": 1161.52
   },
   {
     "date": "2026-03-23",
@@ -4463,7 +4733,9 @@
         "score": 95.1,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5405.75,
+    "kosdaq_close": 1096.89
   },
   {
     "date": "2026-03-24",
@@ -4505,7 +4777,9 @@
         "score": 97.6,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5553.92,
+    "kosdaq_close": 1121.44
   },
   {
     "date": "2026-03-25",
@@ -4547,7 +4821,9 @@
         "score": 95.2,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5642.21,
+    "kosdaq_close": 1159.55
   },
   {
     "date": "2026-03-26",
@@ -4589,7 +4865,9 @@
         "score": 94.0,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5460.46,
+    "kosdaq_close": 1136.64
   },
   {
     "date": "2026-03-27",
@@ -4631,7 +4909,9 @@
         "score": 90.6,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5438.87,
+    "kosdaq_close": 1141.51
   },
   {
     "date": "2026-03-30",
@@ -4673,7 +4953,9 @@
         "score": 84.9,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5277.3,
+    "kosdaq_close": 1107.05
   },
   {
     "date": "2026-03-31",
@@ -4715,7 +4997,9 @@
         "score": 55.2,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5052.46,
+    "kosdaq_close": 1052.39
   },
   {
     "date": "2026-04-01",
@@ -4757,7 +5041,9 @@
         "score": 80.7,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5478.7,
+    "kosdaq_close": 1116.18
   },
   {
     "date": "2026-04-02",
@@ -4799,7 +5085,9 @@
         "score": 60.7,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5234.05,
+    "kosdaq_close": 1056.34
   },
   {
     "date": "2026-04-03",
@@ -4841,7 +5129,9 @@
         "score": 68.9,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5377.3,
+    "kosdaq_close": 1063.75
   },
   {
     "date": "2026-04-06",
@@ -4883,7 +5173,9 @@
         "score": 71.4,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5450.33,
+    "kosdaq_close": 1047.37
   },
   {
     "date": "2026-04-07",
@@ -4925,7 +5217,9 @@
         "score": 69.6,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5494.78,
+    "kosdaq_close": 1036.73
   },
   {
     "date": "2026-04-08",
@@ -4967,7 +5261,9 @@
         "score": 81.7,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5872.34,
+    "kosdaq_close": 1089.85
   },
   {
     "date": "2026-04-09",
@@ -5009,7 +5305,9 @@
         "score": 76.6,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5778.01,
+    "kosdaq_close": 1076.0
   },
   {
     "date": "2026-04-10",
@@ -5051,7 +5349,9 @@
         "score": 83.2,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5858.87,
+    "kosdaq_close": 1093.63
   },
   {
     "date": "2026-04-13",
@@ -5093,7 +5393,9 @@
         "score": 79.2,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5808.62,
+    "kosdaq_close": 1099.84
   },
   {
     "date": "2026-04-14",
@@ -5135,7 +5437,9 @@
         "score": 80.4,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 5967.75,
+    "kosdaq_close": 1121.88
   },
   {
     "date": "2026-04-15",
@@ -5177,7 +5481,9 @@
         "score": 82.7,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 6091.39,
+    "kosdaq_close": 1152.43
   },
   {
     "date": "2026-04-16",
@@ -5219,7 +5525,9 @@
         "score": 84.8,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 6226.05,
+    "kosdaq_close": 1162.97
   },
   {
     "date": "2026-04-17",
@@ -5261,7 +5569,9 @@
         "score": 76.0,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 6191.92,
+    "kosdaq_close": 1170.04
   },
   {
     "date": "2026-04-20",
@@ -5303,7 +5613,9 @@
         "score": 85.1,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 6219.09,
+    "kosdaq_close": 1174.85
   },
   {
     "date": "2026-04-21",
@@ -5345,7 +5657,9 @@
         "score": 92.2,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 6388.47,
+    "kosdaq_close": 1179.03
   },
   {
     "date": "2026-04-22",
@@ -5387,7 +5701,9 @@
         "score": 92.2,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 6417.93,
+    "kosdaq_close": 1181.12
   },
   {
     "date": "2026-04-23",
@@ -5429,7 +5745,9 @@
         "score": 96.2,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 6475.81,
+    "kosdaq_close": 1174.31
   },
   {
     "date": "2026-04-24",
@@ -5471,7 +5789,9 @@
         "score": 99.0,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 6475.63,
+    "kosdaq_close": 1203.84
   },
   {
     "date": "2026-04-27",
@@ -5513,7 +5833,9 @@
         "score": 99.1,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 6615.03,
+    "kosdaq_close": 1226.18
   },
   {
     "date": "2026-04-28",
@@ -5555,7 +5877,9 @@
         "score": 99.1,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 6641.02,
+    "kosdaq_close": 1215.58
   },
   {
     "date": "2026-04-29",
@@ -5597,7 +5921,9 @@
         "score": 99.1,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 6690.9,
+    "kosdaq_close": 1220.26
   },
   {
     "date": "2026-04-30",
@@ -5639,7 +5965,9 @@
         "score": 81.7,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 6598.87,
+    "kosdaq_close": 1192.35
   },
   {
     "date": "2026-05-04",
@@ -5681,7 +6009,9 @@
         "score": 98.2,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 6936.99,
+    "kosdaq_close": 1213.74
   },
   {
     "date": "2026-05-06",
@@ -5723,7 +6053,9 @@
         "score": 99.1,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7384.56,
+    "kosdaq_close": 1210.17
   },
   {
     "date": "2026-05-07",
@@ -5765,7 +6097,9 @@
         "score": 98.2,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7490.05,
+    "kosdaq_close": 1199.18
   },
   {
     "date": "2026-05-08",
@@ -5807,7 +6141,9 @@
         "score": 99.1,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7498.0,
+    "kosdaq_close": 1207.72
   },
   {
     "date": "2026-05-11",
@@ -5849,7 +6185,9 @@
         "score": 99.1,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7822.24,
+    "kosdaq_close": 1207.34
   },
   {
     "date": "2026-05-12",
@@ -5891,7 +6229,9 @@
         "score": 98.3,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7643.15,
+    "kosdaq_close": 1179.29
   },
   {
     "date": "2026-05-13",
@@ -5933,7 +6273,9 @@
         "score": 98.3,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7844.01,
+    "kosdaq_close": 1176.93
   },
   {
     "date": "2026-05-14",
@@ -5975,7 +6317,9 @@
         "score": 98.3,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7981.41,
+    "kosdaq_close": 1191.09
   },
   {
     "date": "2026-05-15",
@@ -6017,7 +6361,9 @@
         "score": 93.2,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7493.18,
+    "kosdaq_close": 1129.82
   },
   {
     "date": "2026-05-18",
@@ -6059,7 +6405,9 @@
         "score": 95.0,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7516.04,
+    "kosdaq_close": 1111.09
   },
   {
     "date": "2026-05-19",
@@ -6101,7 +6449,9 @@
         "score": 87.5,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7271.66,
+    "kosdaq_close": 1084.36
   },
   {
     "date": "2026-05-20",
@@ -6143,7 +6493,9 @@
         "score": 81.0,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7208.95,
+    "kosdaq_close": 1056.07
   },
   {
     "date": "2026-05-21",
@@ -6185,7 +6537,9 @@
         "score": 95.1,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7815.59,
+    "kosdaq_close": 1105.97
   },
   {
     "date": "2026-05-22",
@@ -6227,7 +6581,9 @@
         "score": 91.9,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7847.71,
+    "kosdaq_close": 1161.13
   },
   {
     "date": "2026-05-26",
@@ -6269,7 +6625,9 @@
         "score": 94.4,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8047.51,
+    "kosdaq_close": 1172.52
   },
   {
     "date": "2026-05-27",
@@ -6311,7 +6669,9 @@
         "score": 92.8,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8228.7,
+    "kosdaq_close": 1133.13
   },
   {
     "date": "2026-05-28",
@@ -6353,7 +6713,9 @@
         "score": 92.9,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8185.29,
+    "kosdaq_close": 1104.36
   },
   {
     "date": "2026-05-29",
@@ -6395,7 +6757,9 @@
         "score": 98.4,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8476.15,
+    "kosdaq_close": 1074.8
   },
   {
     "date": "2026-06-01",
@@ -6437,7 +6801,9 @@
         "score": 99.2,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8788.38,
+    "kosdaq_close": 1050.03
   },
   {
     "date": "2026-06-02",
@@ -6479,7 +6845,9 @@
         "score": 98.4,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8801.49,
+    "kosdaq_close": 1026.03
   },
   {
     "date": "2026-06-04",
@@ -6521,7 +6889,9 @@
         "score": 97.7,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8639.41,
+    "kosdaq_close": 1049.73
   },
   {
     "date": "2026-06-05",
@@ -6563,7 +6933,9 @@
         "score": 98.5,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8160.59,
+    "kosdaq_close": 1002.44
   },
   {
     "date": "2026-06-08",
@@ -6605,7 +6977,9 @@
         "score": 93.2,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7484.41,
+    "kosdaq_close": 911.39
   },
   {
     "date": "2026-06-09",
@@ -6647,7 +7021,9 @@
         "score": 96.2,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8096.93,
+    "kosdaq_close": 967.81
   },
   {
     "date": "2026-06-10",
@@ -6689,7 +7065,9 @@
         "score": 94.8,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7730.82,
+    "kosdaq_close": 951.63
   },
   {
     "date": "2026-06-11",
@@ -6731,7 +7109,9 @@
         "score": 95.6,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7763.95,
+    "kosdaq_close": 996.93
   },
   {
     "date": "2026-06-12",
@@ -6773,7 +7153,9 @@
         "score": 96.3,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8123.62,
+    "kosdaq_close": 1029.05
   },
   {
     "date": "2026-06-15",
@@ -6815,7 +7197,9 @@
         "score": 96.4,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8545.98,
+    "kosdaq_close": 1034.03
   },
   {
     "date": "2026-06-16",
@@ -6857,7 +7241,9 @@
         "score": 93.5,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8726.6,
+    "kosdaq_close": 1018.68
   },
   {
     "date": "2026-06-17",
@@ -6899,7 +7285,9 @@
         "score": 93.5,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8864.24,
+    "kosdaq_close": 1031.96
   },
   {
     "date": "2026-06-18",
@@ -6941,7 +7329,9 @@
         "score": 95.7,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 9063.84,
+    "kosdaq_close": 1000.93
   },
   {
     "date": "2026-06-19",
@@ -6983,7 +7373,9 @@
         "score": 98.6,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 9052.42,
+    "kosdaq_close": 966.59
   },
   {
     "date": "2026-06-22",
@@ -7025,7 +7417,9 @@
         "score": 97.2,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 9114.55,
+    "kosdaq_close": 968.4
   },
   {
     "date": "2026-06-23",
@@ -7067,7 +7461,9 @@
         "score": 87.4,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8203.84,
+    "kosdaq_close": 891.52
   },
   {
     "date": "2026-06-24",
@@ -7109,7 +7505,9 @@
         "score": 93.8,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8471.02,
+    "kosdaq_close": 909.31
   },
   {
     "date": "2026-06-25",
@@ -7151,7 +7549,9 @@
         "score": 98.6,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8930.3,
+    "kosdaq_close": 887.81
   },
   {
     "date": "2026-06-26",
@@ -7193,7 +7593,9 @@
         "score": 96.6,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8411.21,
+    "kosdaq_close": 851.37
   },
   {
     "date": "2026-06-29",
@@ -7235,7 +7637,9 @@
         "score": 98.6,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8394.65,
+    "kosdaq_close": 920.57
   },
   {
     "date": "2026-06-30",
@@ -7277,7 +7681,9 @@
         "score": 96.6,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8476.48,
+    "kosdaq_close": 916.18
   },
   {
     "date": "2026-07-01",
@@ -7319,7 +7725,9 @@
         "score": 96.6,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8303.41,
+    "kosdaq_close": 929.35
   },
   {
     "date": "2026-07-02",
@@ -7361,7 +7769,9 @@
         "score": 82.7,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7648.09,
+    "kosdaq_close": 866.72
   },
   {
     "date": "2026-07-03",
@@ -7403,7 +7813,9 @@
         "score": 88.1,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8088.34,
+    "kosdaq_close": 868.41
   },
   {
     "date": "2026-07-06",
@@ -7445,7 +7857,9 @@
         "score": 84.9,
         "verdict": "극단적 탐욕"
       }
-    ]
+    ],
+    "kospi_close": 8051.33,
+    "kosdaq_close": 847.07
   },
   {
     "date": "2026-07-07",
@@ -7487,7 +7901,9 @@
         "score": 73.2,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7656.31,
+    "kosdaq_close": 831.23
   },
   {
     "date": "2026-07-08",
@@ -7529,7 +7945,9 @@
         "score": 70.8,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7246.79,
+    "kosdaq_close": 785.0
   },
   {
     "date": "2026-07-09",
@@ -7571,7 +7989,9 @@
         "score": 69.0,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7291.91,
+    "kosdaq_close": 794.0
   },
   {
     "date": "2026-07-10",
@@ -7613,7 +8033,9 @@
         "score": 71.8,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7475.94,
+    "kosdaq_close": 837.43
   },
   {
     "date": "2026-07-13",
@@ -7655,7 +8077,9 @@
         "score": 58.6,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 6806.93,
+    "kosdaq_close": 799.36
   },
   {
     "date": "2026-07-14",
@@ -7697,7 +8121,9 @@
         "score": 56.3,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 6856.83,
+    "kosdaq_close": 783.98
   },
   {
     "date": "2026-07-15",
@@ -7739,7 +8165,9 @@
         "score": 61.0,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 7284.41,
+    "kosdaq_close": 829.43
   },
   {
     "date": "2026-07-16",
@@ -7781,7 +8209,9 @@
         "score": 56.2,
         "verdict": "탐욕"
       }
-    ]
+    ],
+    "kospi_close": 6820.6,
+    "kosdaq_close": 791.84
   },
   {
     "date": "2026-07-20",
@@ -7823,7 +8253,9 @@
         "score": 49.1,
         "verdict": "중립"
       }
-    ]
+    ],
+    "kospi_close": 6516.27,
+    "kosdaq_close": 749.64
   },
   {
     "date": "2026-07-21",
@@ -7865,7 +8297,9 @@
         "score": 43.8,
         "verdict": "공포"
       }
-    ]
+    ],
+    "kospi_close": 6747.95,
+    "kosdaq_close": 753.34
   },
   {
     "date": "2026-07-22",
@@ -7907,7 +8341,9 @@
         "score": 41.7,
         "verdict": "공포"
       }
-    ]
+    ],
+    "kospi_close": 6797.7,
+    "kosdaq_close": 751.09
   },
   {
     "date": "2026-07-23",
@@ -7949,7 +8385,9 @@
         "score": 53.0,
         "verdict": "중립"
       }
-    ]
+    ],
+    "kospi_close": 7096.89,
+    "kosdaq_close": 790.28
   },
   {
     "date": "2026-07-24",
@@ -7991,7 +8429,9 @@
         "score": 40.6,
         "verdict": "공포"
       }
-    ]
+    ],
+    "kospi_close": 6690.62,
+    "kosdaq_close": 748.22
   },
   {
     "date": "2026-07-27",
@@ -8033,7 +8473,9 @@
         "score": 36.1,
         "verdict": "공포"
       }
-    ]
+    ],
+    "kospi_close": 6755.75,
+    "kosdaq_close": 764.86
   },
   {
     "date": "2026-07-28",
@@ -8075,7 +8517,9 @@
         "score": 12.0,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 6023.66,
+    "kosdaq_close": 705.85
   },
   {
     "date": "2026-07-29",
@@ -8117,7 +8561,9 @@
         "score": 1.8,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 5663.24,
+    "kosdaq_close": 662.68
   },
   {
     "date": "2026-07-30",
@@ -8159,7 +8605,9 @@
         "score": 2.4,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 5593.56,
+    "kosdaq_close": 644.78
   },
   {
     "date": "2026-07-31",
@@ -8201,7 +8649,9 @@
         "score": 16.5,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 6595.45,
+    "kosdaq_close": 719.76
   },
   {
     "date": "2026-08-03",
@@ -8243,7 +8693,9 @@
         "score": 6.4,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 6257.45,
+    "kosdaq_close": 737.35
   },
   {
     "date": "2026-08-04",
@@ -8285,7 +8737,9 @@
         "score": 4.1,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 6358.95,
+    "kosdaq_close": 780.72
   },
   {
     "date": "2026-08-05",
@@ -8327,7 +8781,9 @@
         "score": 5.8,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 6598.26,
+    "kosdaq_close": 799.59
   },
   {
     "date": "2026-08-06",
@@ -8369,7 +8825,9 @@
         "score": 0.0,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 6296.38,
+    "kosdaq_close": 801.67
   },
   {
     "date": "2026-08-07",
@@ -8411,7 +8869,9 @@
         "score": 0.0,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 6258.77,
+    "kosdaq_close": 798.81
   },
   {
     "date": "2026-08-10",
@@ -8453,7 +8913,9 @@
         "score": 0.0,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 6299.66,
+    "kosdaq_close": 854.47
   },
   {
     "date": "2026-08-11",
@@ -8495,7 +8957,9 @@
         "score": 0.0,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 6345.53,
+    "kosdaq_close": 857.84
   },
   {
     "date": "2026-08-12",
@@ -8537,7 +9001,9 @@
         "score": 2.8,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 6579.04,
+    "kosdaq_close": 858.91
   },
   {
     "date": "2026-08-13",
@@ -8579,7 +9045,9 @@
         "score": 4.5,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 6813.34,
+    "kosdaq_close": 861.37
   },
   {
     "date": "2026-08-14",
@@ -8621,7 +9089,9 @@
         "score": 11.1,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 6977.94,
+    "kosdaq_close": 864.65
   },
   {
     "date": "2026-08-18",
@@ -8663,7 +9133,9 @@
         "score": 11.6,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 6869.83,
+    "kosdaq_close": 834.2
   },
   {
     "date": "2026-08-19",
@@ -8705,7 +9177,9 @@
         "score": 0.0,
         "verdict": "극단적 공포"
       }
-    ]
+    ],
+    "kospi_close": 6471.17,
+    "kosdaq_close": 824.46
   },
   {
     "date": "2026-08-20",
@@ -8768,48 +9242,52 @@
         "score": 50.0,
         "verdict": "중립"
       }
-    ]
+    ],
+    "kospi_close": 6852.58,
+    "kosdaq_close": 840.89
   },
   {
     "date": "2026-08-21",
-    "composite_score": 49.3,
-    "verdict": "중립",
+    "composite_score": 20.5,
+    "verdict": "극단적 공포",
     "components": [
+      {
+        "key": "kospi_momentum",
+        "label": "KOSPI 모멘텀",
+        "raw": -7.55,
+        "score": 13.5,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "kosdaq_momentum",
+        "label": "KOSDAQ 모멘텀",
+        "raw": -8.29,
+        "score": 23.2,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 92.7,
+        "score": 5.4,
+        "verdict": "극단적 공포"
+      },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
-        "raw": -2.31,
+        "raw": -2.29,
         "score": 95.4,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -17.89,
+        "raw": -16.7,
         "score": 0.0,
         "verdict": "극단적 공포"
-      },
-      {
-        "key": "market_breadth",
-        "label": "시장 폭 (KS-KQ)",
-        "raw": -61.47,
-        "score": 50.0,
-        "verdict": "중립"
-      },
-      {
-        "key": "foreign_flow",
-        "label": "외국인 5일 수급",
-        "raw": 7666.5,
-        "score": 50.0,
-        "verdict": "중립"
-      },
-      {
-        "key": "price_strength",
-        "label": "주가 강도 (52주)",
-        "raw": -1.0,
-        "score": 50.0,
-        "verdict": "중립"
       }
-    ]
+    ],
+    "kospi_close": 6912.95,
+    "kosdaq_close": 801.94
   }
 ]
