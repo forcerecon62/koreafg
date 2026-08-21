@@ -1,5 +1,5 @@
 """
-초기 이력 채우기 스크립트
+초기 이력 채우기 스크립트 (1회만 실행하면 됨)
 
 collect_static.py는 매일 딱 하루치씩만 쌓기 때문에, 서비스를 막 시작하면 percentile을
 계산할 과거 데이터가 없어 지표가 전부 0점 아니면 100점으로만 나온다(cold start 문제).
@@ -14,9 +14,11 @@ collect_static.py는 매일 딱 하루치씩만 쌓기 때문에, 서비스를 �
   - 시장 폭, 외국인 수급, 주가 강도
   → collect_static.py가 매일 실행되면서 자연히 쌓인다.
 
+지표 중 일부만 그날 결측이어도(야후 데이터 자체의 자잘한 누락 등) 그 지표만 빼고
+나머지로 그날을 계산한다 - 5개가 전부 없는 날만 통으로 건너뛴다.
+
 8개 지표가 다 채워진 "완전한" 실제 수집일은 그대로 보존하고, 그 외(백필된 날 / 일부
-지표만 있는 날)는 매번 최신 가중치로 다시 계산한다 - 그래서 가중치를 바꾼 뒤 이 스크립트를
-다시 돌리면 과거 차트에도 새 가중치가 반영된다.
+지표만 있는 날)는 매번 최신 가중치로 다시 계산한다.
 
 실행: GitHub Actions의 "Backfill History" 워크플로를 Run workflow로 실행.
 """
@@ -117,7 +119,7 @@ def build_raw_series() -> pd.DataFrame:
             - (gold - gold.shift(SAFE_HAVEN_WINDOW)) / gold.shift(SAFE_HAVEN_WINDOW) * 100
         ),
     })
-    return df.dropna()  # 모든 지표의 lookback이 채워지는 시점부터만 사용
+    return df  # dropna 하지 않음 - 지표 중 일부만 결측이어도 나머지로 그날을 계산하기 위함
 
 
 def load_history() -> list:
@@ -149,7 +151,10 @@ def main():
 
         components, scores = [], {}
         for key in GREEDY_WHEN_HIGH:
-            value = round(float(row[key]), 2)
+            raw_value = row[key]
+            if pd.isna(raw_value):
+                continue  # 이 지표만 그날 결측 - 나머지 지표로 계속 진행
+            value = round(float(raw_value), 2)
             hist = per_indicator_hist[key] + [value]
             pct = percentile_score(value, hist)
             score = pct if GREEDY_WHEN_HIGH[key] else round(100 - pct, 1)
@@ -160,15 +165,19 @@ def main():
             })
             per_indicator_hist[key].append(value)  # 다음 날 계산을 위해 이력에 추가(당일 시점까지만 사용 = 미래참조 없음)
 
+        if not components:
+            continue  # 5개 지표가 그날 전부 결측이면 진짜로 건너뜀
+
         prior = existing_by_date.get(date_str)
         if prior and len(prior.get("components", [])) >= 8:
             continue  # 8개 지표가 다 채워진 "완전한" 실제 수집일은 건드리지 않음
 
         total_w, acc = 0.0, 0.0
         for k, w in INDICATOR_WEIGHTS.items():
-            acc += scores[k] * w
-            total_w += w
-        composite = round(acc / total_w, 1)
+            if k in scores:
+                acc += scores[k] * w
+                total_w += w
+        composite = round(acc / total_w, 1) if total_w else 50.0
 
         existing_by_date[date_str] = {
             "date": date_str, "composite_score": composite,
