@@ -14,10 +14,10 @@
     --panel-border: #1F2532;
     --ink: #E8EBF2;
     --ink-dim: #8A93A6;
-    --fear: #5B8DEF;
-    --greed: #E1554F;
+    --fear: #5B8DEF;      /* 공포 극(파랑) */
+    --greed: #E1554F;     /* 탐욕 극(빨강) */
     --neutral: #4C5568;
-    --signal: #F2B84B;
+    --signal: #F2B84B;    /* 지수 추이선 시그니처 컬러(호박색) */
     --radius: 14px;
   }
   *{box-sizing:border-box;}
@@ -102,6 +102,10 @@
   .zoom-btn:disabled{opacity:0.3;}
   .zoom-label{font-size:12px;color:var(--ink-dim);font-family:'IBM Plex Mono',monospace;min-width:76px;text-align:center;}
 
+  .price-card{padding:14px 14px 8px;margin-top:10px;}
+  .price-card-title{font-size:12.5px;font-weight:600;color:var(--ink-dim);margin-bottom:8px;padding-left:2px;}
+  .price-chart-box{height:130px;position:relative;}
+
   /* ── 범례 ── */
   .legend{margin-top:24px;font-size:12.5px;line-height:2;color:var(--ink-dim);}
   .legend b{color:var(--ink);}
@@ -166,6 +170,15 @@
       <button class="zoom-btn" id="zoom-in" aria-label="확대">+</button>
     </div>
     <div class="chart-box" id="history-chart"></div>
+
+    <div class="price-card">
+      <div class="price-card-title">KOSPI</div>
+      <div class="price-chart-box" id="kospi-chart"></div>
+    </div>
+    <div class="price-card">
+      <div class="price-card-title">KOSDAQ</div>
+      <div class="price-chart-box" id="kosdaq-chart"></div>
+    </div>
   </div>
 
   <div class="legend">
@@ -372,11 +385,138 @@ function attachChartHover(box, records, dims){
 }
 
 document.getElementById("zoom-in").addEventListener("click", function(){
-  if(zoomIndex > 0){ zoomIndex--; updateZoomUI(); renderHistoryChart(); }
+  if(zoomIndex > 0){ zoomIndex--; updateZoomUI(); renderAllCharts(); }
 });
 document.getElementById("zoom-out").addEventListener("click", function(){
-  if(zoomIndex < ZOOM_PRESETS.length - 1){ zoomIndex++; updateZoomUI(); renderHistoryChart(); }
+  if(zoomIndex < ZOOM_PRESETS.length - 1){ zoomIndex++; updateZoomUI(); renderAllCharts(); }
 });
+
+// ── 코스피/코스닥 가격 차트 (점수 차트와 같은 줌·같은 날짜 범위 공유) ──
+function niceRange(values){
+  var min = Math.min.apply(null, values);
+  var max = Math.max.apply(null, values);
+  if(min === max){ min -= 1; max += 1; }
+  var pad = (max - min) * 0.08;
+  return { min: min - pad, max: max + pad };
+}
+
+function renderPriceChart(containerId, records, getValue, color){
+  var box = document.getElementById(containerId);
+  var pts = [];
+  for(var i=0;i<records.length;i++){
+    var v = getValue(records[i]);
+    if(v !== null && v !== undefined) pts.push({ i: i, v: v });
+  }
+  if(pts.length === 0){
+    box.innerHTML = '<div style="color:#5A6376;font-size:11px;text-align:center;padding-top:50px;">데이터 없음</div>';
+    return;
+  }
+
+  var values = pts.map(function(p){ return p.v; });
+  var range = niceRange(values);
+  var n = records.length;
+
+  var W = 600, H = 130, padL = 46, padR = 8, padT = 8, padB = 18;
+  var innerW = W - padL - padR, innerH = H - padT - padB;
+  var x = function(i){ return padL + (n<=1?0:(i/(n-1))*innerW); };
+  var y = function(v){ return padT + (range.max - v)/((range.max - range.min) || 1) * innerH; };
+
+  var linePath = "";
+  for(var k=0;k<pts.length;k++){
+    linePath += (k===0 ? "M" : "L") + x(pts[k].i).toFixed(1) + "," + y(pts[k].v).toFixed(1) + " ";
+  }
+
+  var grid = "";
+  [range.min, (range.min+range.max)/2, range.max].forEach(function(v){
+    var gy = y(v);
+    grid += '<line x1="' + padL + '" y1="' + gy + '" x2="' + (W-padR) + '" y2="' + gy + '" stroke="#1F2532" stroke-width="1"/>';
+    grid += '<text x="' + (padL-6) + '" y="' + (gy+3) + '" text-anchor="end" font-size="9" fill="#5A6376" font-family="IBM Plex Mono, monospace">' + Math.round(v) + '</text>';
+  });
+
+  var xLabels = "";
+  var labelCount = Math.min(6, n);
+  for(var kk=0;kk<labelCount;kk++){
+    var idx = Math.round(kk*(n-1)/(labelCount-1||1));
+    var dateStr = (records[idx].date||"").slice(5);
+    xLabels += '<text x="' + x(idx).toFixed(1) + '" y="' + (H-4) + '" text-anchor="middle" font-size="9" fill="#5A6376" font-family="IBM Plex Mono, monospace">' + dateStr + '</text>';
+  }
+
+  box.innerHTML =
+    '<svg id="' + containerId + '-svg" viewBox="0 0 ' + W + ' ' + H + '" width="100%" height="100%" preserveAspectRatio="none" style="touch-action:none;">' +
+    grid +
+    '<path d="' + linePath.trim() + '" fill="none" stroke="' + color + '" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+    xLabels +
+    '<line id="' + containerId + '-hover-line" x1="0" y1="' + padT + '" x2="0" y2="' + (padT+innerH) +
+      '" stroke="#8A93A6" stroke-width="1" stroke-dasharray="2,2" style="display:none;"/>' +
+    '<circle id="' + containerId + '-hover-dot" r="3.5" fill="#fff" stroke="' + color + '" stroke-width="1.5" style="display:none;"/>' +
+    '</svg><div class="chart-tooltip" id="' + containerId + '-tooltip"></div>';
+
+  attachPriceHover(containerId, records, getValue, { W: W, H: H, padL: padL, innerW: innerW, x: x, y: y });
+}
+
+function attachPriceHover(containerId, records, getValue, dims){
+  var box = document.getElementById(containerId);
+  var svg = box.querySelector("#" + containerId + "-svg");
+  var tooltip = box.querySelector("#" + containerId + "-tooltip");
+  var hoverLine = box.querySelector("#" + containerId + "-hover-line");
+  var hoverDot = box.querySelector("#" + containerId + "-hover-dot");
+  var n = records.length;
+  if(n === 0 || !svg) return;
+
+  function indexFromClientX(clientX){
+    var rect = svg.getBoundingClientRect();
+    var relX = (clientX - rect.left) / rect.width * dims.W;
+    var idx = Math.round((relX - dims.padL) / (dims.innerW || 1) * (n - 1));
+    return Math.max(0, Math.min(n - 1, idx));
+  }
+
+  function nearestValidIndex(idx){
+    for(var d=0; d<n; d++){
+      if(idx-d >= 0 && getValue(records[idx-d]) !== null && getValue(records[idx-d]) !== undefined) return idx-d;
+      if(idx+d < n && getValue(records[idx+d]) !== null && getValue(records[idx+d]) !== undefined) return idx+d;
+    }
+    return null;
+  }
+
+  function showAt(clientX){
+    var idx = nearestValidIndex(indexFromClientX(clientX));
+    if(idx === null) return;
+    var rec = records[idx];
+    var v = getValue(rec);
+    var px = dims.x(idx), py = dims.y(v);
+
+    hoverLine.setAttribute("x1", px); hoverLine.setAttribute("x2", px);
+    hoverLine.style.display = "block";
+    hoverDot.setAttribute("cx", px); hoverDot.setAttribute("cy", py);
+    hoverDot.style.display = "block";
+
+    var svgRect = svg.getBoundingClientRect();
+    tooltip.style.left = (px / dims.W * svgRect.width) + "px";
+    tooltip.style.top = (py / dims.H * svgRect.height) + "px";
+    tooltip.textContent = rec.date + " · " + v.toLocaleString();
+    tooltip.style.display = "block";
+  }
+
+  function hide(){
+    hoverLine.style.display = "none";
+    hoverDot.style.display = "none";
+    tooltip.style.display = "none";
+  }
+
+  svg.addEventListener("mousemove", function(e){ showAt(e.clientX); });
+  svg.addEventListener("mouseleave", hide);
+  svg.addEventListener("touchstart", function(e){ e.preventDefault(); showAt(e.touches[0].clientX); }, {passive:false});
+  svg.addEventListener("touchmove", function(e){ e.preventDefault(); showAt(e.touches[0].clientX); }, {passive:false});
+  svg.addEventListener("touchend", hide);
+}
+
+function renderAllCharts(){
+  renderHistoryChart();
+  var nDays = ZOOM_PRESETS[zoomIndex];
+  var records = fullHistory.slice(-nDays);
+  renderPriceChart("kospi-chart", records, function(r){ return r.kospi_close; }, "#6FD6C4");
+  renderPriceChart("kosdaq-chart", records, function(r){ return r.kosdaq_close; }, "#F2A65A");
+}
 
 function main(){
   fetch(DATA_URL + "?t=" + Date.now())
@@ -389,7 +529,7 @@ function main(){
       renderLatest(records[records.length - 1]);
       fullHistory = records;
       updateZoomUI();
-      renderHistoryChart();
+      renderAllCharts();
     })
     .catch(function(e){
       document.getElementById("verdict").textContent = "데이터를 불러오지 못했습니다";
