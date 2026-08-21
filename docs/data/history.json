@@ -9248,8 +9248,8 @@
   },
   {
     "date": "2026-08-21",
-    "composite_score": 20.5,
-    "verdict": "극단적 공포",
+    "composite_score": 35.9,
+    "verdict": "공포",
     "components": [
       {
         "key": "kospi_momentum",
@@ -9269,22 +9269,43 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 92.7,
-        "score": 5.4,
+        "score": 4.9,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
-        "raw": -2.29,
-        "score": 95.4,
+        "raw": -2.47,
+        "score": 97.5,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -16.7,
+        "raw": -18.4,
         "score": 0.0,
         "verdict": "극단적 공포"
+      },
+      {
+        "key": "market_breadth",
+        "label": "시장 폭 (KS-KQ)",
+        "raw": -61.47,
+        "score": 50.0,
+        "verdict": "중립"
+      },
+      {
+        "key": "foreign_flow",
+        "label": "외국인 5일 수급",
+        "raw": 7666.3,
+        "score": 50.0,
+        "verdict": "중립"
+      },
+      {
+        "key": "price_strength",
+        "label": "주가 강도 (52주)",
+        "raw": -1.0,
+        "score": 50.0,
+        "verdict": "중립"
       }
     ],
     "kospi_close": 6912.95,
