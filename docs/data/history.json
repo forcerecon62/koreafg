@@ -1,8 +1,1037 @@
 [
   {
-    "date": "2025-11-19",
-    "composite_score": 41.5,
+    "date": "2025-08-28",
+    "composite_score": 100.0,
+    "verdict": "극단적 탐욕",
+    "components": [
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.3,
+        "score": 100.0,
+        "verdict": "극단적 탐욕"
+      }
+    ]
+  },
+  {
+    "date": "2025-08-29",
+    "composite_score": 100.0,
+    "verdict": "극단적 탐욕",
+    "components": [
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -1.09,
+        "score": 100.0,
+        "verdict": "극단적 탐욕"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-01",
+    "composite_score": 33.3,
     "verdict": "공포",
+    "components": [
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 0.43,
+        "score": 33.3,
+        "verdict": "공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-02",
+    "composite_score": 50.0,
+    "verdict": "중립",
+    "components": [
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 0.28,
+        "score": 50.0,
+        "verdict": "중립"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-03",
+    "composite_score": 60.0,
+    "verdict": "탐욕",
+    "components": [
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 0.04,
+        "score": 60.0,
+        "verdict": "탐욕"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-04",
+    "composite_score": 66.7,
+    "verdict": "탐욕",
+    "components": [
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.22,
+        "score": 66.7,
+        "verdict": "탐욕"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-05",
+    "composite_score": 14.3,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 0.55,
+        "score": 14.3,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-08",
+    "composite_score": 75.0,
+    "verdict": "탐욕",
+    "components": [
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.24,
+        "score": 75.0,
+        "verdict": "탐욕"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-09",
+    "composite_score": 88.9,
+    "verdict": "극단적 탐욕",
+    "components": [
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.52,
+        "score": 88.9,
+        "verdict": "극단적 탐욕"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-10",
+    "composite_score": 90.0,
+    "verdict": "극단적 탐욕",
+    "components": [
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.52,
+        "score": 90.0,
+        "verdict": "극단적 탐욕"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-11",
+    "composite_score": 45.5,
+    "verdict": "중립",
+    "components": [
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.17,
+        "score": 45.5,
+        "verdict": "중립"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-12",
+    "composite_score": 50.0,
+    "verdict": "중립",
+    "components": [
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.18,
+        "score": 50.0,
+        "verdict": "중립"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-15",
+    "composite_score": 7.7,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 0.59,
+        "score": 7.7,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-16",
+    "composite_score": 42.9,
+    "verdict": "공포",
+    "components": [
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.05,
+        "score": 42.9,
+        "verdict": "공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-17",
+    "composite_score": 93.3,
+    "verdict": "극단적 탐욕",
+    "components": [
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.69,
+        "score": 93.3,
+        "verdict": "극단적 탐욕"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-18",
+    "composite_score": 96.8,
+    "verdict": "극단적 탐욕",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 13.79,
+        "score": 100.0,
+        "verdict": "극단적 탐욕"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.61,
+        "score": 87.5,
+        "verdict": "극단적 탐욕"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-19",
+    "composite_score": 50.8,
+    "verdict": "중립",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 14.11,
+        "score": 50.0,
+        "verdict": "중립"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.2,
+        "score": 52.9,
+        "verdict": "중립"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-22",
+    "composite_score": 81.3,
+    "verdict": "극단적 탐욕",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 13.77,
+        "score": 100.0,
+        "verdict": "극단적 탐욕"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 0.18,
+        "score": 27.8,
+        "verdict": "공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-23",
+    "composite_score": 79.5,
+    "verdict": "극단적 탐욕",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 12.83,
+        "score": 100.0,
+        "verdict": "극단적 탐욕"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 0.32,
+        "score": 21.1,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-24",
+    "composite_score": 60.6,
+    "verdict": "탐욕",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 13.17,
+        "score": 80.0,
+        "verdict": "극단적 탐욕"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 1.03,
+        "score": 5.0,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-25",
+    "composite_score": 50.7,
+    "verdict": "중립",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 13.27,
+        "score": 66.7,
+        "verdict": "탐욕"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 1.81,
+        "score": 4.8,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-26",
+    "composite_score": 13.0,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 16.64,
+        "score": 14.3,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 1.6,
+        "score": 9.1,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-29",
+    "composite_score": 23.0,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 15.78,
+        "score": 25.0,
+        "verdict": "공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 0.89,
+        "score": 17.4,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-30",
+    "composite_score": 21.8,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 15.82,
+        "score": 22.2,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 0.72,
+        "score": 20.8,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-01",
+    "composite_score": 20.0,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 15.93,
+        "score": 20.0,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 0.81,
+        "score": 20.0,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-02",
+    "composite_score": 21.7,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 17.83,
+        "score": 9.1,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.13,
+        "score": 57.7,
+        "verdict": "탐욕"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-10",
+    "composite_score": 10.9,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 18.26,
+        "score": 8.3,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 0.89,
+        "score": 18.5,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-13",
+    "composite_score": 8.5,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 18.85,
+        "score": 7.7,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 1.44,
+        "score": 10.7,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-14",
+    "composite_score": 6.1,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 19.09,
+        "score": 7.1,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 1.91,
+        "score": 3.4,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-15",
+    "composite_score": 6.7,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 20.22,
+        "score": 6.7,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 1.87,
+        "score": 6.7,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-16",
+    "composite_score": 9.6,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 21.36,
+        "score": 6.2,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 1.3,
+        "score": 19.4,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-17",
+    "composite_score": 30.6,
+    "verdict": "공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 21.14,
+        "score": 11.8,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.41,
+        "score": 84.4,
+        "verdict": "극단적 탐욕"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-20",
+    "composite_score": 28.5,
+    "verdict": "공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 21.58,
+        "score": 5.6,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.65,
+        "score": 93.9,
+        "verdict": "극단적 탐욕"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-21",
+    "composite_score": 29.1,
+    "verdict": "공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 21.46,
+        "score": 10.5,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.44,
+        "score": 82.4,
+        "verdict": "극단적 탐욕"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-22",
+    "composite_score": 31.8,
+    "verdict": "공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 20.92,
+        "score": 25.0,
+        "verdict": "공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 0.09,
+        "score": 51.4,
+        "verdict": "중립"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-23",
+    "composite_score": 15.0,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 21.49,
+        "score": 9.5,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 0.73,
+        "score": 30.6,
+        "verdict": "공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-24",
+    "composite_score": 7.5,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 22.2,
+        "score": 4.5,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 1.42,
+        "score": 16.2,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-27",
+    "composite_score": 8.7,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 23.17,
+        "score": 4.3,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 1.21,
+        "score": 21.1,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-28",
+    "composite_score": 11.7,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 23.82,
+        "score": 4.2,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 0.79,
+        "score": 33.3,
+        "verdict": "공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-29",
+    "composite_score": 26.7,
+    "verdict": "공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 23.72,
+        "score": 8.0,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.33,
+        "score": 80.0,
+        "verdict": "극단적 탐욕"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-30",
+    "composite_score": 30.7,
+    "verdict": "공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 23.65,
+        "score": 11.5,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.45,
+        "score": 85.4,
+        "verdict": "극단적 탐욕"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-31",
+    "composite_score": 58.2,
+    "verdict": "탐욕",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 20.26,
+        "score": 44.4,
+        "verdict": "공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.82,
+        "score": 97.6,
+        "verdict": "극단적 탐욕"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-03",
+    "composite_score": 50.6,
+    "verdict": "중립",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 21.2,
+        "score": 35.7,
+        "verdict": "공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.68,
+        "score": 93.0,
+        "verdict": "극단적 탐욕"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-04",
+    "composite_score": 17.8,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 24.14,
+        "score": 3.4,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.14,
+        "score": 59.1,
+        "verdict": "탐욕"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-05",
+    "composite_score": 8.2,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 27.68,
+        "score": 3.3,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 0.97,
+        "score": 22.2,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-06",
+    "composite_score": 9.9,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 26.73,
+        "score": 6.5,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 1.1,
+        "score": 19.6,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-07",
+    "composite_score": 4.5,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 27.76,
+        "score": 3.1,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 1.68,
+        "score": 8.5,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-10",
+    "composite_score": 3.3,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 28.76,
+        "score": 3.0,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 1.88,
+        "score": 4.2,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-11",
+    "composite_score": 5.4,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 28.37,
+        "score": 5.9,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 1.9,
+        "score": 4.1,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-12",
+    "composite_score": 15.8,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 27.48,
+        "score": 14.3,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 1.39,
+        "score": 20.0,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-13",
+    "composite_score": 14.9,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 26.62,
+        "score": 19.4,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 1.96,
+        "score": 2.0,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-14",
+    "composite_score": 7.0,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 30.89,
+        "score": 2.7,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 1.44,
+        "score": 19.2,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-17",
+    "composite_score": 23.9,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 31.0,
+        "score": 2.6,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.51,
+        "score": 84.9,
+        "verdict": "극단적 탐욕"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-18",
+    "composite_score": 14.9,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 33.7,
+        "score": 2.6,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 0.38,
+        "score": 50.0,
+        "verdict": "중립"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-19",
+    "composite_score": 10.5,
+    "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
@@ -22,29 +1051,22 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 33.4,
-        "score": 100.0,
-        "verdict": "극단적 탐욕"
+        "score": 5.0,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.23,
-        "score": 100.0,
-        "verdict": "극단적 탐욕"
-      },
-      {
-        "key": "safe_haven",
-        "label": "안전자산 수요",
-        "raw": 3.58,
-        "score": 0.0,
-        "verdict": "극단적 공포"
+        "score": 72.7,
+        "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2025-11-20",
-    "composite_score": 50.0,
-    "verdict": "중립",
+    "composite_score": 31.3,
+    "verdict": "공포",
     "components": [
       {
         "key": "kospi_momentum",
@@ -64,28 +1086,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 33.77,
-        "score": 50.0,
-        "verdict": "중립"
+        "score": 2.4,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.13,
-        "score": 50.0,
-        "verdict": "중립"
+        "score": 62.5,
+        "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 5.91,
-        "score": 50.0,
-        "verdict": "중립"
+        "score": 0.0,
+        "verdict": "극단적 공포"
       }
     ]
   },
   {
     "date": "2025-11-21",
-    "composite_score": 13.8,
+    "composite_score": 6.2,
     "verdict": "극단적 공포",
     "components": [
       {
@@ -106,15 +1128,15 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 35.56,
-        "score": 33.3,
-        "verdict": "공포"
+        "score": 2.4,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.31,
-        "score": 33.3,
-        "verdict": "공포"
+        "score": 50.9,
+        "verdict": "중립"
       },
       {
         "key": "safe_haven",
@@ -127,7 +1149,7 @@
   },
   {
     "date": "2025-11-24",
-    "composite_score": 18.1,
+    "composite_score": 3.1,
     "verdict": "극단적 공포",
     "components": [
       {
@@ -148,15 +1170,15 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 34.16,
-        "score": 50.0,
-        "verdict": "중립"
+        "score": 4.7,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.47,
-        "score": 25.0,
-        "verdict": "공포"
+        "score": 15.5,
+        "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
@@ -169,7 +1191,7 @@
   },
   {
     "date": "2025-11-25",
-    "composite_score": 24.9,
+    "composite_score": 8.3,
     "verdict": "극단적 공포",
     "components": [
       {
@@ -190,28 +1212,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 34.15,
-        "score": 60.0,
-        "verdict": "탐욕"
+        "score": 6.8,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.9,
-        "score": 40.0,
+        "score": 32.2,
         "verdict": "공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": -0.81,
-        "score": 20.0,
-        "verdict": "극단적 공포"
+        "score": 25.0,
+        "verdict": "공포"
       }
     ]
   },
   {
     "date": "2025-11-26",
-    "composite_score": 44.9,
+    "composite_score": 36.5,
     "verdict": "공포",
     "components": [
       {
@@ -232,29 +1254,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 34.95,
-        "score": 33.3,
-        "verdict": "공포"
+        "score": 4.4,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.57,
-        "score": 50.0,
+        "score": 45.0,
         "verdict": "중립"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 1.94,
-        "score": 50.0,
-        "verdict": "중립"
+        "score": 60.0,
+        "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2025-11-27",
-    "composite_score": 53.0,
-    "verdict": "중립",
+    "composite_score": 44.6,
+    "verdict": "공포",
     "components": [
       {
         "key": "kospi_momentum",
@@ -274,28 +1296,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 35.06,
-        "score": 28.6,
-        "verdict": "공포"
+        "score": 4.3,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.3,
-        "score": 71.4,
-        "verdict": "탐욕"
+        "score": 54.1,
+        "verdict": "중립"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 3.36,
-        "score": 57.1,
+        "score": 66.7,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2025-11-28",
-    "composite_score": 51.2,
+    "composite_score": 45.0,
     "verdict": "중립",
     "components": [
       {
@@ -316,29 +1338,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 35.31,
-        "score": 25.0,
-        "verdict": "공포"
+        "score": 4.3,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.8,
-        "score": 100.0,
+        "score": 96.8,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 1.81,
-        "score": 37.5,
+        "score": 42.9,
         "verdict": "공포"
       }
     ]
   },
   {
     "date": "2025-12-01",
-    "composite_score": 66.7,
-    "verdict": "탐욕",
+    "composite_score": 44.7,
+    "verdict": "공포",
     "components": [
       {
         "key": "kospi_momentum",
@@ -358,29 +1380,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 33.53,
-        "score": 88.9,
-        "verdict": "극단적 탐욕"
+        "score": 18.8,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.14,
-        "score": 77.8,
-        "verdict": "극단적 탐욕"
+        "score": 66.7,
+        "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 2.7,
-        "score": 55.6,
+        "score": 62.5,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2025-12-02",
-    "composite_score": 76.5,
-    "verdict": "극단적 탐욕",
+    "composite_score": 56.1,
+    "verdict": "탐욕",
     "components": [
       {
         "key": "kospi_momentum",
@@ -400,29 +1422,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 33.54,
-        "score": 80.0,
-        "verdict": "극단적 탐욕"
+        "score": 18.4,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.32,
-        "score": 90.0,
+        "score": 78.1,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 7.98,
-        "score": 90.0,
+        "score": 88.9,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2025-12-03",
-    "composite_score": 82.6,
-    "verdict": "극단적 탐욕",
+    "composite_score": 59.3,
+    "verdict": "탐욕",
     "components": [
       {
         "key": "kospi_momentum",
@@ -442,29 +1464,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 32.16,
-        "score": 100.0,
-        "verdict": "극단적 탐욕"
+        "score": 24.0,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.17,
-        "score": 54.5,
-        "verdict": "중립"
+        "score": 55.4,
+        "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 9.88,
-        "score": 90.9,
+        "score": 90.0,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2025-12-04",
-    "composite_score": 78.0,
-    "verdict": "극단적 탐욕",
+    "composite_score": 53.6,
+    "verdict": "중립",
     "components": [
       {
         "key": "kospi_momentum",
@@ -484,29 +1506,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 32.12,
-        "score": 100.0,
-        "verdict": "극단적 탐욕"
+        "score": 25.5,
+        "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.38,
-        "score": 91.7,
+        "score": 80.3,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 7.74,
-        "score": 75.0,
+        "score": 72.7,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2025-12-05",
-    "composite_score": 78.6,
-    "verdict": "극단적 탐욕",
+    "composite_score": 57.4,
+    "verdict": "탐욕",
     "components": [
       {
         "key": "kospi_momentum",
@@ -526,29 +1548,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 31.93,
-        "score": 100.0,
-        "verdict": "극단적 탐욕"
+        "score": 26.9,
+        "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.75,
-        "score": 23.1,
-        "verdict": "극단적 공포"
+        "score": 35.8,
+        "verdict": "공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 11.32,
-        "score": 92.3,
+        "score": 91.7,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2025-12-08",
-    "composite_score": 80.9,
-    "verdict": "극단적 탐욕",
+    "composite_score": 61.0,
+    "verdict": "탐욕",
     "components": [
       {
         "key": "kospi_momentum",
@@ -568,29 +1590,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 30.52,
-        "score": 100.0,
-        "verdict": "극단적 탐욕"
+        "score": 32.1,
+        "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.42,
-        "score": 35.7,
-        "verdict": "공포"
+        "score": 45.6,
+        "verdict": "중립"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 13.96,
-        "score": 92.9,
+        "score": 92.3,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2025-12-09",
-    "composite_score": 81.9,
-    "verdict": "극단적 탐욕",
+    "composite_score": 61.3,
+    "verdict": "탐욕",
     "components": [
       {
         "key": "kospi_momentum",
@@ -610,29 +1632,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 30.43,
-        "score": 100.0,
-        "verdict": "극단적 탐욕"
+        "score": 33.3,
+        "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.11,
-        "score": 60.0,
+        "score": 60.9,
         "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 11.64,
-        "score": 86.7,
+        "score": 85.7,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2025-12-10",
-    "composite_score": 75.4,
-    "verdict": "극단적 탐욕",
+    "composite_score": 55.3,
+    "verdict": "탐욕",
     "components": [
       {
         "key": "kospi_momentum",
@@ -652,29 +1674,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 30.2,
-        "score": 100.0,
-        "verdict": "극단적 탐욕"
+        "score": 34.5,
+        "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.04,
-        "score": 56.2,
+        "score": 58.6,
         "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 9.58,
-        "score": 68.8,
+        "score": 66.7,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2025-12-11",
-    "composite_score": 64.4,
-    "verdict": "탐욕",
+    "composite_score": 44.8,
+    "verdict": "공포",
     "components": [
       {
         "key": "kospi_momentum",
@@ -694,28 +1716,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 30.2,
-        "score": 100.0,
-        "verdict": "극단적 탐욕"
+        "score": 35.7,
+        "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.27,
-        "score": 47.1,
+        "score": 52.1,
         "verdict": "중립"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 5.08,
-        "score": 47.1,
-        "verdict": "중립"
+        "score": 43.8,
+        "verdict": "공포"
       }
     ]
   },
   {
     "date": "2025-12-12",
-    "composite_score": 73.9,
+    "composite_score": 56.9,
     "verdict": "탐욕",
     "components": [
       {
@@ -736,8 +1758,8 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 26.99,
-        "score": 100.0,
-        "verdict": "극단적 탐욕"
+        "score": 45.6,
+        "verdict": "중립"
       },
       {
         "key": "fx_stress",
@@ -750,15 +1772,15 @@
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 4.89,
-        "score": 44.4,
+        "score": 41.2,
         "verdict": "공포"
       }
     ]
   },
   {
     "date": "2025-12-15",
-    "composite_score": 58.7,
-    "verdict": "탐욕",
+    "composite_score": 43.9,
+    "verdict": "공포",
     "components": [
       {
         "key": "kospi_momentum",
@@ -778,28 +1800,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 27.1,
-        "score": 94.7,
-        "verdict": "극단적 탐욕"
+        "score": 44.8,
+        "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.07,
-        "score": 52.6,
-        "verdict": "중립"
+        "score": 56.2,
+        "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 3.09,
-        "score": 31.6,
+        "score": 33.3,
         "verdict": "공포"
       }
     ]
   },
   {
     "date": "2025-12-16",
-    "composite_score": 44.8,
+    "composite_score": 29.8,
     "verdict": "공포",
     "components": [
       {
@@ -820,28 +1842,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 25.51,
-        "score": 100.0,
-        "verdict": "극단적 탐욕"
+        "score": 50.8,
+        "verdict": "중립"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.07,
-        "score": 60.0,
+        "score": 60.8,
         "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": -0.76,
-        "score": 10.0,
+        "score": 10.5,
         "verdict": "극단적 공포"
       }
     ]
   },
   {
     "date": "2025-12-17",
-    "composite_score": 42.9,
+    "composite_score": 29.9,
     "verdict": "공포",
     "components": [
       {
@@ -862,29 +1884,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 25.82,
-        "score": 95.2,
-        "verdict": "극단적 탐욕"
+        "score": 50.0,
+        "verdict": "중립"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.26,
-        "score": 42.9,
-        "verdict": "공포"
+        "score": 50.7,
+        "verdict": "중립"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 0.76,
-        "score": 14.3,
+        "score": 15.0,
         "verdict": "극단적 공포"
       }
     ]
   },
   {
     "date": "2025-12-18",
-    "composite_score": 35.3,
-    "verdict": "공포",
+    "composite_score": 23.2,
+    "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
@@ -904,14 +1926,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 25.63,
-        "score": 95.5,
-        "verdict": "극단적 탐욕"
+        "score": 50.8,
+        "verdict": "중립"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.34,
-        "score": 27.3,
+        "score": 43.4,
         "verdict": "공포"
       },
       {
@@ -925,8 +1947,8 @@
   },
   {
     "date": "2025-12-19",
-    "composite_score": 45.0,
-    "verdict": "중립",
+    "composite_score": 36.0,
+    "verdict": "공포",
     "components": [
       {
         "key": "kospi_momentum",
@@ -946,29 +1968,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 21.29,
-        "score": 100.0,
-        "verdict": "극단적 탐욕"
+        "score": 69.4,
+        "verdict": "탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.24,
-        "score": 47.8,
+        "score": 51.9,
         "verdict": "중립"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": -2.09,
-        "score": 4.3,
+        "score": 4.5,
         "verdict": "극단적 공포"
       }
     ]
   },
   {
     "date": "2025-12-22",
-    "composite_score": 52.2,
-    "verdict": "중립",
+    "composite_score": 41.3,
+    "verdict": "공포",
     "components": [
       {
         "key": "kospi_momentum",
@@ -988,29 +2010,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 22.24,
-        "score": 95.8,
-        "verdict": "극단적 탐욕"
+        "score": 60.3,
+        "verdict": "탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.05,
-        "score": 58.3,
+        "score": 57.7,
         "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": -0.44,
-        "score": 20.8,
+        "score": 21.7,
         "verdict": "극단적 공포"
       }
     ]
   },
   {
     "date": "2025-12-23",
-    "composite_score": 45.2,
-    "verdict": "중립",
+    "composite_score": 37.2,
+    "verdict": "공포",
     "components": [
       {
         "key": "kospi_momentum",
@@ -1030,28 +2052,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 22.25,
-        "score": 92.0,
-        "verdict": "극단적 탐욕"
+        "score": 59.4,
+        "verdict": "탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.64,
-        "score": 16.0,
-        "verdict": "극단적 공포"
+        "score": 34.2,
+        "verdict": "공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": -0.47,
-        "score": 20.0,
+        "score": 20.8,
         "verdict": "극단적 공포"
       }
     ]
   },
   {
     "date": "2025-12-24",
-    "composite_score": 42.9,
+    "composite_score": 37.0,
     "verdict": "공포",
     "components": [
       {
@@ -1072,28 +2094,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 20.55,
-        "score": 100.0,
+        "score": 75.4,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.47,
-        "score": 23.1,
-        "verdict": "극단적 공포"
+        "score": 38.7,
+        "verdict": "공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": -1.72,
-        "score": 7.7,
+        "score": 8.0,
         "verdict": "극단적 공포"
       }
     ]
   },
   {
     "date": "2025-12-26",
-    "composite_score": 54.7,
+    "composite_score": 47.3,
     "verdict": "중립",
     "components": [
       {
@@ -1114,7 +2136,7 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 20.52,
-        "score": 100.0,
+        "score": 75.8,
         "verdict": "극단적 탐욕"
       },
       {
@@ -1128,14 +2150,14 @@
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": -2.23,
-        "score": 3.7,
+        "score": 3.8,
         "verdict": "극단적 공포"
       }
     ]
   },
   {
     "date": "2025-12-29",
-    "composite_score": 72.4,
+    "composite_score": 66.3,
     "verdict": "탐욕",
     "components": [
       {
@@ -1156,8 +2178,8 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 20.65,
-        "score": 92.9,
-        "verdict": "극단적 탐욕"
+        "score": 73.1,
+        "verdict": "탐욕"
       },
       {
         "key": "fx_stress",
@@ -1170,14 +2192,14 @@
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 10.08,
-        "score": 85.7,
+        "score": 85.2,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2025-12-30",
-    "composite_score": 69.1,
+    "composite_score": 63.0,
     "verdict": "탐욕",
     "components": [
       {
@@ -1198,8 +2220,8 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 20.65,
-        "score": 93.1,
-        "verdict": "극단적 탐욕"
+        "score": 73.5,
+        "verdict": "탐욕"
       },
       {
         "key": "fx_stress",
@@ -1212,15 +2234,15 @@
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 8.45,
-        "score": 75.9,
-        "verdict": "극단적 탐욕"
+        "score": 75.0,
+        "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-01-02",
-    "composite_score": 79.4,
-    "verdict": "극단적 탐욕",
+    "composite_score": 74.4,
+    "verdict": "탐욕",
     "components": [
       {
         "key": "kospi_momentum",
@@ -1240,28 +2262,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 21.03,
-        "score": 86.7,
-        "verdict": "극단적 탐욕"
+        "score": 69.6,
+        "verdict": "탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -2.25,
-        "score": 96.7,
+        "score": 98.8,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 13.51,
-        "score": 93.3,
+        "score": 93.1,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-01-05",
-    "composite_score": 88.4,
+    "composite_score": 82.1,
     "verdict": "극단적 탐욕",
     "components": [
       {
@@ -1282,29 +2304,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 23.5,
-        "score": 74.2,
-        "verdict": "탐욕"
+        "score": 52.9,
+        "verdict": "중립"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -2.58,
-        "score": 96.8,
+        "score": 98.8,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 14.26,
-        "score": 96.8,
+        "score": 96.7,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-01-06",
-    "composite_score": 79.4,
-    "verdict": "극단적 탐욕",
+    "composite_score": 73.4,
+    "verdict": "탐욕",
     "components": [
       {
         "key": "kospi_momentum",
@@ -1324,28 +2346,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 23.61,
-        "score": 71.9,
-        "verdict": "탐욕"
+        "score": 52.1,
+        "verdict": "중립"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.07,
-        "score": 59.4,
+        "score": 60.5,
         "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 10.77,
-        "score": 81.2,
+        "score": 80.6,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-01-07",
-    "composite_score": 74.1,
+    "composite_score": 68.4,
     "verdict": "탐욕",
     "components": [
       {
@@ -1366,28 +2388,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 23.2,
-        "score": 75.8,
-        "verdict": "극단적 탐욕"
+        "score": 54.2,
+        "verdict": "중립"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.25,
-        "score": 39.4,
-        "verdict": "공포"
+        "score": 48.3,
+        "verdict": "중립"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 14.14,
-        "score": 93.9,
+        "score": 93.8,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-01-08",
-    "composite_score": 69.6,
+    "composite_score": 65.2,
     "verdict": "탐욕",
     "components": [
       {
@@ -1408,28 +2430,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 23.06,
-        "score": 76.5,
-        "verdict": "극단적 탐욕"
+        "score": 56.2,
+        "verdict": "탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.8,
-        "score": 8.8,
-        "verdict": "극단적 공포"
+        "score": 26.1,
+        "verdict": "공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 18.7,
-        "score": 97.1,
+        "score": 97.0,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-01-09",
-    "composite_score": 72.4,
+    "composite_score": 67.7,
     "verdict": "탐욕",
     "components": [
       {
@@ -1450,15 +2472,15 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 22.91,
-        "score": 77.1,
-        "verdict": "극단적 탐욕"
+        "score": 56.8,
+        "verdict": "탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.45,
-        "score": 22.9,
-        "verdict": "극단적 공포"
+        "score": 37.1,
+        "verdict": "공포"
       },
       {
         "key": "safe_haven",
@@ -1471,7 +2493,7 @@
   },
   {
     "date": "2026-01-12",
-    "composite_score": 71.2,
+    "composite_score": 66.4,
     "verdict": "탐욕",
     "components": [
       {
@@ -1492,28 +2514,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 22.78,
-        "score": 77.8,
-        "verdict": "극단적 탐욕"
+        "score": 57.3,
+        "verdict": "탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.02,
-        "score": 5.6,
+        "score": 20.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 16.22,
-        "score": 91.7,
+        "score": 91.4,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-01-13",
-    "composite_score": 70.5,
+    "composite_score": 65.3,
     "verdict": "탐욕",
     "components": [
       {
@@ -1534,28 +2556,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 22.57,
-        "score": 78.4,
-        "verdict": "극단적 탐욕"
+        "score": 57.9,
+        "verdict": "탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.34,
-        "score": 5.4,
+        "score": 15.4,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 17.97,
-        "score": 91.9,
+        "score": 91.7,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-01-14",
-    "composite_score": 67.3,
+    "composite_score": 60.9,
     "verdict": "탐욕",
     "components": [
       {
@@ -1576,29 +2598,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 22.41,
-        "score": 78.9,
-        "verdict": "극단적 탐욕"
+        "score": 58.4,
+        "verdict": "탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.94,
-        "score": 2.6,
+        "score": 2.2,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 15.57,
-        "score": 86.8,
+        "score": 86.5,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-01-15",
-    "composite_score": 76.0,
-    "verdict": "극단적 탐욕",
+    "composite_score": 71.4,
+    "verdict": "탐욕",
     "components": [
       {
         "key": "kospi_momentum",
@@ -1618,29 +2640,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 20.61,
-        "score": 94.9,
+        "score": 76.9,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.16,
-        "score": 10.3,
+        "score": 19.4,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 19.31,
-        "score": 94.9,
+        "score": 94.7,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-01-16",
-    "composite_score": 77.5,
-    "verdict": "극단적 탐욕",
+    "composite_score": 74.5,
+    "verdict": "탐욕",
     "components": [
       {
         "key": "kospi_momentum",
@@ -1660,28 +2682,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 17.15,
-        "score": 100.0,
+        "score": 87.3,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.29,
-        "score": 10.0,
+        "score": 18.1,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 14.34,
-        "score": 82.5,
+        "score": 82.1,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-01-19",
-    "composite_score": 81.8,
+    "composite_score": 78.5,
     "verdict": "극단적 탐욕",
     "components": [
       {
@@ -1702,28 +2724,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 17.12,
-        "score": 100.0,
+        "score": 87.5,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.12,
-        "score": 14.6,
+        "score": 21.1,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 12.84,
-        "score": 70.7,
+        "score": 70.0,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-01-20",
-    "composite_score": 87.0,
+    "composite_score": 85.2,
     "verdict": "극단적 탐욕",
     "components": [
       {
@@ -1744,28 +2766,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 15.29,
-        "score": 100.0,
+        "score": 92.6,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.45,
-        "score": 35.7,
+        "score": 41.7,
         "verdict": "공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 11.68,
-        "score": 69.0,
+        "score": 68.3,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-01-21",
-    "composite_score": 72.0,
+    "composite_score": 70.6,
     "verdict": "탐욕",
     "components": [
       {
@@ -1786,28 +2808,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 15.35,
-        "score": 97.7,
+        "score": 91.5,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.32,
-        "score": 41.9,
-        "verdict": "공포"
+        "score": 47.4,
+        "verdict": "중립"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 7.24,
-        "score": 46.5,
+        "score": 45.2,
         "verdict": "중립"
       }
     ]
   },
   {
     "date": "2026-01-22",
-    "composite_score": 78.5,
+    "composite_score": 76.1,
     "verdict": "극단적 탐욕",
     "components": [
       {
@@ -1828,28 +2850,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 14.78,
-        "score": 100.0,
+        "score": 92.8,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.13,
-        "score": 59.1,
+        "score": 57.1,
         "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": -0.16,
-        "score": 20.5,
+        "score": 20.9,
         "verdict": "극단적 공포"
       }
     ]
   },
   {
     "date": "2026-01-23",
-    "composite_score": 87.9,
+    "composite_score": 85.3,
     "verdict": "극단적 탐욕",
     "components": [
       {
@@ -1870,28 +2892,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 14.6,
-        "score": 100.0,
+        "score": 92.9,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.38,
-        "score": 86.7,
+        "score": 81.8,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": -1.04,
-        "score": 11.1,
+        "score": 11.4,
         "verdict": "극단적 공포"
       }
     ]
   },
   {
     "date": "2026-01-26",
-    "composite_score": 80.9,
+    "composite_score": 80.6,
     "verdict": "극단적 탐욕",
     "components": [
       {
@@ -1912,14 +2934,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 15.38,
-        "score": 91.3,
+        "score": 88.2,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -1.82,
-        "score": 89.1,
+        "score": 95.0,
         "verdict": "극단적 탐욕"
       },
       {
@@ -1933,7 +2955,7 @@
   },
   {
     "date": "2026-01-27",
-    "composite_score": 84.5,
+    "composite_score": 83.2,
     "verdict": "극단적 탐욕",
     "components": [
       {
@@ -1954,14 +2976,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 16.5,
-        "score": 89.4,
+        "score": 83.7,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -2.08,
-        "score": 91.5,
+        "score": 96.0,
         "verdict": "극단적 탐욕"
       },
       {
@@ -1975,7 +2997,7 @@
   },
   {
     "date": "2026-01-28",
-    "composite_score": 85.0,
+    "composite_score": 83.3,
     "verdict": "극단적 탐욕",
     "components": [
       {
@@ -1996,7 +3018,7 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 16.13,
-        "score": 89.6,
+        "score": 83.9,
         "verdict": "극단적 탐욕"
       },
       {
@@ -2017,7 +3039,7 @@
   },
   {
     "date": "2026-01-29",
-    "composite_score": 84.5,
+    "composite_score": 84.1,
     "verdict": "극단적 탐욕",
     "components": [
       {
@@ -2038,14 +3060,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 15.54,
-        "score": 89.8,
+        "score": 87.5,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -2.43,
-        "score": 93.9,
+        "score": 97.1,
         "verdict": "극단적 탐욕"
       },
       {
@@ -2059,7 +3081,7 @@
   },
   {
     "date": "2026-01-30",
-    "composite_score": 91.0,
+    "composite_score": 89.9,
     "verdict": "극단적 탐욕",
     "components": [
       {
@@ -2080,28 +3102,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 15.29,
-        "score": 96.0,
+        "score": 91.0,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -2.36,
-        "score": 92.0,
+        "score": 96.2,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 7.34,
-        "score": 54.0,
+        "score": 53.1,
         "verdict": "중립"
       }
     ]
   },
   {
     "date": "2026-02-02",
-    "composite_score": 62.1,
+    "composite_score": 60.1,
     "verdict": "탐욕",
     "components": [
       {
@@ -2122,28 +3144,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 25.35,
-        "score": 45.1,
-        "verdict": "중립"
+        "score": 36.7,
+        "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.28,
-        "score": 41.2,
-        "verdict": "공포"
+        "score": 47.6,
+        "verdict": "중립"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 7.47,
-        "score": 54.9,
+        "score": 54.0,
         "verdict": "중립"
       }
     ]
   },
   {
     "date": "2026-02-03",
-    "composite_score": 60.0,
+    "composite_score": 58.5,
     "verdict": "탐욕",
     "components": [
       {
@@ -2164,28 +3186,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 33.23,
-        "score": 21.2,
+        "score": 13.2,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.8,
-        "score": 19.2,
-        "verdict": "극단적 공포"
+        "score": 28.3,
+        "verdict": "공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 8.12,
-        "score": 59.6,
+        "score": 58.8,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-02-04",
-    "composite_score": 61.3,
+    "composite_score": 59.7,
     "verdict": "탐욕",
     "components": [
       {
@@ -2206,28 +3228,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 33.33,
-        "score": 20.8,
+        "score": 13.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.99,
-        "score": 15.1,
+        "score": 22.4,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 12.82,
-        "score": 75.5,
-        "verdict": "극단적 탐욕"
+        "score": 75.0,
+        "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-02-05",
-    "composite_score": 47.5,
+    "composite_score": 47.1,
     "verdict": "중립",
     "components": [
       {
@@ -2248,28 +3270,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 37.33,
-        "score": 1.9,
+        "score": 1.1,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 2.16,
-        "score": 1.9,
+        "score": 0.9,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 8.54,
-        "score": 61.1,
+        "score": 60.4,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-02-06",
-    "composite_score": 41.2,
+    "composite_score": 41.0,
     "verdict": "공포",
     "components": [
       {
@@ -2290,28 +3312,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 38.05,
-        "score": 1.8,
+        "score": 1.1,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 2.93,
-        "score": 1.8,
+        "score": 0.9,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 3.37,
-        "score": 40.0,
+        "score": 40.7,
         "verdict": "공포"
       }
     ]
   },
   {
     "date": "2026-02-09",
-    "composite_score": 51.0,
+    "composite_score": 51.3,
     "verdict": "중립",
     "components": [
       {
@@ -2332,28 +3354,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 40.03,
-        "score": 1.8,
+        "score": 1.1,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.94,
-        "score": 19.6,
-        "verdict": "극단적 공포"
+        "score": 25.5,
+        "verdict": "공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 7.52,
-        "score": 53.6,
+        "score": 52.7,
         "verdict": "중립"
       }
     ]
   },
   {
     "date": "2026-02-10",
-    "composite_score": 51.4,
+    "composite_score": 51.3,
     "verdict": "중립",
     "components": [
       {
@@ -2374,28 +3396,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 39.98,
-        "score": 3.5,
+        "score": 2.1,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.41,
-        "score": 38.6,
+        "score": 43.2,
         "verdict": "공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 7.61,
-        "score": 54.4,
+        "score": 53.6,
         "verdict": "중립"
       }
     ]
   },
   {
     "date": "2026-02-11",
-    "composite_score": 51.6,
+    "composite_score": 51.8,
     "verdict": "중립",
     "components": [
       {
@@ -2416,28 +3438,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 40.0,
-        "score": 3.4,
+        "score": 2.1,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.6,
-        "score": 29.3,
+        "score": 35.7,
         "verdict": "공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 9.4,
-        "score": 63.8,
+        "score": 63.2,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-02-12",
-    "composite_score": 62.0,
+    "composite_score": 62.7,
     "verdict": "탐욕",
     "components": [
       {
@@ -2458,28 +3480,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 40.83,
-        "score": 1.7,
+        "score": 1.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -1.09,
-        "score": 83.1,
+        "score": 91.2,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 14.02,
-        "score": 83.1,
+        "score": 82.8,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-02-13",
-    "composite_score": 60.9,
+    "composite_score": 61.4,
     "verdict": "탐욕",
     "components": [
       {
@@ -2500,28 +3522,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 40.97,
-        "score": 1.7,
+        "score": 1.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -2.02,
-        "score": 86.7,
+        "score": 93.0,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 15.64,
-        "score": 90.0,
+        "score": 89.8,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-02-19",
-    "composite_score": 65.1,
+    "composite_score": 65.8,
     "verdict": "탐욕",
     "components": [
       {
@@ -2542,28 +3564,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 41.8,
-        "score": 1.6,
+        "score": 1.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -1.52,
-        "score": 82.0,
+        "score": 90.4,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 22.45,
-        "score": 98.4,
+        "score": 98.3,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-02-20",
-    "composite_score": 63.7,
+    "composite_score": 64.5,
     "verdict": "탐욕",
     "components": [
       {
@@ -2584,28 +3606,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 41.92,
-        "score": 1.6,
+        "score": 1.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.74,
-        "score": 77.4,
+        "score": 86.2,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 20.32,
-        "score": 96.8,
+        "score": 96.7,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-02-23",
-    "composite_score": 63.2,
+    "composite_score": 63.8,
     "verdict": "탐욕",
     "components": [
       {
@@ -2626,14 +3648,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 41.91,
-        "score": 3.2,
+        "score": 2.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.82,
-        "score": 79.4,
+        "score": 88.0,
         "verdict": "극단적 탐욕"
       },
       {
@@ -2647,7 +3669,7 @@
   },
   {
     "date": "2026-02-24",
-    "composite_score": 62.7,
+    "composite_score": 62.3,
     "verdict": "탐욕",
     "components": [
       {
@@ -2668,14 +3690,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 42.13,
-        "score": 1.6,
+        "score": 1.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.14,
-        "score": 68.8,
+        "score": 66.9,
         "verdict": "탐욕"
       },
       {
@@ -2689,7 +3711,7 @@
   },
   {
     "date": "2026-02-25",
-    "composite_score": 60.7,
+    "composite_score": 60.6,
     "verdict": "탐욕",
     "components": [
       {
@@ -2710,28 +3732,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 42.26,
-        "score": 1.5,
+        "score": 1.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.06,
-        "score": 58.5,
+        "score": 59.7,
         "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 31.92,
-        "score": 98.5,
+        "score": 98.4,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-02-26",
-    "composite_score": 64.7,
+    "composite_score": 65.4,
     "verdict": "탐욕",
     "components": [
       {
@@ -2752,14 +3774,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 42.67,
-        "score": 1.5,
+        "score": 1.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.92,
-        "score": 80.3,
+        "score": 88.3,
         "verdict": "극단적 탐욕"
       },
       {
@@ -2773,7 +3795,7 @@
   },
   {
     "date": "2026-02-27",
-    "composite_score": 63.8,
+    "composite_score": 64.4,
     "verdict": "탐욕",
     "components": [
       {
@@ -2794,14 +3816,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 42.98,
-        "score": 1.5,
+        "score": 0.9,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -1.07,
-        "score": 80.6,
+        "score": 88.4,
         "verdict": "극단적 탐욕"
       },
       {
@@ -2815,7 +3837,7 @@
   },
   {
     "date": "2026-03-03",
-    "composite_score": 48.2,
+    "composite_score": 48.8,
     "verdict": "중립",
     "components": [
       {
@@ -2836,28 +3858,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 52.48,
-        "score": 1.5,
+        "score": 0.9,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.61,
-        "score": 25.0,
+        "score": 32.8,
         "verdict": "공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 26.43,
-        "score": 92.6,
+        "score": 92.5,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-03-04",
-    "composite_score": 11.4,
+    "composite_score": 11.1,
     "verdict": "극단적 공포",
     "components": [
       {
@@ -2878,28 +3900,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 70.8,
-        "score": 1.4,
+        "score": 0.9,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 2.83,
-        "score": 2.9,
+        "score": 1.6,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 9.15,
-        "score": 53.6,
+        "score": 52.9,
         "verdict": "중립"
       }
     ]
   },
   {
     "date": "2026-03-05",
-    "composite_score": 39.5,
+    "composite_score": 39.8,
     "verdict": "공포",
     "components": [
       {
@@ -2920,28 +3942,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 78.15,
-        "score": 1.4,
+        "score": 0.9,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.44,
-        "score": 8.6,
+        "score": 12.9,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 18.79,
-        "score": 84.3,
+        "score": 84.1,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-03-06",
-    "composite_score": 39.1,
+    "composite_score": 38.7,
     "verdict": "공포",
     "components": [
       {
@@ -2962,28 +3984,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 75.19,
-        "score": 2.8,
+        "score": 1.8,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 3.68,
-        "score": 1.4,
+        "score": 0.8,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 15.82,
-        "score": 78.9,
+        "score": 78.6,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-03-09",
-    "composite_score": 28.1,
+    "composite_score": 27.6,
     "verdict": "공포",
     "components": [
       {
@@ -3004,28 +4026,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 75.31,
-        "score": 2.8,
+        "score": 1.8,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 3.6,
-        "score": 2.8,
+        "score": 1.6,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 9.48,
-        "score": 54.2,
+        "score": 53.5,
         "verdict": "중립"
       }
     ]
   },
   {
     "date": "2026-03-10",
-    "composite_score": 36.5,
+    "composite_score": 36.7,
     "verdict": "공포",
     "components": [
       {
@@ -3046,28 +4068,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 77.42,
-        "score": 2.7,
+        "score": 1.8,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.84,
-        "score": 23.3,
-        "verdict": "극단적 공포"
+        "score": 28.3,
+        "verdict": "공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 10.8,
-        "score": 60.3,
+        "score": 59.7,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-03-11",
-    "composite_score": 43.9,
+    "composite_score": 44.3,
     "verdict": "공포",
     "components": [
       {
@@ -3088,28 +4110,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 75.98,
-        "score": 4.1,
+        "score": 2.7,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.69,
-        "score": 75.7,
+        "score": 84.4,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 11.61,
-        "score": 62.2,
+        "score": 61.6,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-03-12",
-    "composite_score": 37.2,
+    "composite_score": 37.1,
     "verdict": "공포",
     "components": [
       {
@@ -3130,28 +4152,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 75.74,
-        "score": 5.3,
+        "score": 3.5,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.0,
-        "score": 18.7,
+        "score": 23.3,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 13.13,
-        "score": 68.0,
+        "score": 67.6,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-03-13",
-    "composite_score": 43.3,
+    "composite_score": 42.9,
     "verdict": "공포",
     "components": [
       {
@@ -3172,28 +4194,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 74.9,
-        "score": 9.2,
+        "score": 6.1,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.6,
-        "score": 75.0,
-        "verdict": "탐욕"
+        "score": 80.8,
+        "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 12.3,
-        "score": 64.5,
+        "score": 64.0,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-03-16",
-    "composite_score": 37.6,
+    "composite_score": 37.2,
     "verdict": "공포",
     "components": [
       {
@@ -3214,28 +4236,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 74.98,
-        "score": 9.1,
+        "score": 6.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.2,
-        "score": 14.3,
+        "score": 19.1,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 18.48,
-        "score": 83.1,
+        "score": 82.9,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-03-17",
-    "composite_score": 37.7,
+    "composite_score": 36.9,
     "verdict": "공포",
     "components": [
       {
@@ -3256,21 +4278,21 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 75.1,
-        "score": 9.0,
+        "score": 6.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.67,
-        "score": 9.0,
+        "score": 10.6,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 19.06,
-        "score": 85.9,
+        "score": 85.7,
         "verdict": "극단적 탐욕"
       }
     ]
@@ -3298,14 +4320,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 76.29,
-        "score": 3.8,
+        "score": 2.5,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.82,
-        "score": 26.6,
+        "score": 30.1,
         "verdict": "공포"
       },
       {
@@ -3319,7 +4341,7 @@
   },
   {
     "date": "2026-03-19",
-    "composite_score": 39.4,
+    "composite_score": 38.6,
     "verdict": "공포",
     "components": [
       {
@@ -3340,28 +4362,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 77.07,
-        "score": 3.8,
+        "score": 2.5,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 2.03,
-        "score": 7.5,
+        "score": 4.5,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 37.23,
-        "score": 98.8,
+        "score": 98.7,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-03-20",
-    "composite_score": 40.9,
+    "composite_score": 40.7,
     "verdict": "공포",
     "components": [
       {
@@ -3382,14 +4404,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 76.35,
-        "score": 4.9,
+        "score": 3.3,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.31,
-        "score": 14.8,
+        "score": 17.8,
         "verdict": "극단적 공포"
       },
       {
@@ -3403,7 +4425,7 @@
   },
   {
     "date": "2026-03-23",
-    "composite_score": 24.0,
+    "composite_score": 23.9,
     "verdict": "극단적 공포",
     "components": [
       {
@@ -3424,14 +4446,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 79.54,
-        "score": 1.2,
+        "score": 0.8,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.16,
-        "score": 56.1,
+        "score": 55.9,
         "verdict": "탐욕"
       },
       {
@@ -3445,7 +4467,7 @@
   },
   {
     "date": "2026-03-24",
-    "composite_score": 33.4,
+    "composite_score": 33.3,
     "verdict": "공포",
     "components": [
       {
@@ -3466,14 +4488,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 80.22,
-        "score": 1.2,
+        "score": 0.8,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.24,
-        "score": 72.3,
+        "score": 73.0,
         "verdict": "탐욕"
       },
       {
@@ -3487,7 +4509,7 @@
   },
   {
     "date": "2026-03-25",
-    "composite_score": 36.1,
+    "composite_score": 36.2,
     "verdict": "공포",
     "components": [
       {
@@ -3508,14 +4530,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 80.04,
-        "score": 2.4,
+        "score": 1.6,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.84,
-        "score": 27.4,
+        "score": 30.4,
         "verdict": "공포"
       },
       {
@@ -3529,7 +4551,7 @@
   },
   {
     "date": "2026-03-26",
-    "composite_score": 30.3,
+    "composite_score": 30.2,
     "verdict": "공포",
     "components": [
       {
@@ -3550,28 +4572,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 80.27,
-        "score": 1.2,
+        "score": 0.8,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.28,
-        "score": 72.9,
+        "score": 73.4,
         "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 35.02,
-        "score": 94.1,
+        "score": 94.0,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-03-27",
-    "composite_score": 24.7,
+    "composite_score": 24.5,
     "verdict": "극단적 공포",
     "components": [
       {
@@ -3592,28 +4614,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 78.77,
-        "score": 5.8,
+        "score": 4.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.24,
-        "score": 16.3,
+        "score": 19.3,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 32.12,
-        "score": 90.7,
+        "score": 90.6,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-03-30",
-    "composite_score": 19.2,
+    "composite_score": 18.7,
     "verdict": "극단적 공포",
     "components": [
       {
@@ -3634,28 +4656,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 79.19,
-        "score": 5.7,
+        "score": 4.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.19,
-        "score": 54.0,
+        "score": 53.9,
         "verdict": "중립"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 27.86,
-        "score": 85.1,
+        "score": 84.9,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-03-31",
-    "composite_score": 10.5,
+    "composite_score": 9.1,
     "verdict": "극단적 공포",
     "components": [
       {
@@ -3676,29 +4698,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 76.4,
-        "score": 11.4,
+        "score": 7.9,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 2.07,
-        "score": 6.8,
+        "score": 4.2,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 12.25,
-        "score": 55.7,
+        "score": 55.2,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-04-01",
-    "composite_score": 25.5,
-    "verdict": "공포",
+    "composite_score": 23.5,
+    "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
@@ -3718,28 +4740,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 67.86,
-        "score": 23.6,
+        "score": 16.4,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.4,
-        "score": 43.8,
-        "verdict": "공포"
+        "score": 45.5,
+        "verdict": "중립"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 20.55,
-        "score": 80.9,
+        "score": 80.7,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-04-02",
-    "composite_score": 18.2,
+    "composite_score": 16.1,
     "verdict": "극단적 공포",
     "components": [
       {
@@ -3760,28 +4782,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 61.39,
-        "score": 24.4,
+        "score": 17.1,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.74,
-        "score": 33.3,
+        "score": 35.4,
         "verdict": "공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 13.64,
-        "score": 61.1,
+        "score": 60.7,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-04-03",
-    "composite_score": 23.0,
+    "composite_score": 20.6,
     "verdict": "극단적 공포",
     "components": [
       {
@@ -3802,28 +4824,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 62.32,
-        "score": 24.2,
+        "score": 16.9,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.06,
-        "score": 60.4,
+        "score": 59.3,
         "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 15.8,
-        "score": 69.2,
+        "score": 68.9,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-04-06",
-    "composite_score": 23.1,
+    "composite_score": 20.6,
     "verdict": "극단적 공포",
     "components": [
       {
@@ -3844,29 +4866,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 58.37,
-        "score": 26.1,
-        "verdict": "공포"
+        "score": 18.3,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.15,
-        "score": 57.6,
+        "score": 56.8,
         "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 16.54,
-        "score": 71.7,
+        "score": 71.4,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-04-07",
-    "composite_score": 26.0,
-    "verdict": "공포",
+    "composite_score": 23.9,
+    "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
@@ -3886,28 +4908,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 55.36,
-        "score": 26.9,
-        "verdict": "공포"
+        "score": 18.9,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.55,
-        "score": 78.5,
+        "score": 82.3,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 16.07,
-        "score": 69.9,
+        "score": 69.6,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-04-08",
-    "composite_score": 38.2,
+    "composite_score": 35.9,
     "verdict": "공포",
     "components": [
       {
@@ -3928,28 +4950,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 60.1,
-        "score": 25.5,
-        "verdict": "공포"
+        "score": 18.0,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.28,
-        "score": 74.5,
+        "score": 74.3,
         "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 22.26,
-        "score": 81.9,
+        "score": 81.7,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-04-09",
-    "composite_score": 35.9,
+    "composite_score": 33.8,
     "verdict": "공포",
     "components": [
       {
@@ -3970,28 +4992,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 60.41,
-        "score": 25.3,
-        "verdict": "공포"
+        "score": 17.9,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -2.28,
-        "score": 94.7,
+        "score": 96.6,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 19.26,
-        "score": 76.8,
+        "score": 76.6,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-04-10",
-    "composite_score": 39.7,
+    "composite_score": 37.5,
     "verdict": "공포",
     "components": [
       {
@@ -4012,28 +5034,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 60.12,
-        "score": 26.0,
-        "verdict": "공포"
+        "score": 18.5,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -2.38,
-        "score": 95.8,
+        "score": 97.3,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 23.26,
-        "score": 83.3,
+        "score": 83.2,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-04-13",
-    "composite_score": 35.8,
+    "composite_score": 34.0,
     "verdict": "공포",
     "components": [
       {
@@ -4054,28 +5076,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 60.18,
-        "score": 25.8,
-        "verdict": "공포"
+        "score": 18.4,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -1.79,
-        "score": 86.6,
+        "score": 91.4,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 20.44,
-        "score": 79.4,
+        "score": 79.2,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-04-14",
-    "composite_score": 41.5,
+    "composite_score": 39.7,
     "verdict": "공포",
     "components": [
       {
@@ -4096,28 +5118,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 60.64,
-        "score": 24.5,
+        "score": 17.5,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -2.06,
-        "score": 89.8,
+        "score": 93.4,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 22.06,
-        "score": 80.6,
+        "score": 80.4,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-04-15",
-    "composite_score": 47.8,
+    "composite_score": 45.7,
     "verdict": "중립",
     "components": [
       {
@@ -4138,28 +5160,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 58.54,
-        "score": 29.3,
-        "verdict": "공포"
+        "score": 21.0,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -1.98,
-        "score": 87.9,
+        "score": 92.2,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 22.99,
-        "score": 82.8,
+        "score": 82.7,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-04-16",
-    "composite_score": 50.9,
+    "composite_score": 48.4,
     "verdict": "중립",
     "components": [
       {
@@ -4180,29 +5202,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 57.92,
-        "score": 31.0,
-        "verdict": "공포"
+        "score": 22.3,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.24,
-        "score": 69.0,
+        "score": 70.8,
         "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 24.32,
-        "score": 85.0,
+        "score": 84.8,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-04-17",
-    "composite_score": 45.0,
-    "verdict": "중립",
+    "composite_score": 42.7,
+    "verdict": "공포",
     "components": [
       {
         "key": "kospi_momentum",
@@ -4222,28 +5244,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 58.01,
-        "score": 30.7,
-        "verdict": "공포"
+        "score": 22.1,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.31,
-        "score": 43.6,
-        "verdict": "공포"
+        "score": 46.5,
+        "verdict": "중립"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 20.38,
-        "score": 76.2,
+        "score": 76.0,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-04-20",
-    "composite_score": 52.1,
+    "composite_score": 49.8,
     "verdict": "중립",
     "components": [
       {
@@ -4264,29 +5286,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 51.68,
-        "score": 34.3,
-        "verdict": "공포"
+        "score": 24.8,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -1.15,
-        "score": 83.3,
+        "score": 89.1,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 26.3,
-        "score": 85.3,
+        "score": 85.1,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-04-21",
-    "composite_score": 55.6,
-    "verdict": "탐욕",
+    "composite_score": 53.0,
+    "verdict": "중립",
     "components": [
       {
         "key": "kospi_momentum",
@@ -4306,15 +5328,15 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 51.67,
-        "score": 35.0,
+        "score": 25.4,
         "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.51,
-        "score": 73.8,
-        "verdict": "탐욕"
+        "score": 77.7,
+        "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
@@ -4327,7 +5349,7 @@
   },
   {
     "date": "2026-04-22",
-    "composite_score": 49.4,
+    "composite_score": 46.7,
     "verdict": "중립",
     "components": [
       {
@@ -4348,28 +5370,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 51.57,
-        "score": 35.6,
+        "score": 25.9,
         "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.11,
-        "score": 18.3,
+        "score": 20.9,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 33.18,
-        "score": 92.3,
+        "score": 92.2,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-04-23",
-    "composite_score": 51.8,
+    "composite_score": 49.0,
     "verdict": "중립",
     "components": [
       {
@@ -4390,14 +5412,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 49.45,
-        "score": 36.2,
+        "score": 26.4,
         "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.26,
-        "score": 47.6,
+        "score": 49.7,
         "verdict": "중립"
       },
       {
@@ -4411,7 +5433,7 @@
   },
   {
     "date": "2026-04-24",
-    "composite_score": 58.9,
+    "composite_score": 55.9,
     "verdict": "탐욕",
     "components": [
       {
@@ -4432,28 +5454,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 49.34,
-        "score": 36.8,
+        "score": 26.9,
         "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.14,
-        "score": 53.8,
+        "score": 54.4,
         "verdict": "중립"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 37.87,
-        "score": 99.1,
+        "score": 99.0,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-04-27",
-    "composite_score": 59.3,
+    "composite_score": 56.7,
     "verdict": "탐욕",
     "components": [
       {
@@ -4474,14 +5496,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 47.3,
-        "score": 37.4,
+        "score": 27.4,
         "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.65,
-        "score": 29.9,
+        "score": 34.2,
         "verdict": "공포"
       },
       {
@@ -4495,7 +5517,7 @@
   },
   {
     "date": "2026-04-28",
-    "composite_score": 60.8,
+    "composite_score": 57.8,
     "verdict": "탐욕",
     "components": [
       {
@@ -4516,14 +5538,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 42.79,
-        "score": 38.9,
+        "score": 28.6,
         "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.25,
-        "score": 49.1,
+        "score": 50.6,
         "verdict": "중립"
       },
       {
@@ -4537,7 +5559,7 @@
   },
   {
     "date": "2026-04-29",
-    "composite_score": 70.6,
+    "composite_score": 66.7,
     "verdict": "탐욕",
     "components": [
       {
@@ -4558,14 +5580,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 34.63,
-        "score": 55.0,
-        "verdict": "중립"
+        "score": 40.5,
+        "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.93,
-        "score": 81.7,
+        "score": 87.1,
         "verdict": "극단적 탐욕"
       },
       {
@@ -4579,8 +5601,8 @@
   },
   {
     "date": "2026-04-30",
-    "composite_score": 59.4,
-    "verdict": "탐욕",
+    "composite_score": 54.9,
+    "verdict": "중립",
     "components": [
       {
         "key": "kospi_momentum",
@@ -4600,28 +5622,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 29.27,
-        "score": 69.1,
-        "verdict": "탐욕"
+        "score": 53.0,
+        "verdict": "중립"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.64,
-        "score": 30.9,
+        "score": 34.8,
         "verdict": "공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 28.41,
-        "score": 81.8,
+        "score": 81.7,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-05-04",
-    "composite_score": 74.7,
+    "composite_score": 70.2,
     "verdict": "탐욕",
     "components": [
       {
@@ -4642,14 +5664,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 31.89,
-        "score": 64.9,
-        "verdict": "탐욕"
+        "score": 48.7,
+        "verdict": "중립"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.56,
-        "score": 75.7,
+        "score": 80.0,
         "verdict": "극단적 탐욕"
       },
       {
@@ -4663,7 +5685,7 @@
   },
   {
     "date": "2026-05-06",
-    "composite_score": 70.1,
+    "composite_score": 66.2,
     "verdict": "탐욕",
     "components": [
       {
@@ -4684,14 +5706,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 36.46,
-        "score": 50.0,
-        "verdict": "중립"
+        "score": 37.1,
+        "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.05,
-        "score": 58.9,
+        "score": 59.6,
         "verdict": "탐욕"
       },
       {
@@ -4705,7 +5727,7 @@
   },
   {
     "date": "2026-05-07",
-    "composite_score": 70.0,
+    "composite_score": 66.4,
     "verdict": "탐욕",
     "components": [
       {
@@ -4726,14 +5748,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 36.37,
-        "score": 50.4,
-        "verdict": "중립"
+        "score": 37.5,
+        "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -1.94,
-        "score": 88.5,
+        "score": 92.2,
         "verdict": "극단적 탐욕"
       },
       {
@@ -4747,8 +5769,8 @@
   },
   {
     "date": "2026-05-08",
-    "composite_score": 76.3,
-    "verdict": "극단적 탐욕",
+    "composite_score": 71.9,
+    "verdict": "탐욕",
     "components": [
       {
         "key": "kospi_momentum",
@@ -4768,14 +5790,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 31.27,
-        "score": 65.8,
-        "verdict": "탐욕"
+        "score": 49.7,
+        "verdict": "중립"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -1.17,
-        "score": 84.2,
+        "score": 89.3,
         "verdict": "극단적 탐욕"
       },
       {
@@ -4789,8 +5811,8 @@
   },
   {
     "date": "2026-05-11",
-    "composite_score": 76.3,
-    "verdict": "극단적 탐욕",
+    "composite_score": 71.8,
+    "verdict": "탐욕",
     "components": [
       {
         "key": "kospi_momentum",
@@ -4810,14 +5832,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 31.11,
-        "score": 66.1,
-        "verdict": "탐욕"
+        "score": 50.0,
+        "verdict": "중립"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -1.8,
-        "score": 86.1,
+        "score": 90.5,
         "verdict": "극단적 탐욕"
       },
       {
@@ -4831,7 +5853,7 @@
   },
   {
     "date": "2026-05-12",
-    "composite_score": 62.7,
+    "composite_score": 58.6,
     "verdict": "탐욕",
     "components": [
       {
@@ -4852,14 +5874,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 33.96,
-        "score": 56.0,
-        "verdict": "탐욕"
+        "score": 41.9,
+        "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.18,
-        "score": 49.1,
+        "score": 51.2,
         "verdict": "중립"
       },
       {
@@ -4873,7 +5895,7 @@
   },
   {
     "date": "2026-05-13",
-    "composite_score": 60.4,
+    "composite_score": 56.3,
     "verdict": "탐욕",
     "components": [
       {
@@ -4894,14 +5916,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 33.21,
-        "score": 61.5,
-        "verdict": "탐욕"
+        "score": 46.8,
+        "verdict": "중립"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.29,
-        "score": 12.8,
+        "score": 16.4,
         "verdict": "극단적 공포"
       },
       {
@@ -4915,7 +5937,7 @@
   },
   {
     "date": "2026-05-14",
-    "composite_score": 61.4,
+    "composite_score": 56.8,
     "verdict": "탐욕",
     "components": [
       {
@@ -4936,14 +5958,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 32.93,
-        "score": 61.9,
-        "verdict": "탐욕"
+        "score": 47.1,
+        "verdict": "중립"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 3.14,
-        "score": 2.5,
+        "score": 1.7,
         "verdict": "극단적 공포"
       },
       {
@@ -4957,8 +5979,8 @@
   },
   {
     "date": "2026-05-15",
-    "composite_score": 45.6,
-    "verdict": "중립",
+    "composite_score": 42.7,
+    "verdict": "공포",
     "components": [
       {
         "key": "kospi_momentum",
@@ -4978,29 +6000,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 42.81,
-        "score": 35.3,
+        "score": 26.6,
         "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 2.65,
-        "score": 5.0,
+        "score": 3.5,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 43.16,
-        "score": 93.3,
+        "score": 93.2,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-05-18",
-    "composite_score": 45.4,
-    "verdict": "중립",
+    "composite_score": 42.3,
+    "verdict": "공포",
     "components": [
       {
         "key": "kospi_momentum",
@@ -5020,14 +6042,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 42.66,
-        "score": 37.5,
+        "score": 28.3,
         "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 2.51,
-        "score": 5.8,
+        "score": 4.0,
         "verdict": "극단적 공포"
       },
       {
@@ -5041,7 +6063,7 @@
   },
   {
     "date": "2026-05-19",
-    "composite_score": 41.3,
+    "composite_score": 39.1,
     "verdict": "공포",
     "components": [
       {
@@ -5062,28 +6084,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 45.0,
-        "score": 33.9,
+        "score": 25.6,
         "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.21,
-        "score": 16.5,
+        "score": 19.4,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 37.52,
-        "score": 87.6,
+        "score": 87.5,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-05-20",
-    "composite_score": 39.5,
+    "composite_score": 37.2,
     "verdict": "공포",
     "components": [
       {
@@ -5104,29 +6126,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 45.37,
-        "score": 33.6,
+        "score": 25.5,
         "verdict": "공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.0,
-        "score": 22.1,
+        "score": 24.4,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 34.55,
-        "score": 81.1,
+        "score": 81.0,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-05-21",
-    "composite_score": 46.4,
-    "verdict": "중립",
+    "composite_score": 44.7,
+    "verdict": "공포",
     "components": [
       {
         "key": "kospi_momentum",
@@ -5146,14 +6168,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 52.0,
-        "score": 28.5,
-        "verdict": "공포"
+        "score": 21.6,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.67,
-        "score": 30.9,
+        "score": 34.5,
         "verdict": "공포"
       },
       {
@@ -5167,7 +6189,7 @@
   },
   {
     "date": "2026-05-22",
-    "composite_score": 48.3,
+    "composite_score": 46.5,
     "verdict": "중립",
     "components": [
       {
@@ -5188,14 +6210,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 52.01,
-        "score": 28.2,
-        "verdict": "공포"
+        "score": 21.5,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.74,
-        "score": 30.6,
+        "score": 33.1,
         "verdict": "공포"
       },
       {
@@ -5209,7 +6231,7 @@
   },
   {
     "date": "2026-05-26",
-    "composite_score": 49.8,
+    "composite_score": 48.0,
     "verdict": "중립",
     "components": [
       {
@@ -5230,14 +6252,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 52.28,
-        "score": 28.0,
-        "verdict": "공포"
+        "score": 21.3,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.18,
-        "score": 17.6,
+        "score": 20.1,
         "verdict": "극단적 공포"
       },
       {
@@ -5251,7 +6273,7 @@
   },
   {
     "date": "2026-05-27",
-    "composite_score": 48.7,
+    "composite_score": 46.9,
     "verdict": "중립",
     "components": [
       {
@@ -5272,28 +6294,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 52.26,
-        "score": 28.6,
-        "verdict": "공포"
+        "score": 21.8,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.88,
-        "score": 25.4,
+        "score": 28.3,
         "verdict": "공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 44.55,
-        "score": 92.9,
+        "score": 92.8,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-05-28",
-    "composite_score": 51.7,
+    "composite_score": 49.9,
     "verdict": "중립",
     "components": [
       {
@@ -5314,14 +6336,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 52.48,
-        "score": 27.6,
-        "verdict": "공포"
+        "score": 21.1,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.31,
-        "score": 71.7,
+        "score": 72.9,
         "verdict": "탐욕"
       },
       {
@@ -5335,7 +6357,7 @@
   },
   {
     "date": "2026-05-29",
-    "composite_score": 52.3,
+    "composite_score": 50.6,
     "verdict": "중립",
     "components": [
       {
@@ -5356,14 +6378,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 53.11,
-        "score": 26.6,
-        "verdict": "공포"
+        "score": 20.4,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.3,
-        "score": 71.1,
+        "score": 72.5,
         "verdict": "탐욕"
       },
       {
@@ -5377,7 +6399,7 @@
   },
   {
     "date": "2026-06-01",
-    "composite_score": 50.6,
+    "composite_score": 48.7,
     "verdict": "중립",
     "components": [
       {
@@ -5398,14 +6420,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 53.74,
-        "score": 26.4,
-        "verdict": "공포"
+        "score": 20.2,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.16,
-        "score": 54.3,
+        "score": 54.6,
         "verdict": "중립"
       },
       {
@@ -5419,7 +6441,7 @@
   },
   {
     "date": "2026-06-02",
-    "composite_score": 52.2,
+    "composite_score": 50.3,
     "verdict": "중립",
     "components": [
       {
@@ -5440,29 +6462,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 52.97,
-        "score": 27.7,
-        "verdict": "공포"
+        "score": 21.3,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.23,
-        "score": 67.7,
+        "score": 69.0,
         "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 69.0,
-        "score": 98.5,
+        "score": 98.4,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-06-04",
-    "composite_score": 46.2,
-    "verdict": "중립",
+    "composite_score": 44.2,
+    "verdict": "공포",
     "components": [
       {
         "key": "kospi_momentum",
@@ -5482,14 +6504,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 52.45,
-        "score": 29.8,
-        "verdict": "공포"
+        "score": 22.9,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.64,
-        "score": 9.9,
+        "score": 10.8,
         "verdict": "극단적 공포"
       },
       {
@@ -5503,7 +6525,7 @@
   },
   {
     "date": "2026-06-05",
-    "composite_score": 40.8,
+    "composite_score": 38.8,
     "verdict": "공포",
     "components": [
       {
@@ -5524,14 +6546,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 54.01,
-        "score": 25.8,
-        "verdict": "공포"
+        "score": 19.9,
+        "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.99,
-        "score": 8.3,
+        "score": 5.9,
         "verdict": "극단적 공포"
       },
       {
@@ -5545,7 +6567,7 @@
   },
   {
     "date": "2026-06-08",
-    "composite_score": 27.6,
+    "composite_score": 26.4,
     "verdict": "공포",
     "components": [
       {
@@ -5566,14 +6588,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 62.84,
-        "score": 16.5,
+        "score": 12.8,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 3.96,
-        "score": 0.8,
+        "score": 0.5,
         "verdict": "극단적 공포"
       },
       {
@@ -5587,7 +6609,7 @@
   },
   {
     "date": "2026-06-09",
-    "composite_score": 36.6,
+    "composite_score": 35.6,
     "verdict": "공포",
     "components": [
       {
@@ -5608,28 +6630,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 68.78,
-        "score": 15.7,
+        "score": 12.1,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.46,
-        "score": 12.7,
+        "score": 13.3,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 61.89,
-        "score": 96.3,
+        "score": 96.2,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-06-10",
-    "composite_score": 32.8,
+    "composite_score": 31.9,
     "verdict": "공포",
     "components": [
       {
@@ -5650,14 +6672,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 69.39,
-        "score": 15.6,
+        "score": 12.1,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.96,
-        "score": 25.2,
+        "score": 27.0,
         "verdict": "공포"
       },
       {
@@ -5671,7 +6693,7 @@
   },
   {
     "date": "2026-06-11",
-    "composite_score": 38.5,
+    "composite_score": 37.5,
     "verdict": "공포",
     "components": [
       {
@@ -5692,15 +6714,15 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 68.89,
-        "score": 16.2,
+        "score": 12.6,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.33,
-        "score": 74.3,
-        "verdict": "탐욕"
+        "score": 75.3,
+        "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
@@ -5713,7 +6735,7 @@
   },
   {
     "date": "2026-06-12",
-    "composite_score": 44.1,
+    "composite_score": 43.5,
     "verdict": "공포",
     "components": [
       {
@@ -5734,28 +6756,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 70.15,
-        "score": 15.3,
+        "score": 11.9,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -1.02,
-        "score": 83.2,
+        "score": 87.4,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 61.97,
-        "score": 96.4,
+        "score": 96.3,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-06-15",
-    "composite_score": 48.7,
+    "composite_score": 47.8,
     "verdict": "중립",
     "components": [
       {
@@ -5776,14 +6798,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 72.11,
-        "score": 14.5,
+        "score": 11.3,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -2.89,
-        "score": 99.3,
+        "score": 99.5,
         "verdict": "극단적 탐욕"
       },
       {
@@ -5797,7 +6819,7 @@
   },
   {
     "date": "2026-06-16",
-    "composite_score": 48.2,
+    "composite_score": 47.4,
     "verdict": "중립",
     "components": [
       {
@@ -5818,14 +6840,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 67.87,
-        "score": 18.7,
+        "score": 14.6,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -1.02,
-        "score": 82.7,
+        "score": 87.0,
         "verdict": "극단적 탐욕"
       },
       {
@@ -5839,7 +6861,7 @@
   },
   {
     "date": "2026-06-17",
-    "composite_score": 49.4,
+    "composite_score": 48.6,
     "verdict": "중립",
     "components": [
       {
@@ -5860,28 +6882,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 67.9,
-        "score": 18.6,
+        "score": 14.5,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.97,
-        "score": 81.4,
+        "score": 86.1,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 59.06,
-        "score": 93.6,
+        "score": 93.5,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-06-18",
-    "composite_score": 47.7,
+    "composite_score": 46.3,
     "verdict": "중립",
     "components": [
       {
@@ -5902,14 +6924,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 66.26,
-        "score": 20.6,
+        "score": 16.1,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.02,
-        "score": 58.9,
+        "score": 59.0,
         "verdict": "탐욕"
       },
       {
@@ -5923,7 +6945,7 @@
   },
   {
     "date": "2026-06-19",
-    "composite_score": 42.6,
+    "composite_score": 41.5,
     "verdict": "공포",
     "components": [
       {
@@ -5944,14 +6966,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 66.02,
-        "score": 21.1,
+        "score": 16.6,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.33,
-        "score": 14.1,
+        "score": 16.3,
         "verdict": "극단적 공포"
       },
       {
@@ -5965,7 +6987,7 @@
   },
   {
     "date": "2026-06-22",
-    "composite_score": 42.8,
+    "composite_score": 41.3,
     "verdict": "공포",
     "components": [
       {
@@ -5986,14 +7008,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 60.71,
-        "score": 23.8,
+        "score": 18.7,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.45,
-        "score": 12.6,
+        "score": 13.2,
         "verdict": "극단적 공포"
       },
       {
@@ -6007,7 +7029,7 @@
   },
   {
     "date": "2026-06-23",
-    "composite_score": 28.5,
+    "composite_score": 27.6,
     "verdict": "공포",
     "components": [
       {
@@ -6028,28 +7050,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 72.78,
-        "score": 13.9,
+        "score": 10.9,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.7,
-        "score": 9.7,
+        "score": 10.1,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 54.63,
-        "score": 87.5,
+        "score": 87.4,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-06-24",
-    "composite_score": 32.9,
+    "composite_score": 32.0,
     "verdict": "공포",
     "components": [
       {
@@ -6070,14 +7092,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 73.11,
-        "score": 13.8,
+        "score": 10.9,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.61,
-        "score": 11.7,
+        "score": 12.1,
         "verdict": "극단적 공포"
       },
       {
@@ -6091,7 +7113,7 @@
   },
   {
     "date": "2026-06-25",
-    "composite_score": 37.7,
+    "composite_score": 37.0,
     "verdict": "공포",
     "components": [
       {
@@ -6112,14 +7134,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 74.98,
-        "score": 13.0,
+        "score": 10.3,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 1.14,
-        "score": 21.9,
+        "score": 23.0,
         "verdict": "극단적 공포"
       },
       {
@@ -6133,7 +7155,7 @@
   },
   {
     "date": "2026-06-26",
-    "composite_score": 29.8,
+    "composite_score": 29.6,
     "verdict": "공포",
     "components": [
       {
@@ -6154,14 +7176,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 78.32,
-        "score": 4.8,
+        "score": 3.8,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.58,
-        "score": 38.8,
+        "score": 40.3,
         "verdict": "공포"
       },
       {
@@ -6175,7 +7197,7 @@
   },
   {
     "date": "2026-06-29",
-    "composite_score": 30.8,
+    "composite_score": 30.5,
     "verdict": "공포",
     "components": [
       {
@@ -6196,14 +7218,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 77.31,
-        "score": 6.8,
+        "score": 5.3,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.26,
-        "score": 50.0,
+        "score": 51.0,
         "verdict": "중립"
       },
       {
@@ -6217,7 +7239,7 @@
   },
   {
     "date": "2026-06-30",
-    "composite_score": 32.4,
+    "composite_score": 31.8,
     "verdict": "공포",
     "components": [
       {
@@ -6238,14 +7260,14 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 76.21,
-        "score": 10.1,
+        "score": 8.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.17,
-        "score": 54.4,
+        "score": 54.7,
         "verdict": "중립"
       },
       {
@@ -6259,7 +7281,7 @@
   },
   {
     "date": "2026-07-01",
-    "composite_score": 26.3,
+    "composite_score": 26.0,
     "verdict": "공포",
     "components": [
       {
@@ -6280,28 +7302,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 76.49,
-        "score": 8.0,
+        "score": 6.3,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.87,
-        "score": 28.7,
+        "score": 30.4,
         "verdict": "공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 71.18,
-        "score": 96.7,
+        "score": 96.6,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-07-02",
-    "composite_score": 14.1,
+    "composite_score": 14.2,
     "verdict": "극단적 공포",
     "components": [
       {
@@ -6322,21 +7344,21 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 81.39,
-        "score": 0.7,
+        "score": 0.5,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.59,
-        "score": 38.4,
+        "score": 40.0,
         "verdict": "공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 53.81,
-        "score": 82.8,
+        "score": 82.7,
         "verdict": "극단적 탐욕"
       }
     ]
@@ -6364,29 +7386,29 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 81.9,
-        "score": 0.7,
+        "score": 0.5,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.28,
-        "score": 71.7,
+        "score": 72.3,
         "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 60.08,
-        "score": 88.2,
+        "score": 88.1,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-07-06",
-    "composite_score": 25.7,
-    "verdict": "공포",
+    "composite_score": 24.9,
+    "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
@@ -6406,28 +7428,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 75.38,
-        "score": 13.7,
+        "score": 10.9,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.28,
-        "score": 71.9,
+        "score": 72.5,
         "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 57.31,
-        "score": 85.0,
+        "score": 84.9,
         "verdict": "극단적 탐욕"
       }
     ]
   },
   {
     "date": "2026-07-07",
-    "composite_score": 23.1,
+    "composite_score": 22.4,
     "verdict": "극단적 공포",
     "components": [
       {
@@ -6448,28 +7470,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 72.2,
-        "score": 19.5,
+        "score": 15.5,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.84,
-        "score": 81.2,
+        "score": 85.6,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 43.1,
-        "score": 73.4,
+        "score": 73.2,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-07-08",
-    "composite_score": 23.1,
+    "composite_score": 22.2,
     "verdict": "극단적 공포",
     "components": [
       {
@@ -6490,28 +7512,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 72.95,
-        "score": 18.7,
+        "score": 14.9,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -1.86,
-        "score": 90.3,
+        "score": 92.8,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 40.47,
-        "score": 71.0,
+        "score": 70.8,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-07-09",
-    "composite_score": 24.2,
+    "composite_score": 23.1,
     "verdict": "극단적 공포",
     "components": [
       {
@@ -6532,7 +7554,7 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 72.98,
-        "score": 18.6,
+        "score": 14.9,
         "verdict": "극단적 공포"
       },
       {
@@ -6546,15 +7568,15 @@
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 37.72,
-        "score": 69.2,
+        "score": 69.0,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-07-10",
-    "composite_score": 25.8,
-    "verdict": "공포",
+    "composite_score": 24.6,
+    "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
@@ -6574,28 +7596,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 71.53,
-        "score": 21.7,
+        "score": 17.3,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -2.35,
-        "score": 94.9,
+        "score": 96.2,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 42.16,
-        "score": 72.0,
+        "score": 71.8,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-07-13",
-    "composite_score": 21.3,
+    "composite_score": 20.5,
     "verdict": "극단적 공포",
     "components": [
       {
@@ -6616,28 +7638,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 75.13,
-        "score": 15.2,
+        "score": 12.2,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -2.12,
-        "score": 92.4,
+        "score": 94.3,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 31.22,
-        "score": 58.9,
+        "score": 58.6,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-07-14",
-    "composite_score": 21.9,
+    "composite_score": 21.0,
     "verdict": "극단적 공포",
     "components": [
       {
@@ -6658,28 +7680,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 74.51,
-        "score": 18.2,
+        "score": 14.6,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -2.03,
-        "score": 90.6,
+        "score": 93.0,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 27.96,
-        "score": 56.6,
+        "score": 56.3,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-07-15",
-    "composite_score": 19.8,
+    "composite_score": 19.6,
     "verdict": "극단적 공포",
     "components": [
       {
@@ -6700,28 +7722,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 78.32,
-        "score": 6.2,
+        "score": 5.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -2.1,
-        "score": 91.9,
+        "score": 93.9,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 32.49,
-        "score": 61.3,
+        "score": 61.0,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-07-16",
-    "composite_score": 16.7,
+    "composite_score": 16.9,
     "verdict": "극단적 공포",
     "components": [
       {
@@ -6742,28 +7764,28 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 79.76,
-        "score": 3.7,
+        "score": 3.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -1.14,
-        "score": 82.6,
+        "score": 87.0,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 28.1,
-        "score": 56.5,
+        "score": 56.2,
         "verdict": "탐욕"
       }
     ]
   },
   {
     "date": "2026-07-20",
-    "composite_score": 15.0,
+    "composite_score": 15.2,
     "verdict": "극단적 공포",
     "components": [
       {
@@ -6784,566 +7806,692 @@
         "key": "volatility",
         "label": "변동성 (KOSPI)",
         "raw": 80.36,
-        "score": 1.9,
+        "score": 1.5,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -1.23,
-        "score": 84.0,
+        "score": 88.0,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
         "raw": 21.35,
-        "score": 49.4,
+        "score": 49.1,
         "verdict": "중립"
       }
     ]
   },
   {
-    "date": "2026-07-23",
-    "composite_score": 16.6,
+    "date": "2026-07-21",
+    "composite_score": 14.8,
     "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
         "label": "KOSPI 모멘텀",
-        "raw": -8.54,
-        "score": 2.5,
+        "raw": -12.98,
+        "score": 0.6,
         "verdict": "극단적 공포"
       },
       {
         "key": "kosdaq_momentum",
         "label": "KOSDAQ 모멘텀",
-        "raw": -22.29,
-        "score": 3.7,
+        "raw": -25.88,
+        "score": 1.2,
         "verdict": "극단적 공포"
       },
       {
         "key": "volatility",
         "label": "변동성 (KOSPI)",
-        "raw": 87.86,
-        "score": 0.6,
+        "raw": 82.04,
+        "score": 0.5,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
-        "raw": -1.52,
-        "score": 84.7,
+        "raw": -1.57,
+        "score": 88.5,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": 24.96,
-        "score": 54.0,
+        "raw": 18.98,
+        "score": 43.8,
+        "verdict": "공포"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-22",
+    "composite_score": 19.1,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "kospi_momentum",
+        "label": "KOSPI 모멘텀",
+        "raw": -12.41,
+        "score": 1.2,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "kosdaq_momentum",
+        "label": "KOSDAQ 모멘텀",
+        "raw": -25.58,
+        "score": 1.8,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 75.05,
+        "score": 14.8,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -1.2,
+        "score": 87.2,
+        "verdict": "극단적 탐욕"
+      },
+      {
+        "key": "safe_haven",
+        "label": "안전자산 수요",
+        "raw": 18.29,
+        "score": 41.7,
+        "verdict": "공포"
+      }
+    ]
+  },
+  {
+    "date": "2026-07-23",
+    "composite_score": 20.3,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "kospi_momentum",
+        "label": "KOSPI 모멘텀",
+        "raw": -8.67,
+        "score": 3.6,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "kosdaq_momentum",
+        "label": "KOSDAQ 모멘텀",
+        "raw": -21.19,
+        "score": 6.1,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 75.96,
+        "score": 11.8,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.82,
+        "score": 81.3,
+        "verdict": "극단적 탐욕"
+      },
+      {
+        "key": "safe_haven",
+        "label": "안전자산 수요",
+        "raw": 23.59,
+        "score": 53.0,
         "verdict": "중립"
       }
     ]
   },
   {
     "date": "2026-07-24",
-    "composite_score": 14.5,
+    "composite_score": 19.4,
     "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
         "label": "KOSPI 모멘텀",
-        "raw": -13.83,
+        "raw": -13.94,
         "score": 0.6,
         "verdict": "극단적 공포"
       },
       {
         "key": "kosdaq_momentum",
         "label": "KOSDAQ 모멘텀",
-        "raw": -25.9,
-        "score": 1.2,
+        "raw": -24.82,
+        "score": 3.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "volatility",
         "label": "변동성 (KOSPI)",
-        "raw": 82.76,
-        "score": 1.2,
+        "raw": 74.26,
+        "score": 17.6,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
-        "raw": -1.58,
-        "score": 84.8,
+        "raw": -0.82,
+        "score": 81.4,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": 18.3,
-        "score": 42.1,
+        "raw": 17.18,
+        "score": 40.6,
         "verdict": "공포"
       }
     ]
   },
   {
     "date": "2026-07-27",
-    "composite_score": 15.9,
+    "composite_score": 21.4,
     "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
         "label": "KOSPI 모멘텀",
-        "raw": -13.04,
+        "raw": -13.13,
         "score": 1.2,
         "verdict": "극단적 공포"
       },
       {
         "key": "kosdaq_momentum",
         "label": "KOSDAQ 모멘텀",
-        "raw": -23.74,
-        "score": 3.6,
+        "raw": -22.55,
+        "score": 5.4,
         "verdict": "극단적 공포"
       },
       {
         "key": "volatility",
         "label": "변동성 (KOSPI)",
-        "raw": 81.62,
-        "score": 2.4,
+        "raw": 72.71,
+        "score": 19.9,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
-        "raw": -2.01,
-        "score": 89.1,
+        "raw": -1.98,
+        "score": 91.9,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": 17.73,
-        "score": 41.2,
+        "raw": 14.98,
+        "score": 36.1,
         "verdict": "공포"
       }
     ]
   },
   {
     "date": "2026-07-28",
-    "composite_score": 11.3,
+    "composite_score": 10.3,
     "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
         "label": "KOSPI 모멘텀",
-        "raw": -22.39,
+        "raw": -22.44,
         "score": 0.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "kosdaq_momentum",
         "label": "KOSDAQ 모멘텀",
-        "raw": -29.03,
+        "raw": -27.9,
         "score": 0.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "volatility",
         "label": "변동성 (KOSPI)",
-        "raw": 85.72,
-        "score": 1.2,
+        "raw": 81.36,
+        "score": 1.9,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
-        "raw": -1.46,
-        "score": 82.5,
+        "raw": -0.72,
+        "score": 78.4,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": 7.55,
-        "score": 18.7,
+        "raw": 2.8,
+        "score": 12.0,
         "verdict": "극단적 공포"
       }
     ]
   },
   {
     "date": "2026-07-29",
-    "composite_score": 11.3,
+    "composite_score": 9.9,
     "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
         "label": "KOSPI 모멘텀",
-        "raw": -26.89,
+        "raw": -26.92,
         "score": 0.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "kosdaq_momentum",
         "label": "KOSDAQ 모멘텀",
-        "raw": -32.74,
+        "raw": -31.66,
         "score": 0.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "volatility",
         "label": "변동성 (KOSPI)",
-        "raw": 85.84,
-        "score": 1.2,
+        "raw": 82.24,
+        "score": 0.5,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
-        "raw": -2.3,
-        "score": 94.6,
+        "raw": -1.79,
+        "score": 88.8,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -0.68,
-        "score": 7.2,
+        "raw": -4.13,
+        "score": 1.8,
         "verdict": "극단적 공포"
       }
     ]
   },
   {
     "date": "2026-07-30",
-    "composite_score": 11.0,
+    "composite_score": 10.7,
     "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
         "label": "KOSPI 모멘텀",
-        "raw": -27.62,
+        "raw": -27.66,
         "score": 0.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "kosdaq_momentum",
         "label": "KOSDAQ 모멘텀",
-        "raw": -33.92,
+        "raw": -32.88,
         "score": 0.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "volatility",
         "label": "변동성 (KOSPI)",
-        "raw": 85.63,
-        "score": 2.4,
+        "raw": 82.28,
+        "score": 0.5,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -2.26,
-        "score": 93.5,
+        "score": 95.5,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -5.07,
-        "score": 1.8,
-        "verdict": "극단적 공포"
-      }
-    ]
-  },
-  {
-    "date": "2026-08-03",
-    "composite_score": 13.8,
-    "verdict": "극단적 공포",
-    "components": [
-      {
-        "key": "kospi_momentum",
-        "label": "KOSPI 모멘텀",
-        "raw": -18.96,
-        "score": 1.8,
-        "verdict": "극단적 공포"
-      },
-      {
-        "key": "kosdaq_momentum",
-        "label": "KOSDAQ 모멘텀",
-        "raw": -23.8,
-        "score": 4.7,
-        "verdict": "극단적 공포"
-      },
-      {
-        "key": "volatility",
-        "label": "변동성 (KOSPI)",
-        "raw": 97.32,
-        "score": 0.6,
-        "verdict": "극단적 공포"
-      },
-      {
-        "key": "fx_stress",
-        "label": "환율 스트레스",
-        "raw": -2.6,
-        "score": 97.6,
-        "verdict": "극단적 탐욕"
-      },
-      {
-        "key": "safe_haven",
-        "label": "안전자산 수요",
-        "raw": 4.78,
-        "score": 15.4,
-        "verdict": "극단적 공포"
-      }
-    ]
-  },
-  {
-    "date": "2026-08-04",
-    "composite_score": 15.5,
-    "verdict": "극단적 공포",
-    "components": [
-      {
-        "key": "kospi_momentum",
-        "label": "KOSPI 모멘텀",
-        "raw": -17.6,
+        "raw": -4.08,
         "score": 2.4,
         "verdict": "극단적 공포"
-      },
-      {
-        "key": "kosdaq_momentum",
-        "label": "KOSDAQ 모멘텀",
-        "raw": -18.74,
-        "score": 13.5,
-        "verdict": "극단적 공포"
-      },
-      {
-        "key": "volatility",
-        "label": "변동성 (KOSPI)",
-        "raw": 97.92,
-        "score": 0.6,
-        "verdict": "극단적 공포"
-      },
-      {
-        "key": "fx_stress",
-        "label": "환율 스트레스",
-        "raw": -2.02,
-        "score": 88.2,
-        "verdict": "극단적 탐욕"
-      },
-      {
-        "key": "safe_haven",
-        "label": "안전자산 수요",
-        "raw": 7.62,
-        "score": 21.2,
-        "verdict": "극단적 공포"
       }
     ]
   },
   {
-    "date": "2026-08-05",
-    "composite_score": 16.2,
-    "verdict": "극단적 공포",
-    "components": [
-      {
-        "key": "kospi_momentum",
-        "label": "KOSPI 모멘텀",
-        "raw": -14.44,
-        "score": 3.5,
-        "verdict": "극단적 공포"
-      },
-      {
-        "key": "kosdaq_momentum",
-        "label": "KOSDAQ 모멘텀",
-        "raw": -16.18,
-        "score": 14.6,
-        "verdict": "극단적 공포"
-      },
-      {
-        "key": "volatility",
-        "label": "변동성 (KOSPI)",
-        "raw": 95.91,
-        "score": 1.8,
-        "verdict": "극단적 공포"
-      },
-      {
-        "key": "fx_stress",
-        "label": "환율 스트레스",
-        "raw": -2.46,
-        "score": 96.5,
-        "verdict": "극단적 탐욕"
-      },
-      {
-        "key": "safe_haven",
-        "label": "안전자산 수요",
-        "raw": 1.17,
-        "score": 11.1,
-        "verdict": "극단적 공포"
-      }
-    ]
-  },
-  {
-    "date": "2026-08-06",
+    "date": "2026-07-31",
     "composite_score": 14.6,
     "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
         "label": "KOSPI 모멘텀",
-        "raw": -18.16,
+        "raw": -14.64,
         "score": 2.3,
         "verdict": "극단적 공포"
       },
       {
         "key": "kosdaq_momentum",
         "label": "KOSDAQ 모멘텀",
-        "raw": -15.36,
-        "score": 15.7,
+        "raw": -24.42,
+        "score": 5.8,
         "verdict": "극단적 공포"
       },
       {
         "key": "volatility",
         "label": "변동성 (KOSPI)",
-        "raw": 93.83,
-        "score": 2.3,
+        "raw": 101.81,
+        "score": 0.5,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
-        "raw": -2.2,
-        "score": 90.7,
+        "raw": -3.63,
+        "score": 100.0,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -5.34,
-        "score": 1.7,
+        "raw": 5.48,
+        "score": 16.5,
         "verdict": "극단적 공포"
       }
     ]
   },
   {
-    "date": "2026-08-07",
-    "composite_score": 13.8,
+    "date": "2026-08-03",
+    "composite_score": 12.6,
     "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
         "label": "KOSPI 모멘텀",
-        "raw": -18.43,
+        "raw": -18.82,
+        "score": 1.7,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "kosdaq_momentum",
+        "label": "KOSDAQ 모멘텀",
+        "raw": -21.93,
+        "score": 8.7,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 100.12,
+        "score": 0.9,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -1.53,
+        "score": 86.7,
+        "verdict": "극단적 탐욕"
+      },
+      {
+        "key": "safe_haven",
+        "label": "안전자산 수요",
+        "raw": -1.42,
+        "score": 6.4,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "composite_score": 15.2,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "kospi_momentum",
+        "label": "KOSPI 모멘텀",
+        "raw": -17.3,
         "score": 2.3,
         "verdict": "극단적 공포"
       },
       {
         "key": "kosdaq_momentum",
         "label": "KOSDAQ 모멘텀",
-        "raw": -15.06,
-        "score": 17.3,
+        "raw": -16.72,
+        "score": 15.6,
         "verdict": "극단적 공포"
       },
       {
         "key": "volatility",
         "label": "변동성 (KOSPI)",
-        "raw": 93.81,
-        "score": 2.9,
+        "raw": 100.62,
+        "score": 0.9,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
-        "raw": -1.39,
-        "score": 79.2,
+        "raw": -2.45,
+        "score": 97.4,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -8.8,
-        "score": 0.6,
+        "raw": -2.24,
+        "score": 4.1,
         "verdict": "극단적 공포"
       }
     ]
   },
   {
-    "date": "2026-08-10",
-    "composite_score": 16.2,
+    "date": "2026-08-05",
+    "composite_score": 15.4,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "kospi_momentum",
+        "label": "KOSPI 모멘텀",
+        "raw": -14.02,
+        "score": 4.0,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "kosdaq_momentum",
+        "label": "KOSDAQ 모멘텀",
+        "raw": -14.09,
+        "score": 19.0,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 100.95,
+        "score": 0.9,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -1.7,
+        "score": 86.8,
+        "verdict": "극단적 탐욕"
+      },
+      {
+        "key": "safe_haven",
+        "label": "안전자산 수요",
+        "raw": -1.95,
+        "score": 5.8,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-06",
+    "composite_score": 14.5,
     "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
         "label": "KOSPI 모멘텀",
         "raw": -17.68,
-        "score": 3.4,
+        "score": 2.3,
         "verdict": "극단적 공포"
       },
       {
         "key": "kosdaq_momentum",
         "label": "KOSDAQ 모멘텀",
-        "raw": -8.57,
-        "score": 23.0,
+        "raw": -13.23,
+        "score": 19.4,
         "verdict": "극단적 공포"
       },
       {
         "key": "volatility",
         "label": "변동성 (KOSPI)",
-        "raw": 92.95,
-        "score": 3.4,
+        "raw": 100.49,
+        "score": 1.9,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -1.46,
+        "score": 85.2,
+        "verdict": "극단적 탐욕"
+      },
+      {
+        "key": "safe_haven",
+        "label": "안전자산 수요",
+        "raw": -9.4,
+        "score": 0.0,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-07",
+    "composite_score": 11.2,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "kospi_momentum",
+        "label": "KOSPI 모멘텀",
+        "raw": -17.93,
+        "score": 2.3,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "kosdaq_momentum",
+        "label": "KOSDAQ 모멘텀",
+        "raw": -12.95,
+        "score": 19.9,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 100.37,
+        "score": 2.3,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 0.12,
+        "score": 51.7,
+        "verdict": "중립"
+      },
+      {
+        "key": "safe_haven",
+        "label": "안전자산 수요",
+        "raw": -10.91,
+        "score": 0.0,
+        "verdict": "극단적 공포"
+      }
+    ]
+  },
+  {
+    "date": "2026-08-10",
+    "composite_score": 17.8,
+    "verdict": "극단적 공포",
+    "components": [
+      {
+        "key": "kospi_momentum",
+        "label": "KOSPI 모멘텀",
+        "raw": -17.11,
+        "score": 4.0,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "kosdaq_momentum",
+        "label": "KOSDAQ 모멘텀",
+        "raw": -6.33,
+        "score": 27.7,
+        "verdict": "공포"
+      },
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 99.78,
+        "score": 3.2,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -2.0,
-        "score": 85.6,
+        "score": 90.9,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -8.39,
-        "score": 1.1,
+        "raw": -12.54,
+        "score": 0.0,
         "verdict": "극단적 공포"
       }
     ]
   },
   {
     "date": "2026-08-11",
-    "composite_score": 15.3,
+    "composite_score": 16.7,
     "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
         "label": "KOSPI 모멘텀",
-        "raw": -16.81,
-        "score": 4.6,
+        "raw": -16.21,
+        "score": 4.5,
         "verdict": "극단적 공포"
       },
       {
         "key": "kosdaq_momentum",
         "label": "KOSDAQ 모멘텀",
-        "raw": -7.63,
-        "score": 24.6,
-        "verdict": "극단적 공포"
+        "raw": -5.39,
+        "score": 28.7,
+        "verdict": "공포"
       },
       {
         "key": "volatility",
         "label": "변동성 (KOSPI)",
-        "raw": 91.55,
-        "score": 4.0,
+        "raw": 94.66,
+        "score": 3.7,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.78,
-        "score": 70.3,
-        "verdict": "탐욕"
+        "score": 76.3,
+        "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -11.76,
+        "raw": -14.19,
         "score": 0.0,
         "verdict": "극단적 공포"
       }
@@ -7351,209 +8499,209 @@
   },
   {
     "date": "2026-08-12",
-    "composite_score": 17.4,
+    "composite_score": 19.1,
     "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
         "label": "KOSPI 모멘텀",
-        "raw": -13.55,
-        "score": 6.8,
+        "raw": -12.95,
+        "score": 8.4,
         "verdict": "극단적 공포"
       },
       {
         "key": "kosdaq_momentum",
         "label": "KOSDAQ 모멘텀",
-        "raw": -6.98,
-        "score": 27.3,
+        "raw": -4.79,
+        "score": 30.2,
         "verdict": "공포"
       },
       {
         "key": "volatility",
         "label": "변동성 (KOSPI)",
-        "raw": 92.71,
-        "score": 4.0,
+        "raw": 95.64,
+        "score": 3.7,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -1.14,
-        "score": 76.7,
+        "score": 82.8,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -8.18,
-        "score": 2.3,
+        "raw": -8.98,
+        "score": 2.8,
         "verdict": "극단적 공포"
       }
     ]
   },
   {
     "date": "2026-08-13",
-    "composite_score": 17.0,
+    "composite_score": 18.7,
     "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
         "label": "KOSPI 모멘텀",
-        "raw": -10.27,
-        "score": 9.6,
+        "raw": -9.71,
+        "score": 11.1,
         "verdict": "극단적 공포"
       },
       {
         "key": "kosdaq_momentum",
         "label": "KOSDAQ 모멘텀",
-        "raw": -6.18,
-        "score": 27.7,
+        "raw": -4.08,
+        "score": 30.6,
         "verdict": "공포"
       },
       {
         "key": "volatility",
         "label": "변동성 (KOSPI)",
-        "raw": 93.21,
-        "score": 3.4,
+        "raw": 93.84,
+        "score": 4.6,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.33,
-        "score": 65.0,
+        "score": 67.5,
         "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -6.03,
-        "score": 4.0,
+        "raw": -5.2,
+        "score": 4.5,
         "verdict": "극단적 공포"
       }
     ]
   },
   {
     "date": "2026-08-14",
-    "composite_score": 18.4,
+    "composite_score": 20.2,
     "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
         "label": "KOSPI 모멘텀",
-        "raw": -7.9,
-        "score": 10.7,
+        "raw": -7.46,
+        "score": 12.2,
         "verdict": "극단적 공포"
       },
       {
         "key": "kosdaq_momentum",
         "label": "KOSDAQ 모멘텀",
-        "raw": -5.26,
-        "score": 28.7,
+        "raw": -3.32,
+        "score": 32.0,
         "verdict": "공포"
       },
       {
         "key": "volatility",
         "label": "변동성 (KOSPI)",
-        "raw": 87.47,
-        "score": 6.2,
+        "raw": 91.29,
+        "score": 5.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.38,
-        "score": 66.3,
+        "score": 68.5,
         "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -6.21,
-        "score": 3.9,
+        "raw": -1.25,
+        "score": 11.1,
         "verdict": "극단적 공포"
       }
     ]
   },
   {
     "date": "2026-08-18",
-    "composite_score": 13.8,
+    "composite_score": 15.6,
     "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
         "label": "KOSPI 모멘텀",
-        "raw": -9.2,
-        "score": 10.1,
+        "raw": -8.83,
+        "score": 11.5,
         "verdict": "극단적 공포"
       },
       {
         "key": "kosdaq_momentum",
         "label": "KOSDAQ 모멘텀",
-        "raw": -8.1,
-        "score": 22.9,
-        "verdict": "극단적 공포"
+        "raw": -6.34,
+        "score": 26.9,
+        "verdict": "공포"
       },
       {
         "key": "volatility",
         "label": "변동성 (KOSPI)",
-        "raw": 87.64,
-        "score": 6.1,
+        "raw": 89.86,
+        "score": 5.4,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": 0.55,
-        "score": 34.1,
+        "score": 36.4,
         "verdict": "공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -4.15,
-        "score": 6.1,
+        "raw": -1.06,
+        "score": 11.6,
         "verdict": "극단적 공포"
       }
     ]
   },
   {
     "date": "2026-08-19",
-    "composite_score": 14.9,
+    "composite_score": 15.9,
     "verdict": "극단적 공포",
     "components": [
       {
         "key": "kospi_momentum",
         "label": "KOSPI 모멘텀",
-        "raw": -14.27,
-        "score": 6.1,
+        "raw": -13.86,
+        "score": 7.1,
         "verdict": "극단적 공포"
       },
       {
         "key": "kosdaq_momentum",
         "label": "KOSDAQ 모멘텀",
-        "raw": -8.7,
-        "score": 21.7,
-        "verdict": "극단적 공포"
+        "raw": -6.94,
+        "score": 26.8,
+        "verdict": "공포"
       },
       {
         "key": "volatility",
         "label": "변동성 (KOSPI)",
-        "raw": 87.04,
-        "score": 7.2,
+        "raw": 91.62,
+        "score": 5.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
         "raw": -0.26,
-        "score": 60.0,
+        "score": 62.9,
         "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -12.52,
+        "raw": -16.09,
         "score": 0.0,
         "verdict": "극단적 공포"
       }
