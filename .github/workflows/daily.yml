@@ -2,10 +2,9 @@ name: Daily K-FGI Update
 
 on:
   schedule:
-    # 08:05 UTC = 17:05 KST, 평일만 (KRX 개장일 근사치. 공휴일엔 일부 지표가 비어도
-    # collect_static.py가 자동으로 건너뛰고 나머지 지표로 계산한다)
-    - cron: "5 8 * * 1-5"
-  workflow_dispatch: {}  # Actions 탭에서 수동으로 즉시 실행 가능 (휴대폰에서도 가능)
+    - cron: "5 8 * * 1-5"       # 17:05 KST - 장마감 후 공식 확정치
+    - cron: "0,30 0-6 * * 1-5"  # 09:00~15:30 KST 30분마다 - 장중 근사치
+  workflow_dispatch: {}
 
 permissions:
   contents: write
