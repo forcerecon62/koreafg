@@ -35,15 +35,15 @@ TOP_N_BY_CAP = 100        # 주가 강도 지표에 사용할 시총 상위 표�
 NEAR_BAND_PCT = 5.0        # 52주 고/저가 대비 근접 판정 기준(%)
 
 INDICATOR_WEIGHTS = {
-    "volatility": 0.20,
+    "volatility": 0.18,
     "market_breadth": 0.17,
-    "kospi_momentum": 0.17,
-    "kosdaq_momentum": 0.14,
+    "kospi_momentum": 0.15,
+    "fx_stress": 0.13,
+    "kosdaq_momentum": 0.12,
     "foreign_flow": 0.10,
     "price_strength": 0.08,
-    "fx_stress": 0.07,
     "safe_haven": 0.07,
-}  # 합 1.00 — 2026-08-20 재캘리브레이션: 환율 비중 축소, 가격지표 비중 확대
+}  # 합 1.00 — 2026-08-18 yasun.gg 대비 캘리브레이션 반영
 
 INDICATOR_LABELS = {
     "kospi_momentum": "KOSPI 모멘텀",
@@ -111,14 +111,20 @@ def _close(df) -> pd.Series:
 
 # ── 지표 수집 ─────────────────────────────────────────────
 def collect_market_index() -> dict:
-    """KOSPI/KOSDAQ 모멘텀(60일 이평 괴리율), KOSPI 변동성(20일 실현변동성 연율화)"""
+    """KOSPI/KOSDAQ 모멘텀(60일 이평 괴리율), KOSPI 변동성(20일 실현변동성 연율화).
+    가격 차트용으로 KOSPI/KOSDAQ 실제 종가(kospi_close/kosdaq_close)도 함께 반환한다 -
+    이 둘은 지표가 아니라서 main()에서 점수화 전에 따로 분리된다."""
     out = {}
     try:
-        for key, ticker in (("kospi_momentum", YF_KOSPI), ("kosdaq_momentum", YF_KOSDAQ)):
+        for key, ticker, price_key in (
+            ("kospi_momentum", YF_KOSPI, "kospi_close"),
+            ("kosdaq_momentum", YF_KOSDAQ, "kosdaq_close"),
+        ):
             df = yf.download(ticker, period="1y", interval="1d", progress=False, auto_adjust=True)
             close = _close(df)
             ma = close.rolling(60).mean()  # 60거래일(약 1분기) 이평 — 급락 후 하루 반등에 과민반응 방지
             out[key] = round(float((close.iloc[-1] - ma.iloc[-1]) / ma.iloc[-1] * 100), 2)
+            out[price_key] = round(float(close.iloc[-1]), 2)
 
         df = yf.download(YF_KOSPI, period="1y", interval="1d", progress=False, auto_adjust=True)
         close = _close(df)
@@ -276,7 +282,14 @@ def main():
         print("[ERROR] 모든 지표 수집 실패 - 이번 실행은 기록하지 않습니다")
         sys.exit(1)
 
+    # 가격 차트용 필드는 지표(점수화 대상)가 아니므로 raw에서 분리
+    price_levels = {}
+    for pk in ("kospi_close", "kosdaq_close"):
+        if pk in raw:
+            price_levels[pk] = raw.pop(pk)
+
     print("수집된 raw 지표:", raw)
+    print("수집된 가격 레벨:", price_levels)
 
     per_indicator_hist = {k: [] for k in raw}
     for rec in history[-LOOKBACK_DAYS:]:
@@ -305,10 +318,12 @@ def main():
             total_w += w
     composite = round(acc / total_w, 1) if total_w else 50.0
 
-    history.append({
+    record = {
         "date": today, "composite_score": composite,
         "verdict": label_for(composite), "components": components,
-    })
+    }
+    record.update(price_levels)  # kospi_close / kosdaq_close 최상위 필드로 추가
+    history.append(record)
     history.sort(key=lambda r: r["date"])
     save_history(history[-MAX_RECORDS:])
 
