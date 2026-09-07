@@ -9898,7 +9898,7 @@
   },
   {
     "date": "2026-09-07",
-    "composite_score": 52.2,
+    "composite_score": 51.6,
     "verdict": "중립",
     "components": [
       {
@@ -9925,8 +9925,8 @@
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
-        "raw": -2.46,
-        "score": 97.2,
+        "raw": -2.2,
+        "score": 93.2,
         "verdict": "극단적 탐욕"
       },
       {
@@ -9946,7 +9946,7 @@
       {
         "key": "foreign_flow",
         "label": "외국인 5일 수급",
-        "raw": 31.2,
+        "raw": 29.7,
         "score": 75.0,
         "verdict": "탐욕"
       },
