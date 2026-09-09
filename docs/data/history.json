@@ -10055,15 +10055,15 @@
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
-        "raw": -2.77,
-        "score": 98.4,
+        "raw": -2.63,
+        "score": 98.0,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -23.08,
-        "score": 1.5,
+        "raw": -22.9,
+        "score": 2.6,
         "verdict": "극단적 공포"
       },
       {
@@ -10076,7 +10076,7 @@
       {
         "key": "foreign_flow",
         "label": "외국인 5일 수급",
-        "raw": 19542.5,
+        "raw": 19945.0,
         "score": 85.7,
         "verdict": "극단적 탐욕"
       },
