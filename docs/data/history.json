@@ -10158,7 +10158,7 @@
   },
   {
     "date": "2026-09-11",
-    "composite_score": 39.5,
+    "composite_score": 39.9,
     "verdict": "공포",
     "components": [
       {
@@ -10185,14 +10185,14 @@
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
-        "raw": -0.89,
-        "score": 75.1,
+        "raw": -1.12,
+        "score": 78.7,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -23.46,
+        "raw": -23.2,
         "score": 1.5,
         "verdict": "극단적 공포"
       },
@@ -10206,7 +10206,7 @@
       {
         "key": "foreign_flow",
         "label": "외국인 5일 수급",
-        "raw": -24421.8,
+        "raw": -24503.2,
         "score": 56.2,
         "verdict": "탐욕"
       },
