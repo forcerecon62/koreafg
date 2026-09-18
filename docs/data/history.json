@@ -10483,7 +10483,7 @@
   },
   {
     "date": "2026-09-18",
-    "composite_score": 34.9,
+    "composite_score": 33.2,
     "verdict": "공포",
     "components": [
       {
@@ -10510,35 +10510,35 @@
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
-        "raw": 2.61,
-        "score": 3.6,
+        "raw": 2.89,
+        "score": 2.8,
         "verdict": "극단적 공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -29.16,
-        "score": 0.5,
+        "raw": -28.55,
+        "score": 1.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "market_breadth",
         "label": "시장 폭 (KS-KQ)",
-        "raw": 19.57,
-        "score": 71.4,
+        "raw": 6.71,
+        "score": 61.9,
         "verdict": "탐욕"
       },
       {
         "key": "foreign_flow",
         "label": "외국인 5일 수급",
-        "raw": -114995.5,
+        "raw": -114774.0,
         "score": 9.5,
         "verdict": "극단적 공포"
       },
       {
         "key": "price_strength",
         "label": "주가 강도 (52주)",
-        "raw": -5.0,
+        "raw": -4.0,
         "score": 0.0,
         "verdict": "극단적 공포"
       }
