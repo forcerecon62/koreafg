@@ -10808,41 +10808,41 @@
   },
   {
     "date": "2026-09-25",
-    "composite_score": 50.9,
+    "composite_score": 51.4,
     "verdict": "중립",
     "components": [
       {
         "key": "kospi_momentum",
         "label": "KOSPI 모멘텀",
-        "raw": 2.9,
-        "score": 29.2,
+        "raw": 3.24,
+        "score": 30.6,
         "verdict": "공포"
       },
       {
         "key": "kosdaq_momentum",
         "label": "KOSDAQ 모멘텀",
-        "raw": 4.04,
-        "score": 57.9,
+        "raw": 4.22,
+        "score": 59.8,
         "verdict": "탐욕"
       },
       {
         "key": "volatility",
         "label": "변동성 (KOSPI)",
-        "raw": 31.52,
-        "score": 67.7,
+        "raw": 31.36,
+        "score": 68.1,
         "verdict": "탐욕"
       },
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
-        "raw": -1.72,
+        "raw": -1.7,
         "score": 84.2,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -21.59,
+        "raw": -21.34,
         "score": 8.7,
         "verdict": "극단적 공포"
       },
