@@ -10938,7 +10938,7 @@
   },
   {
     "date": "2026-09-29",
-    "composite_score": 39.9,
+    "composite_score": 39.3,
     "verdict": "공포",
     "components": [
       {
@@ -10972,21 +10972,21 @@
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -18.62,
+        "raw": -18.96,
         "score": 11.0,
         "verdict": "극단적 공포"
       },
       {
         "key": "market_breadth",
         "label": "시장 폭 (KS-KQ)",
-        "raw": -26.14,
-        "score": 14.3,
+        "raw": -34.78,
+        "score": 10.7,
         "verdict": "극단적 공포"
       },
       {
         "key": "foreign_flow",
         "label": "외국인 5일 수급",
-        "raw": -68686.1,
+        "raw": -68948.6,
         "score": 25.0,
         "verdict": "공포"
       },
