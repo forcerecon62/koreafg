@@ -11000,5 +11000,70 @@
     ],
     "kospi_close": 6870.81,
     "kosdaq_close": 849.8
+  },
+  {
+    "date": "2026-09-30",
+    "composite_score": 44.3,
+    "verdict": "공포",
+    "components": [
+      {
+        "key": "kospi_momentum",
+        "label": "KOSPI 모멘텀",
+        "raw": 1.09,
+        "score": 26.4,
+        "verdict": "공포"
+      },
+      {
+        "key": "kosdaq_momentum",
+        "label": "KOSDAQ 모멘텀",
+        "raw": 5.97,
+        "score": 74.5,
+        "verdict": "탐욕"
+      },
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 31.9,
+        "score": 65.7,
+        "verdict": "탐욕"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": 0.36,
+        "score": 38.7,
+        "verdict": "공포"
+      },
+      {
+        "key": "safe_haven",
+        "label": "안전자산 수요",
+        "raw": -11.22,
+        "score": 14.7,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "market_breadth",
+        "label": "시장 폭 (KS-KQ)",
+        "raw": -1.16,
+        "score": 58.6,
+        "verdict": "탐욕"
+      },
+      {
+        "key": "foreign_flow",
+        "label": "외국인 5일 수급",
+        "raw": -68971.7,
+        "score": 24.1,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "price_strength",
+        "label": "주가 강도 (52주)",
+        "raw": -6.0,
+        "score": 13.8,
+        "verdict": "극단적 공포"
+      }
+    ],
+    "kospi_close": 6869.23,
+    "kosdaq_close": 855.81
   }
 ]
