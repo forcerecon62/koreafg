@@ -11198,8 +11198,8 @@
   },
   {
     "date": "2026-10-05",
-    "composite_score": 54.3,
-    "verdict": "중립",
+    "composite_score": 57.2,
+    "verdict": "탐욕",
     "components": [
       {
         "key": "kospi_momentum",
@@ -11225,15 +11225,15 @@
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
-        "raw": -0.76,
-        "score": 70.8,
+        "raw": -0.89,
+        "score": 73.5,
         "verdict": "탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -14.8,
-        "score": 13.6,
+        "raw": -14.13,
+        "score": 14.5,
         "verdict": "극단적 공포"
       },
       {
@@ -11246,9 +11246,9 @@
       {
         "key": "foreign_flow",
         "label": "외국인 5일 수급",
-        "raw": -84208.5,
-        "score": 25.0,
-        "verdict": "공포"
+        "raw": -51900.5,
+        "score": 50.0,
+        "verdict": "중립"
       },
       {
         "key": "price_strength",
