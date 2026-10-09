@@ -11443,14 +11443,14 @@
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
-        "raw": -1.45,
+        "raw": -1.41,
         "score": 80.2,
         "verdict": "극단적 탐욕"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -14.47,
+        "raw": -14.6,
         "score": 13.8,
         "verdict": "극단적 공포"
       }
