@@ -11592,7 +11592,7 @@
   },
   {
     "date": "2026-10-15",
-    "composite_score": 27.9,
+    "composite_score": 27.2,
     "verdict": "공포",
     "components": [
       {
@@ -11619,14 +11619,14 @@
       {
         "key": "fx_stress",
         "label": "환율 스트레스",
-        "raw": 0.27,
-        "score": 39.9,
+        "raw": 0.4,
+        "score": 36.4,
         "verdict": "공포"
       },
       {
         "key": "safe_haven",
         "label": "안전자산 수요",
-        "raw": -24.06,
+        "raw": -24.17,
         "score": 3.6,
         "verdict": "극단적 공포"
       }
