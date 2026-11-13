@@ -12513,5 +12513,49 @@
     ],
     "kospi_close": 5375.36,
     "kosdaq_close": 705.1
+  },
+  {
+    "date": "2026-11-13",
+    "composite_score": 35.2,
+    "verdict": "공포",
+    "components": [
+      {
+        "key": "kospi_momentum",
+        "label": "KOSPI 모멘텀",
+        "raw": -16.06,
+        "score": 5.7,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "kosdaq_momentum",
+        "label": "KOSDAQ 모멘텀",
+        "raw": -11.56,
+        "score": 19.7,
+        "verdict": "극단적 공포"
+      },
+      {
+        "key": "volatility",
+        "label": "변동성 (KOSPI)",
+        "raw": 53.85,
+        "score": 40.7,
+        "verdict": "공포"
+      },
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -1.7,
+        "score": 83.4,
+        "verdict": "극단적 탐욕"
+      },
+      {
+        "key": "safe_haven",
+        "label": "안전자산 수요",
+        "raw": -10.0,
+        "score": 21.4,
+        "verdict": "극단적 공포"
+      }
+    ],
+    "kospi_close": 5311.7,
+    "kosdaq_close": 705.41
   }
 ]
