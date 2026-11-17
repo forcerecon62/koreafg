@@ -12601,5 +12601,26 @@
     ],
     "kospi_close": 5290.53,
     "kosdaq_close": 699.66
+  },
+  {
+    "date": "2026-11-17",
+    "composite_score": 48.6,
+    "verdict": "중립",
+    "components": [
+      {
+        "key": "fx_stress",
+        "label": "환율 스트레스",
+        "raw": -0.5,
+        "score": 60.9,
+        "verdict": "탐욕"
+      },
+      {
+        "key": "safe_haven",
+        "label": "안전자산 수요",
+        "raw": -5.69,
+        "score": 25.7,
+        "verdict": "공포"
+      }
+    ]
   }
 ]
